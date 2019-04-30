@@ -2,10 +2,11 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <title>Devis</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="css/style.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>Devis</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <!--
 <?php
@@ -16,7 +17,7 @@ try
 }
 catch(Exception $e)
 {
-        die('Erreur : '.$e->getMessage());
+        die('Erreur : '.$e->getMessag);
 }
 
 // Insertion du message à l'aide d'une requête préparée
@@ -29,132 +30,212 @@ header('Location: minichat.php');
 ?>-->
 
 <body>
-  <header>
+    <header>
 
 
 
-  </header>
+    </header>
 
-  <main class="container-fluid global">
+    <main class="container-fluid global">
 
-    <form>
-      <!-- -->
-      <!--************première ligne, infos basiques************** -->
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-          <label for="nom">Nom*</label> : <input type="text" name="nom" id="nom" />
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-          <label for="prenom">Prenom*</label> : <input type="text" name="prenom" id="prenom" />
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-          <label for="mail">Email*</label> : <input type="text" name="mail" id="mail" />
-        </div>
-      </div>
-      <!--**************fin première ligne*************************** -->
+        <form>
+            <!-- -->
+            <!--************première ligne, infos basiques************** -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                    <label for="nom">Nom*</label> : <input type="text" name="nom" id="nom" />
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                    <label for="prenom">Prenom*</label> : <input type="text" name="prenom" id="prenom" />
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <label for="mail">Email*</label> : <input type="text" name="mail" id="mail" />
+                </div>
+            </div>
+            <!--**************fin première ligne*************************** -->
 
-      <!--*****************ligne numéro et adresse, voir pour ajouter la map********************* -->
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <label for="tel">Telephone</label> : <input type="text" name="tel" id="tel" />
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <label for="adresse">Adresse*</label> : <input type="text" name="adresse" id="adresse" />
-        </div>
-      </div>
-      <!--********************fin ligne********************** -->
+            <!--*****************ligne numéro et adresse, voir pour ajouter la map********************* -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <label for="tel">Telephone</label> : <input type="text" name="tel" id="tel" />
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <label for="adresse">Adresse*</label> : <input type="text" name="adresse" id="adresse" />
+                </div>
+            </div>
+            <!--********************fin ligne********************** -->
 
-      <!--********************info sur la toiture: orientation, inclinaison, surface******************* -->
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-          <label for="orientation">Orientation*</label> : <input type="text" name="orientation" id="orientation" />
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-          <label for="inclinaison">Inclinaison*</label> : <input type="text" name="inclinaison" id="inclinaison" />
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-          <label for="surface">Surface*</label> : <input type="text" name="surface" id="surface" />
-        </div>
-      </div>
-      <!--******************fin infos toiture**************** -->
+            <!--********************info sur la toiture: orientation, inclinaison, surface******************* -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                    <label for="orientation">Orientation*</label> : <input type="text" name="orientation"
+                        id="orientation" />
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                    <label for="inclinaison">Inclinaison*</label> : <input type="text" name="inclinaison"
+                        id="inclinaison" />
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <label for="surface">Surface*</label> : <input type="text" name="surface" id="surface" />
+                </div>
+            </div>
+            <!--******************fin infos toiture**************** -->
 
-      <!--****************** infos batiment cotation;age;charpente(ce champs doit etre a selectionner dans une liste); ce sont des infos techniques faculatatives********************* -->
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-          <label for="age">age</label> : <input type="text" name="age" id="age" />
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-          <label for="cotation">cotation</label> : <input type="text" name="cotation" id="cotation" />
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-          <label for="charpente">charpente</label> : <input type="text" name="charpente" id="charpente" />
-        </div>
-      </div>
-      <!--******************fin infos batiment cotation;age;charpente********************* -->
+            <!--****************** infos batiment cotation;age;charpente(ce champs doit etre a selectionner dans une liste); ce sont des infos techniques faculatatives********************* -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                    <label for="age">age</label> : <input type="text" name="age" id="age" />
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                    <label for="cotation">cotation</label> : <input type="text" name="cotation" id="cotation" />
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <label for="charpente">charpente</label> : <input type="text" name="charpente" id="charpente" />
+                </div>
+            </div>
+            <!--******************fin infos batiment cotation;age;charpente********************* -->
 
-      <!--****************** infos batiment couverture (ce champs doit etre a selectionner dans une liste) et photo; cette ligne est facultative********************* -->
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <label for="couverture">Couverture</label> : <input type="text" name="couverture" id="couverture" />
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <label for="photo">Photo</label> : <input type="text" name="photo" id="photo" />
-        </div>
-      </div>
-      <!--******************fin infos batiment couverture et photo********************* -->
+            <!--****************** infos batiment couverture (ce champs doit etre a selectionner dans une liste) et photo; cette ligne est facultative********************* -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <label for="couverture">Couverture</label> : <input type="text" name="couverture" id="couverture" />
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <label for="photo">Photo</label> : <input type="text" name="photo" id="photo" />
+                </div>
+            </div>
+            <!--******************fin infos batiment couverture et photo********************* -->
 
-      <!--****************** infos consommation (obligatoire, sur facture, réfléchir à y inclure le type de contrat) + fournisseur(champs facultatif dans liste pré-établie)********************* -->
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <label for="consommation">Consommation*</label> : <input type="text" name="consommation" id="consommation" />
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <label for="fournisseur">Fournisseur</label> : <input type="text" name="fournisseur" id="fournisseur" />
-        </div>
-      </div>
-      <!--******************fin infos consommation + fournisseur********************* -->
+            <!--****************** infos consommation (obligatoire, sur facture, réfléchir à y inclure le type de contrat) + fournisseur(champs facultatif dans liste pré-établie)********************* -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <label for="consommation">Consommation*</label> : <input type="text" name="consommation"
+                        id="consommation" />
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <label for="fournisseur">Fournisseur</label> : <input type="text" name="fournisseur"
+                        id="fournisseur" />
+                </div>
+            </div>
+            <!--******************fin infos consommation + fournisseur********************* -->
 
-      <!--****************** infos chauffage + chauffe-eau; ligne facultative chaque champs est a choisir ds une liste pré-établie********************* -->
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <label for="chauffage">chauffage</label> : <input type="text" name="chauffage" id="chauffage" />
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <label for="chauffage_eau">chauffe-eau</label> : <input type="text" name="chauffage_eau" id="chauffage_eau" />
-        </div>
-      </div>
-      <!--******************fin infos chauffage + chauffe-eau********************* -->
+            <!--****************** infos chauffage + chauffe-eau; ligne facultative chaque champs est a choisir ds une liste pré-établie********************* -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <label for="chauffage">chauffage</label> : <input type="text" name="chauffage" id="chauffage" />
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <label for="chauffage_eau">chauffe-eau</label> : <input type="text" name="chauffage_eau"
+                        id="chauffage_eau" />
+                </div>
+            </div>
+            <!--******************fin infos chauffage + chauffe-eau********************* -->
 
-      <!--****************** infos appareils reproduire l'exemple donné et utilisateurs; ligne facultative, liste pré-établie pour nb de personnes********************* -->
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <label for="appareils_electriques">appareils electriques</label> : <input type="text" name="appareils_electriques" id="appareils_electriques" />
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> : <input type="text" name="Nombre_personnes_foyer" id="Nombre_personnes_foyer" />
-        </div>
-      </div>
-      <!--******************fin infos appareils et utilisateurs********************* -->
+            <!--****************** infos appareils reproduire l'exemple donné et utilisateurs; ligne facultative, liste pré-établie pour nb de personnes********************* -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <label for="appareils_electriques">appareils electriques</label> : <input type="text"
+                        name="appareils_electriques" id="appareils_electriques" />
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item " aria-="true">
+                        Réfrigérateur congélateur bas <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">3</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">Piscine <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">3</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Lave Linge<div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">3</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Lave vaisselle <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">3</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">Congélateur <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">3</label>
+                        </div>
+                    </li>
+                </ul>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> : <input type="text"
+                        name="Nombre_personnes_foyer" id="Nombre_personnes_foyer" />
+                </div>
+            </div>
+            <!--******************fin infos appareils et utilisateurs********************* -->
 
 
-    </form>
+        </form>
 
 
-  </main>
+    </main>
 
 
-  <footer>
+    <footer>
 
 
 
-  </footer>
+    </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
