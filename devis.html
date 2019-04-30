@@ -113,8 +113,9 @@ header('Location: minichat.php');
                         id="consommation" />
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <label for="fournisseur">Fournisseur</label> : <input type="text" name="fournisseur"
-                        id="fournisseur" />
+                    <label for="fournisseur">Fournisseur</label>
+                    <button type="button" class="btn btn-primary btn-lg">EDF</button>
+                    <button type="button" class="btn btn-secondary btn-lg">Autre</button>
                 </div>
             </div>
             <!--******************fin infos consommation + fournisseur********************* -->
@@ -138,7 +139,7 @@ header('Location: minichat.php');
 
                     <ul class="list-group">
                         <li class="list-group-item " aria-="true">
-                            Réfrigérateur congélateur bas
+                            Réfrigérateur congélateur bas :
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox0" value="option0">
                                 <label class="form-check-label" for="inlineCheckbox3">Aucun</label>
@@ -160,30 +161,7 @@ header('Location: minichat.php');
                                 <label class="form-check-label" for="inlineCheckbox3">4+</label>
                             </div>
                         </li>
-                        <li class="list-group-item">Piscine
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox0" value="option0">
-                                <label class="form-check-label" for="inlineCheckbox3">Aucun</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                <label class="form-check-label" for="inlineCheckbox1">1</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                <label class="form-check-label" for="inlineCheckbox2">2</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                                <label class="form-check-label" for="inlineCheckbox3">3</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-                                <label class="form-check-label" for="inlineCheckbox3">4+</label>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            Lave Linge
+                        <li class="list-group-item">Piscine :
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox0" value="option0">
                                 <label class="form-check-label" for="inlineCheckbox3">Aucun</label>
@@ -206,7 +184,7 @@ header('Location: minichat.php');
                             </div>
                         </li>
                         <li class="list-group-item">
-                            Lave vaisselle
+                            Lave Linge :
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox0" value="option0">
                                 <label class="form-check-label" for="inlineCheckbox3">Aucun</label>
@@ -228,7 +206,30 @@ header('Location: minichat.php');
                                 <label class="form-check-label" for="inlineCheckbox3">4+</label>
                             </div>
                         </li>
-                        <li class="list-group-item">Congélateur
+                        <li class="list-group-item">
+                            Lave vaisselle :
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox0" value="option0">
+                                <label class="form-check-label" for="inlineCheckbox3">Aucun</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                                <label class="form-check-label" for="inlineCheckbox3">4+</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">Congélateur :
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox0" value="option0">
                                 <label class="form-check-label" for="inlineCheckbox3">Aucun</label>
@@ -252,7 +253,7 @@ header('Location: minichat.php');
                         </li>
                         <li class="list-group-item " aria-="true">
 
-                            Cave à vin
+                            Cave à vin :
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox0" value="option0">
                                 <label class="form-check-label" for="inlineCheckbox3">Aucun</label>
@@ -274,31 +275,7 @@ header('Location: minichat.php');
                                 <label class="form-check-label" for="inlineCheckbox3">4+</label>
                             </div>
                         </li>
-                        <li class="list-group-item">SPA
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox0" value="option0">
-                                <label class="form-check-label" for="inlineCheckbox3">Aucun</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                <label class="form-check-label" for="inlineCheckbox1">1</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                <label class="form-check-label" for="inlineCheckbox2">2</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                                <label class="form-check-label" for="inlineCheckbox3">3</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-                                <label class="form-check-label" for="inlineCheckbox3">4+</label>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-
-                            Voiture électrique
+                        <li class="list-group-item">SPA :
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox0" value="option0">
                                 <label class="form-check-label" for="inlineCheckbox3">Aucun</label>
@@ -322,7 +299,7 @@ header('Location: minichat.php');
                         </li>
                         <li class="list-group-item">
 
-                            Pompe à chaleur Piscine
+                            Voiture électrique :
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox0" value="option0">
                                 <label class="form-check-label" for="inlineCheckbox3">Aucun</label>
@@ -344,7 +321,31 @@ header('Location: minichat.php');
                                 <label class="form-check-label" for="inlineCheckbox3">4+</label>
                             </div>
                         </li>
-                        <li class="list-group-item">Sèche linge
+                        <li class="list-group-item">
+
+                            Pompe à chaleur Piscine :
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox0" value="option0">
+                                <label class="form-check-label" for="inlineCheckbox3">Aucun</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                                <label class="form-check-label" for="inlineCheckbox3">4+</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">Sèche linge :
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox0" value="option0">
                                 <label class="form-check-label" for="inlineCheckbox3">Aucun</label>
