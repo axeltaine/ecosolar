@@ -8,6 +8,26 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
 </head>
+<!--
+<?php
+// Connexion à la base de données
+try
+{
+    $bdd = new PDO('mysql:host=localhost;dbname=ecosolar;charset=utf8', 'root', 'toor');
+}
+catch(Exception $e)
+{
+        die('Erreur : '.$e->getMessage());
+}
+ 
+// Insertion du message à l'aide d'une requête préparée
+$req = $bdd->prepare('INSERT INTO `devis` (Nom, Prenom, Adresse, Numero_telephone, adresse_mail, Orientation_toiture, Inclinaison_toiture, 	Surface_toiture, Cotation_batiment, Age_batiment, Type_charpente, Type_couverture, Photos_batiment, consommation_menage, Fournisseur, Type_chauffage, Type_chauffage_eau, Nombre_personnes_foyer, appareils_electriques) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+$req->execute(array( $_POST['Nom'], $_POST['Prenom'], $_POST['Adresse'], $_POST['Numero_telephone'], $_POST['adresse_mail'], $_POST['Orientation_toiture'], $_POST['Inclinaison_toiture'], $_POST['Surface_toiture'], $_POST['Cotation_batiment'], $_POST['Age_batiment'], $_POST['Type_charpente'], $_POST['Type_couverture'], $_POST['Photos_batiment'], $_POST['consommation_menage'], $_POST['Fournisseur'], $_POST['Type_chauffage'], $_POST['Type_chauffage_eau'], $_POST['Nombre_personnes_foyer'], $_POST['appareils_electriques']));
+
+ 
+// Redirection du visiteur vers la page du minichat
+header('Location: minichat.php');
+?>-->
 
 <body>
     <header>
