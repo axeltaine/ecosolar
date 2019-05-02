@@ -153,9 +153,9 @@ body {
 #progressbar li {
     list-style-type: none;
     color: #666;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-size: 9px;
-    width: 33.33%;
+    width: 20%; /* etait a 33.33%*/
     float: left;
     position: relative;
     letter-spacing: 1px;
