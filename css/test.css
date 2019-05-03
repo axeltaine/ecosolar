@@ -17,6 +17,11 @@ body {
     background: transparent;
 }
 
+.logo {
+    width: auto; 
+    height: 10em;
+    align-items: center;
+}
 /*form styles*/
 #msform {
     text-align: center;
