@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/test.css" rel="stylesheet">
+    <link href="orientation.css" rel="stylesheet">
 </head>
 
 <body>
@@ -64,8 +65,19 @@
                     <h2 class="fs-title">Informations sur la toiture</h2>
 
                     <div class="form-group">
-                        <label for="orientation">Orientation*</label> : <input type="text" name="orientation"
-                            id="orientation" />
+                        <label for="orientation">Orientation*</label> : <br>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                                <div id="orientation"></div>
+                                <div id="orientation_est"></div>
+                                <div id="orientation_sud"></div>
+                                <div id="orientation_ouest"></div> 
+                              <button type="button" id="button_sud" class="btn btn-primary">SUD</button>
+                              <button type="button" id="button_sud_ouest" class="btn btn-primary">SUD-OUEST</button>
+                              <button type="button" id="button_sud_est" class="btn btn-primary">SUD-EST</button>
+                              <button type="button" id="button_ouest" class="btn btn-primary">EST</button>
+                              <button type="button" id="button_est" class="btn btn-primary">OUEST</button>
+                            </div>
+                            
                     </div>
 
                     <div class="form-group">
@@ -174,6 +186,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
     </script>
     <script src="test.js"></script>
+    <script src="main_orientation.js"></script>
 
 </body>
 
