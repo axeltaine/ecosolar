@@ -1,0 +1,88 @@
+#orientation {
+  background-color: orange;
+  transform: rotate(45deg);
+  width: 5em;
+  height: 5em;
+  position: relative;
+}
+
+#orientation_est {
+  z-index: 1;
+  position: absolute;
+  border-style: solid;
+  border-width: 58px 57px 56px 0;
+  border-color: transparent #007bff transparent transparent;
+  padding-left: 0;
+  left: 37.5%;
+  display: none;
+  animation-name: flipInY;
+  animation-duration: 1s;
+}
+
+/****animation pour l'entree des directions****/
+
+@keyframes flipInY {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+.flipInY {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInY;
+  animation-name: flipInY;
+}
+
+#orientation_sud {
+  z-index: 1;
+  position: absolute;
+  border-style: solid;
+  border-width: 57px 57px 0 57px;
+  border-color: #007bff transparent transparent transparent;
+  padding-bottom: 0;
+  top: 50%;
+  display: none;
+  animation-name: flipInY;
+  animation-duration: 1s;
+}
+
+#orientation_ouest {
+  z-index: 1;
+  position: absolute;
+  border-style: solid;
+  border-width: 57px 0 57px 57px;
+  border-color: transparent transparent transparent #007bff;
+  padding-right: 0;
+  right: 37.5%;
+  display: none;
+  animation-name: flipInY;
+  animation-duration: 1s;
+}
