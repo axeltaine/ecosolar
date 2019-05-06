@@ -37,13 +37,6 @@
 
     <script>
 
-    $(function() {
-    	$('.range').next().text('--'); // Valeur par défaut
-    	$('.range').on('input', function() {
-		      var $set = $(this).val();
-		       $(this).next().text($set);
-	     });
-    });
     //je sélectionne mon canvas
     var canvas = document.querySelector('.moncanvas');
     //var width = canvas.width = window.innerWidth;
