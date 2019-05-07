@@ -1,3 +1,4 @@
+/**contient le carre**/
 #orientation1 {
   background-color: #FF671F;
   transform: rotate(45deg);
@@ -6,6 +7,7 @@
   position: relative;
 }
 
+/**bloc pour aligner les objets**/
 .bloc_orientation {
   display: flex;
   flex-direction: column;
@@ -28,6 +30,7 @@
   height: 50%;
 }
 
+/**container pour place les objets**/
 .container_orientation {
   display: flex;
   flex-direction: row;
@@ -36,6 +39,7 @@
   margin-bottom: auto;
 }
 
+/**container pour placer le boutton du bas**/
 .container_button {
   display: flex;
   justify-content: space-around;
@@ -43,6 +47,7 @@
   margin-bottom: auto;
 }
 
+/**contient un triangle**/
 #orientation_est {
   z-index: 1;
   position: absolute;
@@ -58,7 +63,6 @@
 }
 
 /****animation pour l'entree des directions****/
-
 @keyframes flipInY {
   from {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
@@ -125,4 +129,21 @@
   display: none;
   animation-name: flipInY;
   animation-duration: 1s;
+}
+
+/**MEDIA QUERIES POUR TABLETTE**/
+@media (max-width: 1024px){
+  #orientation_est {
+    left: 44.2%;
+    top: 7.9%;
+  }
+
+  #orientation_ouest {
+    right: 40.7%;
+  }
+
+  #orientation_sud {
+    right: 35%;
+    right: 40.7%;
+  }
 }
