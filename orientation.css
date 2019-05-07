@@ -131,7 +131,8 @@
   animation-duration: 1s;
 }
 
-/**MEDIA QUERIES POUR TABLETTE**/
+
+/**MEDIA QUERIES POUR LAPTOPS**/
 @media (max-width: 1024px){
   #orientation_est {
     left: 44.2%;
@@ -143,7 +144,53 @@
   }
 
   #orientation_sud {
-    right: 35%;
     right: 40.7%;
+  }
+}
+
+/**MEDIA QUERIES POUR LAPTOPS L**/
+@media (min-width: 1440px){
+  #orientation_est {
+    left: 46%;
+  }
+
+  #orientation_ouest {
+    right: 43%;
+  }
+
+  #orientation_sud {
+    right: 43.4%;
+  }
+}
+
+/**MEDIA QUERIES POUR TOUTES LES TAILLES DE TABLET A SMARTPHONE**/
+@media (max-width: 1000px){
+  #orientation_est {
+    left: 44%;
+    top: 7.9%;
+  }
+
+  #orientation_ouest {
+    right: 40.5%;
+  }
+
+  #orientation_sud {
+    right: 40.2%;
+  }
+}
+
+/**MEDIA QUERIES GRAND ECRAN**/
+@media (min-width: 2560px){
+  #orientation_est {
+    left: 47.8%;
+    top: 7.9%;
+  }
+
+  #orientation_ouest {
+    right: 46.5%;
+  }
+
+  #orientation_sud {
+    right: 46.5%;
   }
 }
