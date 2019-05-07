@@ -1,9 +1,32 @@
-#orientation {
+#orientation1 {
   background-color: orange;
   transform: rotate(45deg);
   width: 5em;
   height: 5em;
   position: relative;
+}
+
+.bloc_orientation {
+  display: flex;
+  flex-direction: column;
+  height: 17em;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.container_orientation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.container_button {
+  display: flex;
+  justify-content: space-around;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #orientation_est {
@@ -13,7 +36,8 @@
   border-width: 58px 57px 56px 0;
   border-color: transparent #007bff transparent transparent;
   padding-left: 0;
-  left: 37.5%;
+  left: 44.7%;
+  top: 7.9%;
   display: none;
   animation-name: flipInY;
   animation-duration: 1s;
@@ -68,7 +92,8 @@
   border-width: 57px 57px 0 57px;
   border-color: #007bff transparent transparent transparent;
   padding-bottom: 0;
-  top: 50%;
+  top: 29.1%;
+  right: 41.6%;
   display: none;
   animation-name: flipInY;
   animation-duration: 1s;
@@ -81,7 +106,8 @@
   border-width: 57px 0 57px 57px;
   border-color: transparent transparent transparent #007bff;
   padding-right: 0;
-  right: 37.5%;
+  right: 41.5%;
+  top: 8%;
   display: none;
   animation-name: flipInY;
   animation-duration: 1s;
