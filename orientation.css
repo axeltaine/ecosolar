@@ -1,5 +1,5 @@
 #orientation1 {
-  background-color: orange;
+  background-color: #FF671F;
   transform: rotate(45deg);
   width: 5em;
   height: 5em;
@@ -12,6 +12,20 @@
   height: 17em;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.bloc_orientation button {
+  background-color: #1D428A;
+  border-color: #1D428A;
+}
+
+.bloc_orientation button:hover {
+  background-color: #FF671F;
+  border-color: #FF671F;
+}
+
+.container_orientation button {
+  height: 50%;
 }
 
 .container_orientation {
@@ -34,7 +48,7 @@
   position: absolute;
   border-style: solid;
   border-width: 58px 57px 56px 0;
-  border-color: transparent #007bff transparent transparent;
+  border-color: transparent #1D428A transparent transparent;
   padding-left: 0;
   left: 45.7%;
   top: 7.9%;
@@ -90,7 +104,7 @@
   position: absolute;
   border-style: solid;
   border-width: 57px 57px 0 57px;
-  border-color: #007bff transparent transparent transparent;
+  border-color: #1D428A transparent transparent transparent;
   padding-bottom: 0;
   top: 29.1%;
   right: 43%;
@@ -104,7 +118,7 @@
   position: absolute;
   border-style: solid;
   border-width: 57px 0 57px 57px;
-  border-color: transparent transparent transparent #007bff;
+  border-color: transparent transparent transparent #1D428A;
   padding-right: 0;
   right: 43%;
   top: 8%;
