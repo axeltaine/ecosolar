@@ -36,7 +36,7 @@
   border-width: 58px 57px 56px 0;
   border-color: transparent #007bff transparent transparent;
   padding-left: 0;
-  left: 44.7%;
+  left: 45.7%;
   top: 7.9%;
   display: none;
   animation-name: flipInY;
@@ -93,7 +93,7 @@
   border-color: #007bff transparent transparent transparent;
   padding-bottom: 0;
   top: 29.1%;
-  right: 41.6%;
+  right: 43%;
   display: none;
   animation-name: flipInY;
   animation-duration: 1s;
@@ -106,7 +106,7 @@
   border-width: 57px 0 57px 57px;
   border-color: transparent transparent transparent #007bff;
   padding-right: 0;
-  right: 41.5%;
+  right: 43%;
   top: 8%;
   display: none;
   animation-name: flipInY;
