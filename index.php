@@ -9,6 +9,7 @@
   <link href="css/test.css" rel="stylesheet">
   <link href="orientation.css" rel="stylesheet">
   <link href="listtest.css" rel="stylesheet">
+  <link rel="stylesheet" href="angle_toit.css" />
 </head>
 
 <body>
@@ -85,8 +86,21 @@
             </div>
           </div>
           <!-- fin du bloc orientation -->
-          <div class="form-group">
-            <label for="inclinaison">Inclinaison*</label> : <input type="text" name="inclinaison" id="inclinaison" />
+          <div id="angle_form">
+
+
+            <canvas class="moncanvas" id="canvas" width="500" height="500"></canvas>
+
+            <form method="POST" id="formulaire_angle">
+              <div class="form-group">
+                <label for="customRange2">Angle de votre toiture</label>
+                <input type="range" class="custom-range"
+                min="0" max="50" step="0.1"
+                id="customRange2" value=""
+                onchange="updateTextInput(this.value);"></br>
+                <input type="text" id="textInput" value="">
+              </div>
+            </form>
           </div>
 
           <div class="form-group">
@@ -187,6 +201,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="test.js"></script>
   <script src="main_orientation.js"></script>
+  <script src="angle.js"></script>
 
 </body>
 
