@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <title>Devis</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="css/test.css" rel="stylesheet">
   <link href="orientation.css" rel="stylesheet">
   <link href="listtest.css" rel="stylesheet">
@@ -129,7 +130,8 @@
           <h2 class="fs-title">Informations sur la consommation</h2>
 
           <div class="form-group">
-            <label for="consommation">Consommation*</label> : <input type="text" name="consommation" id="consommation" />
+            <label for="consommation">Consommation*</label> : <input type="text" name="consommation"
+              id="consommation" />
           </div>
           <div class="form-group">
             <label for="fournisseur">Fournisseur</label> : </br>
@@ -140,7 +142,8 @@
             <label for="chauffage">Chauffage</label> : <input type="text" name="chauffage" id="chauffage" />
           </div>
           <div class="form-group">
-            <label for="chauffage_eau">Chauffage-eau</label> : <input type="text" name="chauffage_eau" id="chauffage_eau" />
+            <label for="chauffage_eau">Chauffage-eau</label> : <input type="text" name="chauffage_eau"
+              id="chauffage_eau" />
           </div>
 
 
@@ -149,12 +152,12 @@
         </fieldset>
 
         <fieldset>
-          <h2 class="fs-title">Appareils et utilisateurs</h2>
           <?php include ('listtest.html'); ?>
           <h3 class="fs-subtitle">Cochez ce qui vous correspond</h3>
           <!-- ajouter une liste d'appareils électriques à cocher le nombre possedé -->
           <div class="form-group">
-            <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> : <input type="text" name="Nombre_personnes_foyer" id="Nombre_personnes_foyer" />
+            <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> : <input type="text"
+              name="Nombre_personnes_foyer" id="Nombre_personnes_foyer" />
           </div>
 
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
@@ -181,8 +184,7 @@
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js">
   </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="test.js"></script>
   <script src="main_orientation.js"></script>
 
