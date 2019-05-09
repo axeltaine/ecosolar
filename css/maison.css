@@ -1,0 +1,47 @@
+.bloc_orientation {
+  height: 20em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.maison {
+  height: 20%;
+}
+
+.maison img {
+  padding-left: 5%;
+}
+
+.button {
+  height: 15%;
+  margin-top: auto;
+}
+
+#ouest {
+  position: absolute;
+  display: none;
+  z-index: 5;
+}
+
+#nord_ouest {
+  position: absolute;
+  display: none;
+  z-index: 4;
+}
+
+#est {
+  position: absolute;
+  display: none;
+  z-index: 3;
+}
+
+#nord_est {
+  position: absolute;
+  display: none;
+  z-index: 2;
+}
+
+#nord {
+  position: absolute;
+  z-index: 0;
+}
