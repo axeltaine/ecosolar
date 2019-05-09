@@ -60,7 +60,7 @@
             <label for="adresse">Adresse*</label> : <input type="text" name="adresse" id="adresse" />
           </div>
 
-          <input type="button" name="next" class="next action-button" value="Étape suivante" />
+          <input type="button" name="next" class="next action-button" value=" suivant" />
         </fieldset>
 
         <fieldset>
@@ -110,7 +110,7 @@
 
 
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
-          <input type="button" name="next" class="next action-button" value="Étape suivante" />
+          <input type="button" name="next" class="next action-button" value=" suivant" />
         </fieldset>
         <fieldset>
           <h2 class="fs-title">Informations sur le bâtiment</h2>
@@ -137,7 +137,7 @@
 
 
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
-          <input type="button" name="next" class="next action-button" value="Étape suivante" />
+          <input type="button" name="next" class="next action-button" value=" suivant" />
         </fieldset>
         <fieldset>
           <h2 class="fs-title">Informations sur la consommation</h2>
@@ -161,7 +161,7 @@
 
 
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
-          <input type="button" name="next" class="next action-button" value="Étape suivante" />
+          <input type="button" name="next" class="next action-button" value="suivant" />
         </fieldset>
 
         <fieldset>
