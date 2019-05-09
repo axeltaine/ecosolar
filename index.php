@@ -65,7 +65,9 @@
 
         <fieldset>
           <h2 class="fs-title">Informations sur la toiture</h2>
-
+          <div class="container">
+          <div class="row">
+          <div class="col">
           <div class="form-group">
             <label for="orientation">Orientation*</label> : <br>
             <!-- ligne contenant l'orientation avec les triangles animer en jquery -->
@@ -85,7 +87,9 @@
               </div>
             </div>
           </div>
+          </div>
           <!-- fin du bloc orientation -->
+          <div class="col">
           <div id="angle_form">
 
 
@@ -101,7 +105,9 @@
                 <input type="text" id="textInput" value="">
               </div>
           </div>
-
+          </div>
+          </div>
+          </div>
           <div class="form-group">
             <label for="surface">Surface*</label> : <input type="text" name="surface" id="surface" />
           </div>
