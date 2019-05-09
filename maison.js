@@ -35,5 +35,5 @@ $("#button_nord").click(function() {
   $("#est").hide();
   $("#nord_ouest").hide();
   $("#ouest").hide();
-
+  $("nord_est").hide();
 });

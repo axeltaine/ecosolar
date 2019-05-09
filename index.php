@@ -7,9 +7,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="css/test.css" rel="stylesheet">
-  <link href="orientation.css" rel="stylesheet">
   <link href="listtest.css" rel="stylesheet">
-  <link rel="stylesheet" href="angle_toit.css" />
+  <link rel="stylesheet" href="css/maison.css" />
 </head>
 
 <body>
@@ -72,18 +71,19 @@
             <label for="orientation">Orientation*</label> : <br>
             <!-- ligne contenant l'orientation avec les triangles animer en jquery -->
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex bloc_orientation">
-              <div class="container_orientation">
-                <button type="button" id="button_est" class="btn btn-primary">OUEST</button>
-                <div id="orientation1"></div>
-                <div id="orientation_est"></div>
-                <div id="orientation_sud"></div>
-                <div id="orientation_ouest"></div>
-                <button type="button" id="button_ouest" class="btn btn-primary">EST</button>
+              <div class="maison">
+                <img id="ouest" src="img/ouest.png" />
+                <img id="nord_ouest" src="img/nord_ouest.png" />
+                <img id="nord" src="img/nord.png" />
+                <img id="est" src="img/est.png" />
+                <img id="nord_est" src="img/nord-est.png" />
               </div>
-              <div class="container_button">
-                <button type="button" id="button_sud_ouest" class="btn btn-primary">SUD-OUEST</button>
-                <button type="button" id="button_sud" class="btn btn-primary">SUD</button>
-                <button type="button" id="button_sud_est" class="btn btn-primary">SUD-EST</button>
+              <div class="button">
+                <button id="button_ouest" type="button" class="btn btn-primary">Ouest</button>
+                <button id="button_nord_ouest" type="button" class="btn btn-primary">Nord_ouest</button>
+                <button id="button_nord" type="button" class="btn btn-primary">Nord</button>
+                <button id="button_est" type="button" class="btn btn-primary">Est</button>
+                <button id="button_nord_est" type="button" class="btn btn-primary">Nord_est</button>
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@
           </div>
           </div>
           </div>
-          </div>
+  </div>
           <div class="form-group">
             <label for="surface">Surface*</label> : <input type="text" name="surface" id="surface" />
           </div>
@@ -205,7 +205,7 @@
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="test.js"></script>
-  <script src="main_orientation.js"></script>
+  <script src="maison.js"></script>
   <script src="angle.js"></script>
 
 </body>
