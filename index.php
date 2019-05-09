@@ -91,7 +91,7 @@
 
             <canvas class="moncanvas" id="canvas" width="500" height="500"></canvas>
 
-            <form method="POST" id="formulaire_angle">
+
               <div class="form-group">
                 <label for="customRange2">Angle de votre toiture</label>
                 <input type="range" class="custom-range"
@@ -100,7 +100,6 @@
                 onchange="updateTextInput(this.value);"></br>
                 <input type="text" id="textInput" value="">
               </div>
-            </form>
           </div>
 
           <div class="form-group">
