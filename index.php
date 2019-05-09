@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="css/test.css" rel="stylesheet">
   <link href="orientation.css" rel="stylesheet">
+  <link href="listtest.css" rel="stylesheet">
 </head>
 
 <body>
@@ -149,6 +150,7 @@
 
         <fieldset>
           <h2 class="fs-title">Appareils et utilisateurs</h2>
+          <?php include ('listtest.html'); ?>
           <h3 class="fs-subtitle">Cochez ce qui vous correspond</h3>
           <!-- ajouter une liste d'appareils électriques à cocher le nombre possedé -->
           <div class="form-group">
