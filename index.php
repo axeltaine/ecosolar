@@ -9,6 +9,7 @@
   <link href="css/test.css" rel="stylesheet">
   <link href="listtest.css" rel="stylesheet">
   <link rel="stylesheet" href="css/maison.css" />
+  <link href="angle_toit.css" rel="stylesheet">
 </head>
 
 <body>
@@ -95,13 +96,9 @@
               <!-- fin du bloc orientation -->
               <div class="col">
                 <div id="angle_form">
-
-
-                  
-
-
+                <label for="customRange2">Angle de votre toiture</label>
                   <div class="form-group">
-                    <label for="customRange2">Angle de votre toiture</label>
+                    
                     <canvas class="moncanvas" id="canvas" width="500" height="500"></canvas>
                     <input type="range" class="custom-range" min="0" max="50" step="0.1" id="customRange2" value=""
                       onchange="updateTextInput(this.value);">
