@@ -135,7 +135,8 @@
           </div>
 
           <div class="form-group">
-            <label for="cotation">cotation</label> : <input type="text" name="cotation" id="cotation" />
+            <label for="cotation">cotation</label> : 
+              <?php include ('cotation.php'); ?>
           </div>
 
           <div class="form-group">
