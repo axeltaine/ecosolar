@@ -46,8 +46,8 @@
           </div>
           <div class="form-group">
             <label for="fournisseur">Fournisseur</label> : </br>
-            <button type="button" class="btn btn-primary btn-lg">EDF</button>
-            <button type="button" class="btn btn-secondary btn-lg">Autre</button>
+            <button type="button" class="btn btn-primary btn-lg"><img src="EDF_energy.png" alt="" style="max-height: 5em;"></button>
+            <button type="button" class="btn btn-secondary btn-lg"><img src="autre_logo.png" alt="" style="min-height: 3.5em;"><br>Autre</button>
           </div>
           <div class="form-group">
             <label for="chauffage">Chauffage</label> : <input type="text" name="chauffage" id="chauffage" />
