@@ -1,7 +1,7 @@
 var formulaire = document.getElementById("formulaire_angle");
-//pour afficher la valeur sélectionnée avec le range
+//fonction qui récupère la valeur du bouton sélectionné
 function updateTextInput(val) {
-      document.getElementById('textInput').value=val;
+      document.getElementsByName('inlineRadioOptions').value=val;
     }
 //je sélectionne mon canvas
 var canvas = document.querySelector('.moncanvas');
@@ -16,14 +16,18 @@ function degToRad(degrees) {
 var angle;
 
 function changeangle(){
-angle = document.getElementById('customRange2').value; //si je met textInput a la place de custom, rien ne s'affiche
+angle = document.getElementsByName('inlineRadioOptions').value; //si je met textInput a la place de custom, rien ne s'affiche
 return angle;
 }
 
 
 function toiture(){
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  changeangle(); // très important, c'est cette ligne qui permet l'affichage des modifs!!!
+  if(angle = changeangle()){
+    changeangle(); // très important, c'est cette ligne qui permet l'affichage des modifs!!!
+  }else{
+    angle = 35;
+  }
   //je déplace le dessin au point 50/50
   ctx.beginPath();
   ctx.moveTo(100, 400);
@@ -41,4 +45,4 @@ toiture();
 
 
 
-  document.addEventListener("onchange", changeangle(), false)
+  document.addEventListener("onclick", changeangle(), false)

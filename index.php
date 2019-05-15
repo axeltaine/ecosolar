@@ -105,14 +105,32 @@
               <!-- fin du bloc orientation -->
               <div class="col">
                 <div id="angle_form">
-                  <label for="customRange2">Angle de votre toiture</label>
-                  <div class="form-group">
 
-                    <canvas class="moncanvas" id="canvas" width="500" height="500"></canvas>
-                    <input type="range" class="custom-range" min="0" max="50" step="0.1" id="customRange2" value=""
-                      onchange="updateTextInput(this.value);">
-                    <input type="text" id="textInput" value="">
+                  <div>
+                    <h1>Inclinaison de la toiture</h1>
                   </div>
+
+                  <canvas class="moncanvas" id="canvas" width="500" height="500"></canvas>
+
+
+                    <label>Angle d'inclinaison approximatif de votre toiture en °</label>
+                    <div class="form-check form-check-inline"><!--!!!!!!!!!!!!!!!!!!! le onclick est nécessaire pour récupérer la valeur de l'input -->
+                      <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);" name="inlineRadioOptions" id="angle1" value="5">
+                      <label class="form-check-label" for="inlineRadio1">5</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);" name="inlineRadioOptions" id="angle2" value="20">
+                      <label class="form-check-label" for="inlineRadio2">20</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);" name="inlineRadioOptions" id="angle3" value="35" checked>
+                      <label class="form-check-label" for="inlineRadio3">35</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);" name="inlineRadioOptions" id="angle4" value="45">
+                      <label class="form-check-label" for="inlineRadio4">45</label>
+                    </div>
+                  
                 </div>
               </div>
             </div>
@@ -135,7 +153,7 @@
           </div>
 
           <div class="form-group">
-            <label for="cotation">cotation</label> : 
+            <label for="cotation">cotation</label> :
               <?php include ('cotation.php'); ?>
           </div>
 
@@ -143,7 +161,7 @@
             <label for="charpente">Charpente</label> : <input type="text" name="charpente" id="charpente" />
           </div>
           <div class="form-group">
-            <label for="couverture">Couverture</label> : 
+            <label for="couverture">Couverture</label> :
               <?php include ('checkbox.php'); ?>
           </div>
 

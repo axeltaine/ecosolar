@@ -16,18 +16,29 @@
     <main>
       <div id="angle_form">
 
+        <div>
+          <h1>Inclinaison de la toiture</h1>
+        </div>
 
         <canvas class="moncanvas" id="canvas" width="500" height="500"></canvas>
 
         <form method="POST" id="formulaire_angle">
-          <div class="form-group">
-            <label for="customRange2">Angle de votre toiture</label>
-            <input type="range" class="custom-range"
-            min="0" max="50" step="0.1"
-            id="customRange2" value=""
-            onchange="updateTextInput(this.value);"></br>
-            <input type="text" id="textInput" value="">
-            <input type="submit" value="Valider" />
+          <label>Angle d'inclinaison approximatif de votre toiture en °</label>
+          <div class="form-check form-check-inline"><!--!!!!!!!!!!!!!!!!!!! le onclick est nécessaire pour récupérer la valeur de l'input -->
+            <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);" name="inlineRadioOptions" id="angle1" value="5">
+            <label class="form-check-label" for="inlineRadio1">5</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);" name="inlineRadioOptions" id="angle2" value="20">
+            <label class="form-check-label" for="inlineRadio2">20</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);" name="inlineRadioOptions" id="angle3" value="35" checked>
+            <label class="form-check-label" for="inlineRadio3">35</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);" name="inlineRadioOptions" id="angle4" value="45">
+            <label class="form-check-label" for="inlineRadio4">45</label>
           </div>
         </form>
       </div>
@@ -41,9 +52,9 @@
     <script>
 
     var formulaire = document.getElementById("formulaire_angle");
-    //pour afficher la valeur sélectionnée avec le range
+    //fonction qui récupère la valeur du bouton sélectionné
     function updateTextInput(val) {
-          document.getElementById('textInput').value=val;
+          document.getElementsByName('inlineRadioOptions').value=val;
         }
     //je sélectionne mon canvas
     var canvas = document.querySelector('.moncanvas');
@@ -58,14 +69,18 @@
     var angle;
 
     function changeangle(){
-    angle = document.getElementById('customRange2').value; //si je met textInput a la place de custom, rien ne s'affiche
+    angle = document.getElementsByName('inlineRadioOptions').value; //si je met textInput a la place de custom, rien ne s'affiche
     return angle;
     }
 
 
     function toiture(){
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      changeangle(); // très important, c'est cette ligne qui permet l'affichage des modifs!!!
+      if(angle = changeangle()){
+        changeangle(); // très important, c'est cette ligne qui permet l'affichage des modifs!!!
+      }else{
+        angle = 35;
+      }
       //je déplace le dessin au point 50/50
       ctx.beginPath();
       ctx.moveTo(50, 300);
@@ -83,7 +98,7 @@
 
 
 
-      document.addEventListener("onchange", changeangle(), false)
+      document.addEventListener("onclick", changeangle(), false)
 
 
 
