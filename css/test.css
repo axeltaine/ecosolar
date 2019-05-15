@@ -203,3 +203,8 @@ body {
     background: #ff671f;
     color: white;
 }
+
+
+.input-group {
+    flex-wrap: nowrap;
+}
