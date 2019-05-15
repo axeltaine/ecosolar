@@ -30,41 +30,50 @@
       <form id="msform">
         <!-- progressbar -->
         <ul id="progressbar">
-          <li class="active">Information personnel</li>
-          <li>Toiture</li>
-          <li>Bâtiment</li>
-          <li>Consommation</li>
+          <li class="active">Consommation</li>
           <li>Appareils et utilisateurs</li>
+          <li>Bâtiment</li>
+          <li>Toiture</li>
+          <li>Information personnel</li>
         </ul>
         <!-- fieldsets -->
         <fieldset>
-          <h2 class="fs-title">Information personnel</h2>
+          <h2 class="fs-title">Informations sur la consommation</h2>
 
           <div class="form-group">
-            <label for="nom">Nom*</label> : <input type="text" name="nom" id="nom" />
+            <label for="consommation">Consommation*</label> : <input type="text" name="consommation"
+              id="consommation" />
           </div>
-
           <div class="form-group">
-            <label for="prenom">Prenom*</label> : <input type="text" name="prenom" id="prenom" />
+            <label for="fournisseur">Fournisseur</label> : </br>
+            <button type="button" class="btn btn-primary btn-lg"><img src="EDF_energy.png" alt="" style="max-height: 5em;"></button>
+            <button type="button" class="btn btn-secondary btn-lg"><img src="autre_logo.png" alt="" style="min-height: 3.5em;"><br>Autre</button>
           </div>
-
           <div class="form-group">
-            <label for="mail">Email*</label> : <input type="text" name="mail" id="mail" />
+            <label for="chauffage">Chauffage</label> : <input type="text" name="chauffage" id="chauffage" />
           </div>
-
           <div class="form-group">
-            <label for="tel">Telephone</label> : <input type="text" name="tel" id="tel" />
+            <label for="chauffage_eau">Chauffage-eau</label> : <input type="text" name="chauffage_eau"
+              id="chauffage_eau" />
           </div>
 
+
+
+          <input type="button" name="next" class="next action-button" value="suivant" />
+        </fieldset>
+
+        <fieldset>
+          <?php include ('listtest.html'); ?>
+          <h3 class="fs-subtitle">Cochez ce qui vous correspond</h3>
+          <!-- ajouter une liste d'appareils électriques à cocher le nombre possedé -->
           <div class="form-group">
-            <label for="adresse">Adresse*</label> : <iframe
-              src="https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d158.0865126246605!2d4.721117603613022!3d49.769271626808745!2m2!1f0!2f45!3m2!1i1024!2i768!4f35!5e1!3m2!1sfr!2sfr!4v1557730017861!5m2!1sfr!2sfr"
-              width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe><input type="text"
-              name="adresse" id="adresse" />
-
+            <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> : <input type="text"
+              name="Nombre_personnes_foyer" id="Nombre_personnes_foyer" />
           </div>
 
-          <input type="button" name="next" class="next action-button" value=" suivant" />
+          <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
+          <input type="button" name="next" class="next action-button" value="suivant" />
+
         </fieldset>
 
         <fieldset>
@@ -96,9 +105,9 @@
               <!-- fin du bloc orientation -->
               <div class="col">
                 <div id="angle_form">
-                <label for="customRange2">Angle de votre toiture</label>
+                  <label for="customRange2">Angle de votre toiture</label>
                   <div class="form-group">
-                    
+
                     <canvas class="moncanvas" id="canvas" width="500" height="500"></canvas>
                     <input type="range" class="custom-range" min="0" max="50" step="0.1" id="customRange2" value=""
                       onchange="updateTextInput(this.value);">
@@ -145,40 +154,31 @@
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
           <input type="button" name="next" class="next action-button" value=" suivant" />
         </fieldset>
-        <fieldset>
-          <h2 class="fs-title">Informations sur la consommation</h2>
 
-          <div class="form-group">
-            <label for="consommation">Consommation*</label> : <input type="text" name="consommation"
-              id="consommation" />
-          </div>
-          <div class="form-group">
-            <label for="fournisseur">Fournisseur</label> : </br>
-            <button type="button" class="btn btn-primary btn-lg">EDF</button>
-            <button type="button" class="btn btn-secondary btn-lg">Autre</button>
-          </div>
-          <div class="form-group">
-            <label for="chauffage">Chauffage</label> : <input type="text" name="chauffage" id="chauffage" />
-          </div>
-          <div class="form-group">
-            <label for="chauffage_eau">Chauffage-eau</label> : <input type="text" name="chauffage_eau"
-              id="chauffage_eau" />
-          </div>
-
-
-          <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
-          <input type="button" name="next" class="next action-button" value="suivant" />
-        </fieldset>
 
         <fieldset>
-          <?php include ('listtest.html'); ?>
-          <h3 class="fs-subtitle">Cochez ce qui vous correspond</h3>
-          <!-- ajouter une liste d'appareils électriques à cocher le nombre possedé -->
+          <h2 class="fs-title">Information personnel</h2>
+
           <div class="form-group">
-            <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> : <input type="text"
-              name="Nombre_personnes_foyer" id="Nombre_personnes_foyer" />
+            <label for="nom">Nom*</label> : <input type="text" name="nom" id="nom" />
           </div>
 
+          <div class="form-group">
+            <label for="prenom">Prenom*</label> : <input type="text" name="prenom" id="prenom" />
+          </div>
+
+          <div class="form-group">
+            <label for="mail">Email*</label> : <input type="text" name="mail" id="mail" />
+          </div>
+
+          <div class="form-group">
+            <label for="tel">Telephone</label> : <input type="text" name="tel" id="tel" />
+          </div>
+
+          <div class="form-group">
+            <label for="adresse">Adresse*</label> : <input type="text" name="adresse" id="adresse" />
+
+          </div>
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
           <input type="submit" name="submit" class="submit action-button" value="Submit" />
         </fieldset>
