@@ -113,24 +113,32 @@
                   <canvas class="moncanvas" id="canvas" width="500" height="500"></canvas>
 
 
-                    <label>Angle d'inclinaison approximatif de votre toiture en °</label>
+                    <label>Angle d'inclinaison approximatif de votre toiture en °</label><br />
                     <div class="form-check form-check-inline"><!--!!!!!!!!!!!!!!!!!!! le onclick est nécessaire pour récupérer la valeur de l'input -->
+                      <div class="d-flex flex-column">
                       <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);" name="inlineRadioOptions" id="angle1" value="5">
-                      <label class="form-check-label" for="inlineRadio1">5</label>
+                      <label class="form-check-label" for="inlineRadio1">05</label>
+                      </div>
                     </div>
                     <div class="form-check form-check-inline">
+                      <div class="d-flex flex-column">
                       <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);" name="inlineRadioOptions" id="angle2" value="20">
                       <label class="form-check-label" for="inlineRadio2">20</label>
+                      </div>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);" name="inlineRadioOptions" id="angle3" value="35" checked>
+                      <div class="d-flex flex-column">
+                      <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);" name="inlineRadioOptions" id="angle3" value="35">
                       <label class="form-check-label" for="inlineRadio3">35</label>
+                      </div>
                     </div>
                     <div class="form-check form-check-inline">
+                      <div class="d-flex flex-column">
                       <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);" name="inlineRadioOptions" id="angle4" value="45">
                       <label class="form-check-label" for="inlineRadio4">45</label>
+                      </div>
                     </div>
-                  
+
                 </div>
               </div>
             </div>
