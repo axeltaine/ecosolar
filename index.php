@@ -142,7 +142,8 @@
             <label for="charpente">Charpente</label> : <input type="text" name="charpente" id="charpente" />
           </div>
           <div class="form-group">
-            <label for="couverture">Couverture</label> : <input type="text" name="couverture" id="couverture" />
+            <label for="couverture">Couverture</label> : 
+              <?php include ('checkbox.php'); ?>
           </div>
 
           <div class="form-group">
