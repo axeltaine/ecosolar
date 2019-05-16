@@ -231,7 +231,7 @@ body {
 .fs-title {
   margin-bottom: 3%;
   animation-name: flipInX;
-  animation-duration: 1.2s;
+  animation-duration: 1s;
 }
 
 .display_hr {
@@ -250,12 +250,12 @@ hr {
 
 .hr1 {
   animation-name: fadeInLeft;
-  animation-duration: 1s;
+  animation-duration: 800ms;
 }
 
 .hr2 {
   animation-name: fadeInRight;
-  animation-duration: 1s;
+  animation-duration: 800ms;
 }
 
 /******POUR MODIFIER LA CONSO*******/
@@ -271,14 +271,14 @@ hr {
 }
 
 .button_autre {
-  background-color: grey;
+  background-color: lightgrey;
   border: none;
   border-radius: 5%;
   width: 5em;
   height: 5em;
   margin-left: 3%;
   animation-name: bounceIn;
-  animation-duration: 1.4s;
+  animation-duration: 1s;
 }
 
 .button_autre:hover {
@@ -294,7 +294,7 @@ hr {
   height: 5em;
   margin-left: 3%;
   animation-name: bounceIn;
-  animation-duration: 1.4s;
+  animation-duration: 1s;
 }
 
 .button_edf:hover {
