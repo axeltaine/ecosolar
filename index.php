@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="css/test.css" rel="stylesheet">
-  <link href="listtest.css" rel="stylesheet">
+  <link href="css/listtest.css" rel="stylesheet">
   <link rel="stylesheet" href="css/maison.css" />
-  <link href="angle_toit.css" rel="stylesheet">
+  <link href="css/angle_toit.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
   </header>
   <div class="row">
     <div class="col-md-12 col-md-offset-0">
-      <img class="logo rounded mx-auto d-block" src="icone-pastille-ecosolar-rvb.png" />
+      <img class="logo rounded mx-auto d-block" src="img/icone-pastille-ecosolar-rvb.png" />
     </div>
   </div>
 
@@ -46,8 +46,8 @@
           </div>
           <div class="form-group">
             <label for="fournisseur">Fournisseur</label> : </br>
-            <button type="button" class="btn btn-primary btn-lg"><img src="EDF_energy.png" alt="" style="max-height: 5em;"></button>
-            <button type="button" class="btn btn-secondary btn-lg"><img src="autre_logo.png" alt="" style="min-height: 3.5em;"><br>Autre</button>
+            <button type="button" class="btn btn-primary btn-lg"><img src="img/EDF_energy.png" alt="" style="max-height: 5em;"></button>
+            <button type="button" class="btn btn-secondary btn-lg"><img src="img/autre_logo.png" alt="" style="min-height: 3.5em;"><br>Autre</button>
           </div>
           <div class="form-group">
             <label for="chauffage">Chauffage</label> : <input type="text" name="chauffage" id="chauffage" />
@@ -67,7 +67,7 @@
           <h3 class="fs-subtitle">Cochez ce qui vous correspond</h3>
           <!-- ajouter une liste d'appareils électriques à cocher le nombre possedé -->
           <div class="form-group">
-            <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> : 
+            <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> :
               <div class="input-group">
                         <input class="numeric float optional form-control" min="0" placeholder="0" type="number"
                             step="any" value="10" name="study[roof_length]" id="nombre_personnes_foyer">
@@ -239,9 +239,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
-  <script src="test.js"></script>
-  <script src="maison.js"></script>
-  <script src="angle.js"></script>
+  <script src="js/test.js"></script>
+  <script src="js/maison.js"></script>
+  <script src="js/angle.js"></script>
 
 </body>
 

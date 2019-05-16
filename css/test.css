@@ -17,8 +17,12 @@ body {
     background: transparent;
 }
 
+.row{
+  max-width:100%;
+}
+
 .logo {
-    width: auto; 
+    width: auto;
     height: 10em;
     align-items: center;
 }
