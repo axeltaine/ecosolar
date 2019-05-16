@@ -53,8 +53,14 @@
             <label for="chauffage">Chauffage</label> : <input type="text" name="chauffage" id="chauffage" />
           </div>
           <div class="form-group">
-            <label for="chauffage_eau">Chauffage-eau</label> : <input type="text" name="chauffage_eau"
-              id="chauffage_eau" />
+          <label for="exampleFormControlSelect1">Chauffage-eau</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Résistance électrique</option>
+      <option>Pompe à chaleur</option>
+      <option>Chaudière bois</option>
+      <option>Chaudière gaz</option>
+      <option>Chaudrère fuel</option>
+    </select>
           </div>
 
 
