@@ -61,8 +61,15 @@
           </div>
         </br>
         <div class="display_chauff">
-          <div class="form-group">
-            <label for="chauffage">Chauffage</label> : <input type="text" name="chauffage" id="chauffage" />
+          <div class="form-group chauff_colonne">
+          <img src="icons/chauffage.png" style=width:30%;">
+          <label for="exampleFormControlSelect2">Chauffage</label>
+            <select class="form-control" id="exampleFormControlSelect2">
+              <option>Chauffage électrique</option>
+              <option>Climatisation (PAC Air/Air)</option>
+              <option>Pompe à chaleur Air/Eau</option>
+              <option>Chauffage gaz, fioul ou bois</option>
+            </select>
           </div>
           <div class="form-group chauff_colonne">
             <img src="icons/logo-eau.png" style=width:30%;">
