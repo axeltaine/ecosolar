@@ -67,8 +67,13 @@
           <h3 class="fs-subtitle">Cochez ce qui vous correspond</h3>
           <!-- ajouter une liste d'appareils électriques à cocher le nombre possedé -->
           <div class="form-group">
-            <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> : <input type="text"
-              name="Nombre_personnes_foyer" id="Nombre_personnes_foyer" />
+            <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> : 
+              <div class="input-group">
+                        <input class="numeric float optional form-control" min="0" placeholder="0" type="number"
+                            step="any" value="10" name="study[roof_length]" id="nombre_personnes_foyer">
+                            <div class="input-group-append">
+                            </div>
+          </div>
           </div>
 
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
