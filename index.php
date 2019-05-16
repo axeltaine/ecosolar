@@ -38,24 +38,34 @@
         </ul>
         <!-- fieldsets -->
         <fieldset>
+          <div class="display_hr">
+          <hr>
           <h2 class="fs-title">Informations sur la consommation</h2>
-
+          <hr>
+        </div>
+        </br>
+        <div class="display_conso">
           <div class="form-group">
             <label for="consommation">Consommation*</label> : <input type="text" name="consommation"
               id="consommation" />
           </div>
           <div class="form-group">
             <label for="fournisseur">Fournisseur</label> : </br>
-            <button type="button" class="btn btn-primary btn-lg"><img src="img/EDF_energy.png" alt=""
-                style="max-height: 5em;"></button>
-            <button type="button" class="btn btn-secondary btn-lg"><img src="img/autre_logo.png" alt=""
-                style="min-height: 3.5em;"><br>Autre</button>
+            <div class='display_button'>
+            <button class="button_edf"><img src="img/EDF_energy.png" alt=""
+                style="max-height: 4em;"></button>
+            <button class="button_autre"><img src="img/autre_logo.png" alt=""
+                style="height:2em;"><br>Autre</button>
+              </div>
+            </div>
           </div>
+        </br>
+        <div class="display_chauff">
           <div class="form-group">
             <label for="chauffage">Chauffage</label> : <input type="text" name="chauffage" id="chauffage" />
           </div>
-          <img src="icons/logo-eau.png" alt="">
-          <div class="form-group">
+          <div class="form-group chauff_colonne">
+            <img src="icons/logo-eau.png" style=width:30%;">
             <label for="exampleFormControlSelect1">Chauffage-eau</label>
             <select class="form-control" id="exampleFormControlSelect1">
               <option>Résistance électrique</option>
@@ -65,6 +75,7 @@
               <option>Chaudrère fuel</option>
             </select>
           </div>
+        </div>
 
 
 
