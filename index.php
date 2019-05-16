@@ -10,6 +10,7 @@
   <link href="css/listtest.css" rel="stylesheet">
   <link rel="stylesheet" href="css/maison.css" />
   <link href="css/angle_toit.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,9 +40,9 @@
         <!-- fieldsets -->
         <fieldset>
           <div class="display_hr">
-            <hr>
+            <hr class="hr1">
             <h2 class="fs-title">Informations sur la consommation</h2>
-            <hr>
+            <hr class="hr2">
           </div>
           </br>
           <div class="display_conso">
@@ -71,7 +72,7 @@
           </br>
           <div class="display_chauff">
             <div class="form-group chauff_colonne">
-              <img src="icons/chauffage.png" style="width:24%;">
+              <img class="img_chauff1" src="icons/chauffage.png" style="width:24%;">
               <label for="exampleFormControlSelect2">Chauffage</label>
               <select class="form-control" id="exampleFormControlSelect2">
                 <option>Chauffage électrique</option>
@@ -81,7 +82,7 @@
               </select>
             </div>
             <div class="form-group chauff_colonne">
-              <img src="icons/logo-eau.png" style="width:30%;">
+              <img class="img_chauff1" src="icons/logo-eau.png" style="width:30%;">
               <label for="exampleFormControlSelect1">Chauffage-eau</label>
               <select class="form-control" id="exampleFormControlSelect1">
                 <option>Résistance électrique</option>
