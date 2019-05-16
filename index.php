@@ -52,6 +52,7 @@
           <div class="form-group">
             <label for="chauffage">Chauffage</label> : <input type="text" name="chauffage" id="chauffage" />
           </div>
+          <img src="icons/logo-eau.png" alt="" >
           <div class="form-group">
           <label for="exampleFormControlSelect1">Chauffage-eau</label>
     <select class="form-control" id="exampleFormControlSelect1">
