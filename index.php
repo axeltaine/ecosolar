@@ -46,22 +46,24 @@
           </div>
           <div class="form-group">
             <label for="fournisseur">Fournisseur</label> : </br>
-            <button type="button" class="btn btn-primary btn-lg"><img src="img/EDF_energy.png" alt="" style="max-height: 5em;"></button>
-            <button type="button" class="btn btn-secondary btn-lg"><img src="img/autre_logo.png" alt="" style="min-height: 3.5em;"><br>Autre</button>
+            <button type="button" class="btn btn-primary btn-lg"><img src="img/EDF_energy.png" alt=""
+                style="max-height: 5em;"></button>
+            <button type="button" class="btn btn-secondary btn-lg"><img src="img/autre_logo.png" alt=""
+                style="min-height: 3.5em;"><br>Autre</button>
           </div>
           <div class="form-group">
             <label for="chauffage">Chauffage</label> : <input type="text" name="chauffage" id="chauffage" />
           </div>
-          <img src="icons/logo-eau.png" alt="" >
+          <img src="icons/logo-eau.png" alt="">
           <div class="form-group">
-          <label for="exampleFormControlSelect1">Chauffage-eau</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>Résistance électrique</option>
-      <option>Pompe à chaleur</option>
-      <option>Chaudière bois</option>
-      <option>Chaudière gaz</option>
-      <option>Chaudrère fuel</option>
-    </select>
+            <label for="exampleFormControlSelect1">Chauffage-eau</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Résistance électrique</option>
+              <option>Pompe à chaleur</option>
+              <option>Chaudière bois</option>
+              <option>Chaudière gaz</option>
+              <option>Chaudrère fuel</option>
+            </select>
           </div>
 
 
@@ -75,12 +77,12 @@
           <!-- ajouter une liste d'appareils électriques à cocher le nombre possedé -->
           <div class="form-group">
             <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> :
-              <div class="input-group">
-                        <input class="numeric float optional form-control" min="0" placeholder="0" type="number"
-                            step="any" value="10" name="study[roof_length]" id="nombre_personnes_foyer">
-                            <div class="input-group-append">
-                            </div>
-          </div>
+            <div class="input-group">
+              <input class="numeric float optional form-control" min="0" placeholder="0" type="number" step="any"
+                value="10" name="study[roof_length]" id="nombre_personnes_foyer">
+              <div class="input-group-append">
+              </div>
+            </div>
           </div>
 
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
@@ -125,31 +127,36 @@
                   <canvas class="moncanvas" id="canvas" width="500" height="500"></canvas>
 
 
-                    <label>Angle d'inclinaison approximatif de votre toiture en °</label><br />
-                    <div class="form-check form-check-inline"><!--!!!!!!!!!!!!!!!!!!! le onclick est nécessaire pour récupérer la valeur de l'input -->
-                      <div class="d-flex flex-column">
-                      <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);" name="inlineRadioOptions" id="angle1" value="5">
+                  <label>Angle d'inclinaison approximatif de votre toiture en °</label><br />
+                  <div class="form-check form-check-inline">
+                    <!--!!!!!!!!!!!!!!!!!!! le onclick est nécessaire pour récupérer la valeur de l'input -->
+                    <div class="d-flex flex-column">
+                      <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);"
+                        name="inlineRadioOptions" id="angle1" value="5">
                       <label class="form-check-label" for="inlineRadio1">05</label>
-                      </div>
                     </div>
-                    <div class="form-check form-check-inline">
-                      <div class="d-flex flex-column">
-                      <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);" name="inlineRadioOptions" id="angle2" value="20">
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <div class="d-flex flex-column">
+                      <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);"
+                        name="inlineRadioOptions" id="angle2" value="20">
                       <label class="form-check-label" for="inlineRadio2">20</label>
-                      </div>
                     </div>
-                    <div class="form-check form-check-inline">
-                      <div class="d-flex flex-column">
-                      <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);" name="inlineRadioOptions" id="angle3" value="35">
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <div class="d-flex flex-column">
+                      <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);"
+                        name="inlineRadioOptions" id="angle3" value="35">
                       <label class="form-check-label" for="inlineRadio3">35</label>
-                      </div>
                     </div>
-                    <div class="form-check form-check-inline">
-                      <div class="d-flex flex-column">
-                      <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);" name="inlineRadioOptions" id="angle4" value="45">
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <div class="d-flex flex-column">
+                      <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);"
+                        name="inlineRadioOptions" id="angle4" value="45">
                       <label class="form-check-label" for="inlineRadio4">45</label>
-                      </div>
                     </div>
+                  </div>
 
                 </div>
               </div>
@@ -174,7 +181,7 @@
 
           <div class="form-group">
             <label for="cotation">cotation</label> :
-              <?php include ('cotation.php'); ?>
+            <?php include ('cotation.php'); ?>
           </div>
 
           <div class="form-group">
@@ -182,7 +189,7 @@
           </div>
           <div class="form-group">
             <label for="couverture">Couverture</label> :
-              <?php include ('checkbox.php'); ?>
+            <?php include ('checkbox.php'); ?>
           </div>
 
           <div class="form-group">
@@ -197,27 +204,54 @@
 
 
         <fieldset>
-          <h2 class="fs-title">Information personnel</h2>
+          <h2 class="modal-title">Information personnel</h2>
 
-          <div class="form-group">
-            <label for="nom">Nom*</label> : <input type="text" name="nom" id="nom" />
+          <div class="form-row">
+            <div class="col-7 mb-3 d-flex align-items-center">
+              <div class="custom-control custom-radio custom-control-inline">
+                <input class="custom-control-input" type="radio" value="" name="gender" id="Monsieur">
+                <label class="custom-control-label" for="Monsieur">Monsieur</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input class="custom-control-input" type="radio" value="" name="gender" id="Madame">
+                <label class="custom-control-label" for="Madame">Madame</label>
+              </div>
+            </div>
           </div>
 
-          <div class="form-group">
-            <label for="prenom">Prenom*</label> : <input type="text" name="prenom" id="prenom" />
+          <div class="form-row">
+            <div class="col mb-3">
+              <input class="form-control" placeholder="nom" type="text" name="nom">
+            </div>
+
+            <div class="col mb-3">
+              <input class="form-control" placeholder="prenom" type="text" name="prenom">
+            </div>
           </div>
 
-          <div class="form-group">
-            <label for="mail">Email*</label> : <input type="text" name="mail" id="mail" />
+
+          <div class="form-row">
+            <div class="col mb-3">
+              <input class="form-control" placeholder="email" type="email" name="eamil">
+            </div>
+
+            <div class="col mb-3">
+              <input class="form-control" placeholder="Telephone" type="text" name="Telephone">
+            </div>
           </div>
 
-          <div class="form-group">
-            <label for="tel">Telephone</label> : <input type="text" name="tel" id="tel" />
-          </div>
+          <div class="form-row">
+            <div class="col mb-3">
+              <input class="form-control" placeholder="Adresse" type="text" name="Adresse">
+            </div>
 
-          <div class="form-group">
-            <label for="adresse">Adresse*</label> : <input type="text" name="adresse" id="adresse" />
+            <div class="col mb-3">
+              <input class="form-control" placeholder="code postal" type="text" name="code postal">
+            </div>
 
+            <div class="col mb-3">
+              <input class="form-control" placeholder="Ville" type="text" name="ville">
+            </div>
           </div>
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
           <input type="submit" name="submit" class="submit action-button" value="Submit" />
