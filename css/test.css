@@ -222,6 +222,16 @@ body {
     flex-wrap: nowrap;
 }
 
+.form-control {
+  height: 20%;
+}
+
+/******POUR MODIFIER LE TITRE******/
+
+.fs-title {
+  margin-bottom: 3%;
+}
+
 .display_hr {
   display: flex;
   justify-content: center;
@@ -236,25 +246,12 @@ hr {
   margin-top: 1%;
 }
 
+/******POUR MODIFIER LA CONSO*******/
+
 .display_conso {
   display: flex;
   justify-content: center;
-}
-
-.display_chauff {
-  display: flex;
-  justify-content: center;
-}
-
-.chauff_colonne {
-  display: flex;
-  flex-direction: column;
-}
-
-.chauff_colonne img {
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 2%;
+  margin-bottom: 2%;
 }
 
 .display_button {
@@ -271,12 +268,12 @@ hr {
 }
 
 .button_autre:hover {
-  background-color: #4682B4;
+  background-color: #87CEFA;
   transform: scale(1.02);
 }
 
 .button_edf {
-  background-color: #4079A4;
+  background-color: #00BFFF;
   border: none;
   border-radius: 5%;
   width: 5em;
@@ -285,6 +282,25 @@ hr {
 }
 
 .button_edf:hover {
-  background-color: #4682B4;
-  transform: scale(1.02);
+  background-color: #87CEFA;
+  transform: scale(1.03);
+}
+
+/****** POUR MODIFIER LE CHAUFFAGE*******/
+
+.display_chauff {
+  display: flex;
+  justify-content: center;
+  height: 12em;
+}
+
+.chauff_colonne {
+  display: flex;
+  flex-direction: column;
+}
+
+.chauff_colonne img {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2%;
 }

@@ -71,7 +71,7 @@
           </br>
           <div class="display_chauff">
             <div class="form-group chauff_colonne">
-              <img src="icons/chauffage.png" style=width:30%;">
+              <img src="icons/chauffage.png" style="width:24%;">
               <label for="exampleFormControlSelect2">Chauffage</label>
               <select class="form-control" id="exampleFormControlSelect2">
                 <option>Chauffage électrique</option>
@@ -81,7 +81,7 @@
               </select>
             </div>
             <div class="form-group chauff_colonne">
-              <img src="icons/logo-eau.png" style=width:30%;">
+              <img src="icons/logo-eau.png" style="width:30%;">
               <label for="exampleFormControlSelect1">Chauffage-eau</label>
               <select class="form-control" id="exampleFormControlSelect1">
                 <option>Résistance électrique</option>
