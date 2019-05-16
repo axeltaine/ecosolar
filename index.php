@@ -39,50 +39,59 @@
         <!-- fieldsets -->
         <fieldset>
           <div class="display_hr">
-          <hr>
-          <h2 class="fs-title">Informations sur la consommation</h2>
-          <hr>
-        </div>
-        </br>
-        <div class="display_conso">
-          <div class="form-group">
-            <label for="consommation">Consommation*</label> : <input type="text" name="consommation"
-              id="consommation" />
+            <hr>
+            <h2 class="fs-title">Informations sur la consommation</h2>
+            <hr>
           </div>
-          <div class="form-group">
-            <label for="fournisseur">Fournisseur</label> : </br>
-            <div class='display_button'>
-            <button class="button_edf"><img src="img/EDF_energy.png" alt=""
-                style="max-height: 4em;"></button>
-            <button class="button_autre"><img src="img/autre_logo.png" alt=""
-                style="height:2em;"><br>Autre</button>
+          </br>
+          <div class="display_conso">
+            <div class="form-group">
+              <label for="consommation">Consommation*</label> :
+              <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1">
+                <input class="form-control" placeholder="Montant de votre facture annuelle" type="text" name="facture">
+                </label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2">
+                <input class="form-control" placeholder="Je n'ai pas ma facture d'électricité" type="text" name="nofacture">
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fournisseur">Fournisseur</label> : </br>
+              <div class='display_button'>
+                <button class="button_edf"><img src="img/EDF_energy.png" alt="" style="max-height: 4em;"></button>
+                <button class="button_autre"><img src="img/autre_logo.png" alt="" style="height:2em;"><br>Autre</button>
               </div>
             </div>
           </div>
-        </br>
-        <div class="display_chauff">
-          <div class="form-group chauff_colonne">
-          <img src="icons/chauffage.png" style=width:30%;">
-          <label for="exampleFormControlSelect2">Chauffage</label>
-            <select class="form-control" id="exampleFormControlSelect2">
-              <option>Chauffage électrique</option>
-              <option>Climatisation (PAC Air/Air)</option>
-              <option>Pompe à chaleur Air/Eau</option>
-              <option>Chauffage gaz, fioul ou bois</option>
-            </select>
+          </br>
+          <div class="display_chauff">
+            <div class="form-group chauff_colonne">
+              <img src="icons/chauffage.png" style=width:30%;">
+              <label for="exampleFormControlSelect2">Chauffage</label>
+              <select class="form-control" id="exampleFormControlSelect2">
+                <option>Chauffage électrique</option>
+                <option>Climatisation (PAC Air/Air)</option>
+                <option>Pompe à chaleur Air/Eau</option>
+                <option>Chauffage gaz, fioul ou bois</option>
+              </select>
+            </div>
+            <div class="form-group chauff_colonne">
+              <img src="icons/logo-eau.png" style=width:30%;">
+              <label for="exampleFormControlSelect1">Chauffage-eau</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Résistance électrique</option>
+                <option>Pompe à chaleur</option>
+                <option>Chaudière bois</option>
+                <option>Chaudière gaz</option>
+                <option>Chaudrère fuel</option>
+              </select>
+            </div>
           </div>
-          <div class="form-group chauff_colonne">
-            <img src="icons/logo-eau.png" style=width:30%;">
-            <label for="exampleFormControlSelect1">Chauffage-eau</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>Résistance électrique</option>
-              <option>Pompe à chaleur</option>
-              <option>Chaudière bois</option>
-              <option>Chaudière gaz</option>
-              <option>Chaudrère fuel</option>
-            </select>
-          </div>
-        </div>
 
 
 
