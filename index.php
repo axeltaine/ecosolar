@@ -118,7 +118,11 @@
         </fieldset>
 
         <fieldset>
+          <div class="display_hr">
+            <hr class="hr1">
           <h2 class="fs-title">Informations sur la toiture</h2>
+          <hr class="hr2">
+        </div>
           <div class="container">
             <div class="row">
               <div class="col">
@@ -198,24 +202,23 @@
         </fieldset>
 
         <fieldset>
+          <div class="display_hr">
+            <hr class="hr1">
           <h2 class="fs-title">Informations sur le bâtiment</h2>
-
-          <div class="form-group">
-            <label for="age">age</label> : <input type="text" name="age" id="age" />
-          </div>
-
-          <div class="form-group">
-            <label for="cotation">cotation</label> :
-            <div class="container-fluid d-flex justify-content-center">
-                <div class="row">
-                <img src="img/cotation.png" class="img-thumbnail" style="height:8em; width:8em;">
+           <hr class="hr2">
+         </div>
+          <div class="container-fluid d-flex justify-content-center">
+          <div class="form-group w-25 p-3">
+            <label for="cotation">cotation:</label>
+                <div class="row d-flex justify-content-center">
+                <img src="img/cotation.png" class="img-thumbnail" style="height:12em; width:12em;">
             </div>
             </div>
-            <div class="d-flex justify-content-center">
-                        <div class="form-group string optional study_roof_length "><label
+            <div class="d-flex flex-column w-25 p-3">
+                        <div class="form-group string optional study_roof_length"><label
                                 class="string optional small" for="study_roof_length">Longeur</label>
 
-                                <div class="input-group">
+                                <div class="input-group h-25">
                                     <input class="numeric float optional form-control" min="0" placeholder="0" type="number"
                                         step="any" value="10" name="study[roof_length]" id="study_roof_length">
                                         <div class="input-group-append">
@@ -226,7 +229,7 @@
                         <div class="form-group string optional study_roof_width "><label
                                 class="string optional small" for="study_roof_width">Largeur</label>
 
-                                <div class="input-group">
+                                <div class="input-group h-25">
                                     <input class="numeric float optional form-control" min="0" placeholder="0" type="number"
                                         step="any" value="10" name="study[roof_width]" id="study_roof_width">
                                      <div class="input-group-append">
@@ -237,16 +240,19 @@
                         <div class="form-group string optional study_roof_height "><label
                                 class="string optional small" for="study_roof_height">Hauteur</label>
 
-                                <div class="input-group">
+                                <div class="input-group h-25">
                                     <input class="numeric float optional form-control" min="0" placeholder="0" type="number"
                                         step="any" value="3" name="study[roof_height]" id="study_roof_height">
                                      <div class="input-group-append">
                 <label class="input-group-text" for="inputGroupSelect02">m</label>
               </div>
-                            </div>
-                        </div>
-          </div>
-        </div>
+            </div>
+           </div>
+         </div>
+                <div class="form-group d-flex justify-content-space-between h-25">
+                  <label for="age">age</label> : <input type="text" name="age" id="age" />
+                </div>
+              </div>
 
           <div class="form-group">
             <label for="charpente">Charpente</label> : <input type="text" name="charpente" id="charpente" />
@@ -268,8 +274,11 @@
 
 
         <fieldset>
+          <div class="display_hr">
+            <hr class="hr1">
           <h2 class="modal-title">Information personnel</h2>
-
+            <hr class="hr2">
+          </div>
           <div class="form-row">
             <div class="col-7 mb-3 d-flex align-items-center">
               <div class="custom-control custom-radio custom-control-inline">
