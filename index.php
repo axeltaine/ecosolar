@@ -44,10 +44,9 @@
             <h2 class="fs-title">Informations sur la consommation</h2>
             <hr class="hr2">
           </div>
-          </br>
           <div class="display_conso">
             <div class="form-group">
-              <label for="consommation">Consommation*</label> :
+              <label for="consommation" class= data-toggle="tooltip" data-placement="top" title="Obligatoire">Consommation*:</label>
               <div class="custom-control custom-radio">
                 <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
                 <label class="custom-control-label" for="customRadio1">
@@ -124,7 +123,7 @@
             <div class="row">
               <div class="col">
                 <div class="form-group">
-                  <label for="orientation">Orientation*</label> : <br>
+                  <label for="orientation" data-toggle="tooltip" data-placement="top" title="Obligatoire">Orientation*</label> : <br>
                   <!-- ligne contenant l'orientation avec les triangles animer en jquery -->
                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex bloc_orientation">
                     <div class="maison">
@@ -191,7 +190,7 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="surface">Surface*</label> : <input type="text" name="surface" id="surface" />
+            <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label> : <input type="text" name="surface" id="surface" />
           </div>
 
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
