@@ -6,7 +6,7 @@ require("phpToPDF.php");
 $my_html="<HTML>
 <h1>Votre simulation personnalisée</h1><br>
 <h2>...Mr, Mrs...</h2><br><br>
-<img scr='img/icone-pastille-ecosolar-rvb.png'/>
+<img scr=\'img/icone-pastille-ecosolar-rvb.png\'/>
 
 
 <h3>Vos informations</h3>
