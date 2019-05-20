@@ -23,7 +23,7 @@
   z-index: 5;
 }
 
-#nord_ouest {
+#Sud_ouest {
   position: absolute;
   display: none;
   z-index: 4;
@@ -35,13 +35,13 @@
   z-index: 3;
 }
 
-#nord_est {
+#Sud_est {
   position: absolute;
   display: none;
   z-index: 2;
 }
 
-#nord {
+#Sud {
   position: absolute;
   z-index: 0;
 }
