@@ -130,7 +130,7 @@
             <h2 class="fs-title">Informations sur la toiture</h2>
             <hr class="hr2">
           </div>
-          <div class="container">
+          <div class="container toiture">
             <div class="row">
               <div class="col">
                 <div class="form-group">
@@ -160,7 +160,8 @@
                 <div id="angle_form">
 
                   <div>
-                    <h1>Inclinaison de la toiture</h1>
+                    <label for="inclinaison" data-toggle="tooltip" data-placement="top"
+                      title="max 50°">Inclinaison*</label> : <br>
                   </div>
 
                   <canvas class="moncanvas" id="canvas" width="500" height="500"></canvas>

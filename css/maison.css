@@ -9,12 +9,15 @@
 }
 
 .maison img {
-  padding-left: 5%;
+  margin-left: 25%;
+  height: 55%;
+  margin-top: 10%;
 }
 
 .button {
   height: 15%;
   margin-top: auto;
+  margin-left: 2%;
 }
 
 #ouest {
