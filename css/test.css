@@ -258,13 +258,17 @@ hr {
   animation-duration: 800ms;
 }
 
+.electro {
+  margin-top: 4%;
+}
+
 /******POUR MODIFIER LA CONSO*******/
 
 .display_conso {
   display: flex;
   justify-content: center;
   margin-bottom: 2%;
-  margin-top: 3%;
+  margin-top: 4%;
 }
 
 .display_button {
