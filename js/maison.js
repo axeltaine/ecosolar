@@ -1,39 +1,45 @@
-$("#button_ouest").click(function() {
-  $("#ouest").toggle();
-  $("#est").hide();
-  $("#Sud_est").hide();
-  $("#Sud_ouest").hide();
+$(document).ready(function(){
+  $("#button_ouest").click(function() {
+    $("#ouest").toggle(true);
+    $("#est").toggle(false);
+    $("#Sud_est").toggle(false);
+    $("#Sud_ouest").toggle(false);
+    $("#Sud").toggle(false);
 
 });
 
 $("#button_Sud_ouest").click(function() {
-  $("#Sud_ouest").toggle();
-  $("#ouest").hide();
-  $("#Sud_est").hide();
-  $("#est").hide();
+  $("#ouest").toggle(false);
+    $("#est").toggle(false);
+    $("#Sud_est").toggle(false);
+    $("#Sud_ouest").toggle(true);
+    $("#Sud").toggle(false);
 
 });
 
 $("#button_est").click(function() {
-  $("#est").toggle();
-  $("#ouest").hide();
-  $("#Sud_est").hide();
-  $("#Sud_ouest").hide();
+  $("#ouest").toggle(false);
+  $("#est").toggle(true);
+  $("#Sud_est").toggle(false);
+  $("#Sud_ouest").toggle(false);
+  $("#Sud").toggle(false);
 
 });
 
 $("#button_Sud_est").click(function() {
-  $("#Sud_est").toggle();
-  $("#est").hide();
-  $("#Sud_ouest").hide();
-  $("#ouest").hide();
+  $("#ouest").toggle(false);
+  $("#est").toggle(false);
+  $("#Sud_est").toggle(true);
+  $("#Sud_ouest").toggle(false);
+  $("#Sud").toggle(false);
 
 });
 
 $("#button_Sud").click(function() {
-  $("#Sud").show();
-  $("#est").hide();
-  $("#Sud_ouest").hide();
-  $("#ouest").hide();
-  $("Sud_est").hide();
+  $("#ouest").toggle(false);
+  $("#est").toggle(false);
+  $("#Sud_est").toggle(false);
+  $("#Sud_ouest").toggle(false);
+  $("#Sud").toggle(true);
+});
 });
