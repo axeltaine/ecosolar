@@ -58,8 +58,7 @@
               <div class="custom-control custom-radio">
                 <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
                 <label class="custom-control-label" for="customRadio2">
-                  <input class="form-control" placeholder="Je n'ai pas ma facture d'électricité" type="text"
-                    name="nofacture">
+                  Je n'ai pas ma facture d'électricité.
                 </label>
               </div>
             </div>
