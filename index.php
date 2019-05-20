@@ -110,6 +110,10 @@
               <div class="input-group-append">
               </div>
             </div>
+            <div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
           </div>
 
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
@@ -254,9 +258,7 @@
                 </div>
               </div>
 
-          <div class="form-group">
-            <label for="charpente">Charpente</label> : <input type="text" name="charpente" id="charpente" />
-          </div>
+
           <div class="form-group">
             <label for="couverture">Couverture</label> :
             <?php include ('checkbox.php'); ?>
@@ -325,7 +327,12 @@
             <div class="col mb-3">
               <input class="form-control" placeholder="Ville" type="text" name="ville">
             </div>
+            
           </div>
+          <div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
           <input type="submit" name="submit" class="submit action-button" value="Submit" />
         </fieldset>
