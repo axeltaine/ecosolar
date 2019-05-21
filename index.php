@@ -35,9 +35,9 @@
         <ul id="progressbar">
           <li class="active">Consommation</li>
           <li>Toiture</li>
-          <li>Bâtiment</li>
+          <li>Localisation du bâtiment</li>
+          <li>Informations sur le bâtiment</li>
           <li>Appareils électroniques</li>
-          <li>Information personnel</li>
           <li>Information personnel</li>
         </ul>
         <!-- fieldsets -->
@@ -181,35 +181,30 @@
               </div>
             </div>
           </div>
-          <div class="surface_toiture">
-          <div class="form-group surface">
-            <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label> :
-          </div>
-          <div class="button_toiture">
-            <button type="button"><img class="toiture_svg" src="img/house-roof.svg"/><p>< 20m</p></button>
-            <button type="button"><img class="toiture_svg2" src="img/house-roof.svg"/><p>20 - 40m</p></button>
-            <button type="button"><img class="toiture_svg3" src="img/house-roof.svg"/><p>> 40m</p></button>
-          </div>
-        </div>
+
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
           <input type="button" name="next" class="next action-button" value=" suivant" />
         </fieldset>
         <fieldset>
           <div class="display_hr">
             <hr class="hr1">
-            <h2 class="fs-title">Informations sur la toiture</h2>
+            <h2 class="fs-title">Informations pour le calcul d'énergie</h2>
             <hr class="hr2">
           </div>
           <div class="container toiture">
             <div class="row">
               <div class="col">
                 <div class="form-group orientation">
-                <div class="form-group">
+                  <div class="form-group">
             <label for="couverture">carte</label> :
               <?php include ('carte.html'); ?>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
               <!-- fin du bloc orientation -->
-              
+
           <div class="surface_toiture">
           <div class="form-group surface">
             <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label> :
@@ -283,10 +278,6 @@
             <?php include ('checkbox.php'); ?>
           </div>
 
-          <div class="form-group">
-            <label for="photo">Photo</label>
-            <input type="file" class="form-control-file" name="photo" id="photo" />
-          </div>
 
 
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
@@ -305,10 +296,10 @@
               <div class="input-group-append">
               </div>
             </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Example textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
+          </div>
+          <div class="form-group">
+            <label for="photo">Photo</label>
+            <input type="file" class="form-control-file" name="photo" id="photo" />
           </div>
 
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
@@ -371,11 +362,11 @@
 
           </div>
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <label for="exampleFormControlTextarea1">Plus d'informations</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
-          <input type="submit" name="submit" class="submit action-button" value="Submit" />
+          <input type="submit" name="submit" class="submit action-button" value="Envoyer" />
         </fieldset>
       </form>
     </div>
