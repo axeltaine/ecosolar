@@ -273,15 +273,15 @@ hr {
   margin-left: 4%;
 }
 
+.surface_toiture:hover {
+  transform: scale(1.04);
+  transition: 200ms;
+}
+
 .button_toiture {
   display: flex;
   justify-content: center;
   margin-bottom: 4%;
-}
-
-.button_toiture:hover {
-  transform: scale(1.05);
-  transition: 300ms;
 }
 
 .button_toiture button {
@@ -292,6 +292,11 @@ hr {
   border: none;
   box-shadow: 0px 1px 3px black;
 }
+
+.button_toiture button:focus {
+  background-color: rgba(000, 0, 0, 0.05);
+  transform: scale(1.05);
+  }
 
 .button_toiture button:hover {
   background-color: rgba(000, 0, 0, 0.05);
@@ -351,6 +356,11 @@ button .toiture_svg {
   transform: scale(1.02);
 }
 
+.button_autre:focus {
+  background-color: #87CEFA;
+  transform: scale(1.02);
+}
+
 .button_edf {
   background-color: #00BFFF;
   border: none;
@@ -363,6 +373,11 @@ button .toiture_svg {
 }
 
 .button_edf:hover {
+  background-color: #87CEFA;
+  transform: scale(1.03);
+}
+
+.button_edf:focus {
   background-color: #87CEFA;
   transform: scale(1.03);
 }

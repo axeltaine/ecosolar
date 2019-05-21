@@ -134,7 +134,7 @@
           <div class="container toiture">
             <div class="row">
               <div class="col">
-                <div class="form-group">
+                <div class="form-group orientation">
                   <label for="orientation" data-toggle="tooltip" data-placement="top"
                     title="Obligatoire">Orientation*</label> : <br>
                   <!-- ligne contenant l'orientation avec les triangles animer en jquery -->
@@ -203,6 +203,7 @@
               </div>
             </div>
           </div>
+          <div class="surface_toiture">
           <div class="form-group surface">
             <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label> :
           </div>
@@ -211,6 +212,7 @@
             <button type="button"><img class="toiture_svg2" src="img/house-roof.svg"/><p>20 - 40m</p></button>
             <button type="button"><img class="toiture_svg3" src="img/house-roof.svg"/><p>> 40m</p></button>
           </div>
+        </div>
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
           <input type="button" name="next" class="next action-button" value=" suivant" />
         </fieldset>
