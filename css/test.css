@@ -226,10 +226,6 @@ body {
   height: 20%;
 }
 
-.toiture {
-  margin-top: 4%;
-}
-
 /******POUR MODIFIER LE TITRE******/
 
 .fs-title {
@@ -266,7 +262,15 @@ hr {
   margin-top: 4%;
 }
 
+.electro button {
+  background-color: #1D428A;
+}
+
 /******PARTIE SURFACE TOITURE******/
+
+.toiture {
+  margin-top: 4%;
+}
 
 .surface {
   margin-top: 4%;

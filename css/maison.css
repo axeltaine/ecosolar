@@ -27,6 +27,10 @@
   margin-right: auto;
 }
 
+.button button{
+  background-color: #1D428A;
+}
+
 #ouest {
   position: absolute;
   display: none;

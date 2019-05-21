@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Devis</title>
+  <title>Devis Ecosolar</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -34,9 +34,9 @@
         <!-- progressbar -->
         <ul id="progressbar">
           <li class="active">Consommation</li>
-          <li>Appareils et utilisateurs</li>
-          <li>Bâtiment</li>
           <li>Toiture</li>
+          <li>Bâtiment</li>
+          <li>Appareils électroniques</li>
           <li>Information personnel</li>
         </ul>
         <!-- fieldsets -->
@@ -100,29 +100,6 @@
 
 
           <input type="button" name="next" class="next action-button" value="suivant" />
-        </fieldset>
-
-        <fieldset>
-          <?php include ('listtest.html'); ?>
-          <h3 class="fs-subtitle">Cochez ce qui vous correspond</h3>
-          <!-- ajouter une liste d'appareils électriques à cocher le nombre possedé -->
-          <div class="form-group">
-            <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> :
-            <div class="input-group">
-              <input class="numeric float optional form-control" min="0" placeholder="0" type="number" step="any"
-                value="10" name="study[roof_length]" id="nombre_personnes_foyer">
-              <div class="input-group-append">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Example textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-          </div>
-
-          <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
-          <input type="button" name="next" class="next action-button" value="suivant" />
-
         </fieldset>
 
         <fieldset>
@@ -289,6 +266,28 @@
           <input type="button" name="next" class="next action-button" value=" suivant" />
         </fieldset>
 
+        <fieldset>
+          <?php include ('listtest.html'); ?>
+          <h3 class="fs-subtitle">Cochez ce qui vous correspond</h3>
+          <!-- ajouter une liste d'appareils électriques à cocher le nombre possedé -->
+          <div class="form-group">
+            <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> :
+            <div class="input-group">
+              <input class="numeric float optional form-control" min="0" placeholder="0" type="number" step="any"
+                value="10" name="study[roof_length]" id="nombre_personnes_foyer">
+              <div class="input-group-append">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </div>
+
+          <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
+          <input type="button" name="next" class="next action-button" value="suivant" />
+
+        </fieldset>
 
         <fieldset>
           <div class="display_hr">
