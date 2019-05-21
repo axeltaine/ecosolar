@@ -18,7 +18,7 @@
 
 html {
     height: 100%;
-    background:#1D428A;
+    background: #1D428A;
 }
 
 body {
@@ -266,6 +266,62 @@ hr {
   margin-top: 4%;
 }
 
+/******PARTIE SURFACE TOITURE******/
+
+.surface {
+  margin-top: 4%;
+  margin-left: 4%;
+}
+
+.button_toiture {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4%;
+}
+
+.button_toiture:hover {
+  transform: scale(1.05);
+  transition: 300ms;
+}
+
+.button_toiture button {
+  height: 120px;
+  width: 90px;
+  margin-left: 2%;
+  background-color: lightgrey;
+  border: none;
+  box-shadow: 0px 1px 3px black;
+}
+
+.button_toiture button:hover {
+  background-color: rgba(000, 0, 0, 0.05);
+  transform: scale(1.05);
+  transition: 300ms;
+  box-shadow: 0px 1px 4px black;
+}
+
+.toiture_svg {
+  height: 30px;
+  width: 30px;
+}
+
+.toiture_svg2 {
+  height: 40px;
+  width: 40px;
+}
+
+.toiture_svg3 {
+  height: 50px;
+  width: 50px;
+}
+
+button .toiture_svg {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /******POUR MODIFIER LA CONSO*******/
 
 .display_conso {
@@ -340,3 +396,5 @@ hr {
   animation-name: bounceIn;
   animation-duration: 1.4s;
 }
+
+/*****PARTIE CHECKBOX*******/

@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid checkbox">
     <div class="col-sm">
   <div class="form-check form-check-inline">
     <div class="d-flex flex-column">
@@ -50,4 +50,3 @@
   </div>
   </div>
 </div>
-

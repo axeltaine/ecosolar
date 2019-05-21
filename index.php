@@ -47,7 +47,7 @@
           <div class="display_conso">
             <div class="form-group">
               <label for="consommation" class=data-toggle="tooltip" data-placement="top"
-                title="Obligatoire">Consommation*:</label>
+                title="Consommation annuelle">Consommation*:</label>
               <div class="custom-control custom-radio">
                 <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
                 <label class="custom-control-label" for="customRadio1">
@@ -201,11 +201,14 @@
               </div>
             </div>
           </div>
-          <div class="form-group">
+          <div class="form-group surface">
             <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label> :
-            <input type="text" name="surface" id="surface" />
           </div>
-
+          <div class="button_toiture">
+            <button><img class="toiture_svg" src="img/house-roof.svg"/><p>< 20m</p></button>
+            <button><img class="toiture_svg2" src="img/house-roof.svg"/><p>20 - 40m</p></button>
+            <button><img class="toiture_svg3" src="img/house-roof.svg"/><p>> 40m</p></button>
+          </div>
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
           <input type="button" name="next" class="next action-button" value=" suivant" />
         </fieldset>
