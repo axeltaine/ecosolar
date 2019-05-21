@@ -398,3 +398,11 @@ button .toiture_svg {
 }
 
 /*****PARTIE CHECKBOX*******/
+
+.checkbox i {
+  position: absolute;
+  margin-left: 33%;
+  margin-top: 35%;
+  color: #18B518;
+  display: none;
+}
