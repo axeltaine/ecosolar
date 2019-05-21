@@ -3,6 +3,10 @@
     float: left;
 }
 
+.map__image svg{
+    height: 350px;
+}
+
 .map__image path{
     fill: #1D428A;
     stroke: #FFF;
