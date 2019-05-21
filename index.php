@@ -38,6 +38,7 @@
           <li>Bâtiment</li>
           <li>Appareils électroniques</li>
           <li>Information personnel</li>
+          <li>Information personnel</li>
         </ul>
         <!-- fieldsets -->
         <fieldset>
@@ -193,6 +194,35 @@
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
           <input type="button" name="next" class="next action-button" value=" suivant" />
         </fieldset>
+        <fieldset>
+          <div class="display_hr">
+            <hr class="hr1">
+            <h2 class="fs-title">Informations sur la toiture</h2>
+            <hr class="hr2">
+          </div>
+          <div class="container toiture">
+            <div class="row">
+              <div class="col">
+                <div class="form-group orientation">
+                <div class="form-group">
+            <label for="couverture">carte</label> :
+              <?php include ('carte.html'); ?>
+          </div>
+              <!-- fin du bloc orientation -->
+              
+          <div class="surface_toiture">
+          <div class="form-group surface">
+            <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label> :
+          </div>
+          <div class="button_toiture">
+            <button type="button"><img class="toiture_svg" src="img/house-roof.svg"/><p>< 20m</p></button>
+            <button type="button"><img class="toiture_svg2" src="img/house-roof.svg"/><p>20 - 40m</p></button>
+            <button type="button"><img class="toiture_svg3" src="img/house-roof.svg"/><p>> 40m</p></button>
+          </div>
+        </div>
+          <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
+          <input type="button" name="next" class="next action-button" value=" suivant" />
+        </fieldset>
 
         <fieldset>
           <div class="display_hr">
@@ -246,10 +276,7 @@
               <label for="age">age</label> : <input type="text" name="age" id="age" />
             </div>
           </div>
-          <div class="form-group">
-            <label for="couverture">carte</label> :
-              <?php include ('carte.html'); ?>
-          </div>
+
 
           <div class="form-group">
             <label for="couverture">Couverture</label> :
