@@ -67,8 +67,8 @@
             <div class="form-group">
               <label for="fournisseur">Fournisseur</label> : </br>
               <div class='display_button'>
-                <button class="button_edf"><img src="img/EDF_energy.png" alt="" style="max-height: 4em;"></button>
-                <button class="button_autre"><img src="img/autre_logo.png" alt="" style="height:2em;"><br>Autre</button>
+                <button type="button" class="button_edf"><img src="img/EDF_energy.png" alt="" style="max-height: 4em;"></button>
+                <button type="button" class="button_autre"><img src="img/autre_logo.png" alt="" style="height:2em;"><br>Autre</button>
               </div>
             </div>
           </div>
@@ -207,9 +207,9 @@
             <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label> :
           </div>
           <div class="button_toiture">
-            <button><img class="toiture_svg" src="img/house-roof.svg"/><p>< 20m</p></button>
-            <button><img class="toiture_svg2" src="img/house-roof.svg"/><p>20 - 40m</p></button>
-            <button><img class="toiture_svg3" src="img/house-roof.svg"/><p>> 40m</p></button>
+            <button type="button"><img class="toiture_svg" src="img/house-roof.svg"/><p>< 20m</p></button>
+            <button type="button"><img class="toiture_svg2" src="img/house-roof.svg"/><p>20 - 40m</p></button>
+            <button type="button"><img class="toiture_svg3" src="img/house-roof.svg"/><p>> 40m</p></button>
           </div>
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
           <input type="button" name="next" class="next action-button" value=" suivant" />
