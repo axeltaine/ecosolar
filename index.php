@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/maison.css" />
   <link href="css/angle_toit.css" rel="stylesheet">
   <link href="css/animate.css" rel="stylesheet">
+  <link href="carte.css" rel="stylesheet">
 </head>
 
 <body>
@@ -266,7 +267,10 @@
               <label for="age">age</label> : <input type="text" name="age" id="age" />
             </div>
           </div>
-
+          <div class="form-group">
+            <label for="couverture">carte</label> :
+              <?php include ('carte.html'); ?>
+          </div>
 
           <div class="form-group">
             <label for="couverture">Couverture</label> :
@@ -373,6 +377,7 @@
   <script src="js/maison.js"></script>
   <script src="js/angle.js"></script>
   <script src="js/checkbox.js"></script>
+  <script src="carte.js"></script>
 
 </body>
 
