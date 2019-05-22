@@ -201,8 +201,7 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            
               <!-- fin du bloc orientation -->
 
           <div class="surface_toiture">
@@ -210,10 +209,13 @@
             <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label> :
           </div>
           <div class="button_toiture">
-            <button type="button"><img class="toiture_svg" src="img/house-roof.svg"/><p>< 20m</p></button>
-            <button type="button"><img class="toiture_svg2" src="img/house-roof.svg"/><p>20 - 40m</p></button>
-            <button type="button"><img class="toiture_svg3" src="img/house-roof.svg"/><p>> 40m</p></button>
+            <button type="button"><img class="toiture_svg" src="img/house-roof.svg"/><p>< 35m</p></button>
+            <button type="button"><img class="toiture_svg2" src="img/house-roof.svg"/><p>35 - 50m</p></button>
+            <button type="button"><img class="toiture_svg3" src="img/house-roof.svg"/><p>> 50m</p></button>
           </div>
+          </div>
+          </div>
+          
         </div>
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
           <input type="button" name="next" class="next action-button" value=" suivant" />
@@ -232,31 +234,9 @@
                 <img src="img/cotation.png" class="img-thumbnail" style="height:12em; width:12em;">
               </div>
             </div>
-            <div class="d-flex flex-column w-25 p-3">
-              <div class="form-group string optional study_roof_length"><label class="string optional small"
-                  for="study_roof_length">Longeur</label>
-
-                <div class="input-group h-25">
-                  <input class="numeric float optional form-control" min="0" placeholder="0" type="number" step="any"
-                    value="10" name="study[roof_length]" id="study_roof_length">
-                  <div class="input-group-append">
-                    <label class="input-group-text" for="inputGroupSelect02">m</label>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group string optional study_roof_width "><label class="string optional small"
-                  for="study_roof_width">Largeur</label>
-
-                <div class="input-group h-25">
-                  <input class="numeric float optional form-control" min="0" placeholder="0" type="number" step="any"
-                    value="10" name="study[roof_width]" id="study_roof_width">
-                  <div class="input-group-append">
-                    <label class="input-group-text" for="inputGroupSelect02">m</label>
-                  </div>
-                </div>
-              </div>
+           
               <div class="form-group string optional study_roof_height "><label class="string optional small"
-                  for="study_roof_height">Hauteur</label>
+                  for="study_roof_height">Hauteur du bâtiment</label>
 
                 <div class="input-group h-25">
                   <input class="numeric float optional form-control" min="0" placeholder="0" type="number" step="any"
@@ -266,7 +246,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            
             <div class="form-group d-flex justify-content-space-between h-25">
               <label for="age">age</label> : <input type="text" name="age" id="age" />
             </div>
