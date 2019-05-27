@@ -54,8 +54,8 @@
               <div class="custom-control custom-radio">
                 <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
                 <label class="custom-control-label" for="customRadio1">
-                  <input class="form-control" placeholder="Montant de votre facture annuelle" type="text"
-                    name="facture">
+                  <input class="form-control" placeholder="Montant facture annuelle" type="text"
+                    name="facture" id="input_conso">
                 </label>
               </div>
               <div class="custom-control custom-radio">
