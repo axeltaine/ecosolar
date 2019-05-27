@@ -73,7 +73,7 @@ body {
     box-sizing: border-box;
     font-family: montserrat;
     color: #2C3E50;
-    font-size: 1.3em; /*écriture dans les bouttons*/
+    font-size: 1.2em; /*écriture dans les bouttons*/
 }
 
 #msform input:focus, #msform textarea:focus {

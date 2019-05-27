@@ -9,16 +9,11 @@
   transform: scale(1.04);
 }
 
-.maison {
-  height: 20%;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .maison img {
-  margin-left: 30%;
   height: 55%;
-  margin-top: 8%;
+  margin-top: 6%;
 }
 
 .button {

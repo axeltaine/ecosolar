@@ -101,7 +101,7 @@
 
 
 
-          <input type="button" name="next" class="next action-button" value="suivant" />
+          <input type="button" name="next" class="next action-button" value="Suivant" />
         </fieldset>
 
         <fieldset>
@@ -117,8 +117,8 @@
                   <label for="orientation" data-toggle="tooltip" data-placement="top"
                     title="Obligatoire">Orientation*</label> : <br>
                   <!-- ligne contenant l'orientation avec les triangles animer en jquery -->
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex bloc_orientation">
-                    <div class="maison">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex flex-column bloc_orientation">
+                    <div class="maison d-flex justify-content-center">
                       <img id="ouest" src="img/ouest.png" />
                       <img id="Sud_ouest" src="img/Sud_ouest.png" />
                       <img id="Sud" src="img/Sud.png" />
@@ -184,7 +184,7 @@
           </div>
 
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
-          <input type="button" name="next" class="next action-button" value=" suivant" />
+          <input type="button" name="next" class="next action-button" value=" Suivant" />
         </fieldset>
         <fieldset>
           <div class="display_hr">
@@ -219,7 +219,7 @@
 
         </div>
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
-          <input type="button" name="next" class="next action-button" value=" suivant" />
+          <input type="button" name="next" class="next action-button" value=" Suivant" />
         </fieldset>
 
         <fieldset>
@@ -260,7 +260,7 @@
 
 
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
-          <input type="button" name="next" class="next action-button" value=" suivant" />
+          <input type="button" name="next" class="next action-button" value=" Suivant" />
         </fieldset>
 
         <fieldset>
@@ -282,7 +282,7 @@
           </div>
 
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
-          <input type="button" name="next" class="next action-button" value="suivant" />
+          <input type="button" name="next" class="next action-button" value="Suivant" />
 
         </fieldset>
 
