@@ -35,9 +35,9 @@
         <ul id="progressbar">
           <li class="active">Consommation</li>
           <li>Toiture</li>
-          <li>Localisation du bâtiment</li>
-          <li>Informations sur le bâtiment</li>
-          <li>Appareils électroniques</li>
+          <li>Localisation bâtiment</li>
+          <li>Informations bâtiment</li>
+          <li>Vos appareils</li>
           <li>Information personnel</li>
         </ul>
         <!-- fieldsets -->
@@ -247,7 +247,7 @@
                 </div>
               </div>
 
-            <div class="form-group d-flex flex-column justify-content-space-between h-25">
+            <div class="form-group d-flex flex-column justify-content-space-between h-25 age">
               <label for="age">age:</label> <input type="text" name="age" id="age" />
             </div>
           </div>

@@ -29,7 +29,7 @@ body {
 .row{
   margin-left: 0;
   margin-right: 0;
-  
+
 }
 
 .logo {
@@ -425,4 +425,8 @@ button .toiture_svg {
 .hauteur {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.age{
+  
 }
