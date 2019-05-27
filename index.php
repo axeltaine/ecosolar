@@ -39,7 +39,7 @@
           <li>Localisation bâtiment</li>
           <li>Informations bâtiment</li>
           <li>Vos appareils</li>
-          <li>Information personnel</li>
+          <li>Informations personnelles</li>
         </ul>
         <!-- fieldsets -->
         <fieldset>
@@ -137,14 +137,14 @@
               </div>
               <!-- fin du bloc orientation -->
               <div class="col">
-                <div id="angle_form">
+                <div id="angle_form d-flex flex-column">
 
                   <div>
                     <label for="inclinaison" data-toggle="tooltip" data-placement="top"
                       title="max 50°">Inclinaison*</label> : <br>
                   </div>
 
-                  <canvas class="moncanvas" id="canvas" width="500" height="500"></canvas>
+                  <canvas class="moncanvas d-flex" id="canvas" width="500" height="500"></canvas>
 
 
                   <label>Angle d'inclinaison approximatif de votre toiture en °</label><br />
@@ -229,14 +229,14 @@
             <hr class="hr2">
           </div>
           <div class="container-fluid d-flex justify-content-center">
-            <div class="form-group w-25 p-3">
+            <div class="form-group p-3">
               <label for="cotation">cotation:</label>
-              <div class="row d-flex justify-content-center">
-                <img src="img/cotation.png" class="img-thumbnail" style="height:12em; width:12em;">
+              <div class="row d-flex justify-content-center cotation">
+                <img src="img/cotation.png" class="img-thumbnail" style="height:12em; width:15em;">
               </div>
             </div>
 
-              <div class="form-group string optional study_roof_height hauteur"><label class="string optional small"
+              <div class="form-group d-flex flex-column string optional study_roof_height hauteur"><label class="string optional"
                   for="study_roof_height">Hauteur du bâtiment</label>
 
                 <div class="input-group h-25">
@@ -246,11 +246,9 @@
                     <label class="input-group-text" for="inputGroupSelect02">m</label>
                   </div>
                 </div>
+                <label for="age">age:</label> <input type="text" name="age" id="age" />
               </div>
 
-            <div class="form-group d-flex flex-column justify-content-space-between h-25 age">
-              <label for="age">age:</label> <input type="text" name="age" id="age" />
-            </div>
           </div>
 
 
