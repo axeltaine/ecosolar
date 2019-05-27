@@ -76,7 +76,7 @@
           </div>
           </br>
           <div class="display_chauff">
-            <div class="form-group chauff_colonne">
+            <div class="form-group chauff_colonne" id="chauffage">
               <img class="img_chauff1" src="icons/chauffage.png" style="width:24%;">
               <label for="exampleFormControlSelect2">Chauffage</label>
               <select class="form-control" id="exampleFormControlSelect2">
@@ -94,7 +94,7 @@
                 <option>Pompe à chaleur</option>
                 <option>Chaudière bois</option>
                 <option>Chaudière gaz</option>
-                <option>Chaudrère fuel</option>
+                <option>Chaudière fuel</option>
               </select>
             </div>
           </div>

@@ -339,10 +339,13 @@ button .toiture_svg {
 
 /******POUR MODIFIER LA CONSO*******/
 .conso{
-
+  margin-right: 2%;
 }
 #input_conso{
   height: 1.5em;
+}
+#chauffage{
+  margin-right: 2%;
 }
 .display_conso {
   display: flex;
