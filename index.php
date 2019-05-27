@@ -201,7 +201,7 @@
                   </div>
                 </div>
               </div>
-            
+
               <!-- fin du bloc orientation -->
 
           <div class="surface_toiture">
@@ -215,7 +215,7 @@
           </div>
           </div>
           </div>
-          
+
         </div>
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
           <input type="button" name="next" class="next action-button" value=" suivant" />
@@ -234,8 +234,8 @@
                 <img src="img/cotation.png" class="img-thumbnail" style="height:12em; width:12em;">
               </div>
             </div>
-           
-              <div class="form-group string optional study_roof_height "><label class="string optional small"
+
+              <div class="form-group string optional study_roof_height hauteur"><label class="string optional small"
                   for="study_roof_height">Hauteur du bâtiment</label>
 
                 <div class="input-group h-25">
@@ -246,9 +246,9 @@
                   </div>
                 </div>
               </div>
-            
-            <div class="form-group d-flex justify-content-space-between h-25">
-              <label for="age">age</label> : <input type="text" name="age" id="age" />
+
+            <div class="form-group d-flex flex-column justify-content-space-between h-25">
+              <label for="age">age:</label> <input type="text" name="age" id="age" />
             </div>
           </div>
 

@@ -278,8 +278,8 @@ hr {
 }
 
 .surface_toiture:hover {
-  transform: scale(1.04);
   transition: 200ms;
+  transform: scale(1.05);
 }
 
 .button_toiture {
@@ -291,17 +291,18 @@ hr {
 .button_toiture button {
   height: 120px;
   width: 90px;
-  margin-left: 2%;
-  background-color: lightgrey;
+  margin-left: 4%;
+  margin-top: 6%;
+  background-color: #fF671F;
   border: none;
-  box-shadow: 0px 1px 3px black;
+  box-shadow: 0px 1px 2px;
 }
 
 .button_toiture button:hover {
-  background-color: rgba(000, 0, 0, 0.05);
+
   transform: scale(1.05);
-  transition: 300ms;
-  box-shadow: 0px 1px 4px black;
+  transition: 200ms;
+  box-shadow: 0px 1px 2px;
 }
 
 .toiture_svg {
@@ -409,4 +410,9 @@ button .toiture_svg {
   margin-top: 35%;
   color: #18B518;
   display: none;
+}
+
+.hauteur {
+  margin-top: auto;
+  margin-bottom: auto;
 }

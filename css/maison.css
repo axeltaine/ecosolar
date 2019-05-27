@@ -29,6 +29,11 @@
 
 .button button{
   background-color: #1D428A;
+  border: none;
+}
+
+.button button:hover {
+  background-color: #fF671F;
 }
 
 #ouest {
