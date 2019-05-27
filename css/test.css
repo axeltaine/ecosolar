@@ -71,7 +71,7 @@ body {
     box-sizing: border-box;
     font-family: montserrat;
     color: #2C3E50;
-    font-size: 13px;
+    font-size: 1.3em; /*écriture dans les bouttons*/
 }
 
 #msform input:focus, #msform textarea:focus {
@@ -145,7 +145,7 @@ body {
 
 /*headings*/
 .fs-title {
-    font-size: 18px;
+    font-size: 1.8em;
     text-transform: uppercase;
     color: #2C3E50;
     margin-bottom: 10px;
@@ -155,7 +155,7 @@ body {
 
 .fs-subtitle {
     font-weight: normal;
-    font-size: 13px;
+    font-size: 1.3em;
     color: #666;
     margin-bottom: 20px;
 }
@@ -172,7 +172,7 @@ body {
     list-style-type: none;
     color: white;
     /*text-transform: uppercase;*/
-    font-size: 14px;
+    font-size: 1.3em;
     width: 16.6%; /* etait a 33.33%*/
     float: left;
     position: relative;
@@ -186,7 +186,7 @@ body {
     height: 24px;
     line-height: 26px;
     display: block;
-    font-size: 12px;
+    font-size: 1.2em;
     color: #333;
     background: white;
     border-radius: 25px;
