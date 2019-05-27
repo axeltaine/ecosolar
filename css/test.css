@@ -338,7 +338,12 @@ button .toiture_svg {
 }
 
 /******POUR MODIFIER LA CONSO*******/
+.conso{
 
+}
+#input_conso{
+  height: 1.5em;
+}
 .display_conso {
   display: flex;
   justify-content: center;
@@ -354,8 +359,8 @@ button .toiture_svg {
   background-color: lightgrey;
   border: none;
   border-radius: 5%;
-  width: 5em;
-  height: 5em;
+  width: 6em;
+  height: 6em;
   margin-left: 3%;
   animation-name: bounceIn;
   animation-duration: 1s;
@@ -370,8 +375,8 @@ button .toiture_svg {
   background-color: #00BFFF;
   border: none;
   border-radius: 5%;
-  width: 5em;
-  height: 5em;
+  width: 6em;
+  height: 6em;
   margin-left: 3%;
   animation-name: bounceIn;
   animation-duration: 1s;

@@ -49,7 +49,7 @@
             <hr class="hr2">
           </div>
           <div class="display_conso">
-            <div class="form-group">
+            <div class="form-group d-flex flex-column conso">
               <label for="consommation" class=data-toggle="tooltip" data-placement="top"
                 title="Consommation annuelle">Consommation*:</label>
               <div class="custom-control custom-radio">
