@@ -302,8 +302,8 @@ hr {
   height: 120px;
   width: 90px;
   margin-left: 4%;
-  margin-top: 6%;
-  background-color: #fF671F;
+  margin-top: 50%;
+  background-color: lightgrey;
   border: none;
   box-shadow: 0px 1px 2px;
 }
@@ -313,6 +313,7 @@ hr {
   transform: scale(1.05);
   transition: 200ms;
   box-shadow: 0px 1px 2px;
+  background-color: #fF671F;
 }
 
 .toiture_svg {

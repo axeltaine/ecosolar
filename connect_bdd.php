@@ -2,8 +2,8 @@
 
 $servername = "localhost";
 $dbname = "ecosolar";
-$username = "root";
-$password = "toor";
+$username = "charf11";
+$password = "pioupiou";
 
 // Connexion à la base de données
 try
