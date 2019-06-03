@@ -272,14 +272,14 @@
             <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> :
             <div class="input-group">
               <input class="numeric float optional form-control" min="0" placeholder="0" type="number" step="any"
-                value="10" name="study[roof_length]" id="nombre_personnes_foyer">
+                value="10" name="nombre_personne_foyer" id="nombre_personnes_foyer">
               <div class="input-group-append">
               </div>
             </div>
           </div>
           <div class="form-group">
             <label for="photo">Photo du bâtiment</label>
-            <input type="file" class="form-control-file" name="photo" id="photo" />
+            <input type="file" class="form-control-file" name="photo_batiment" id="photo" />
           </div>
 
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
@@ -319,7 +319,7 @@
 
           <div class="form-row">
             <div class="col mb-3">
-              <input class="form-control" placeholder="email" type="email" name="mail"  id="mail">
+              <input class="form-control" placeholder="email" type="email" name="email"  id="mail">
             </div>
 
             <div class="col mb-3">
@@ -343,7 +343,7 @@
           </div>
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Plus d'informations</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" name="info_complementaire" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
           <input type="submit" name="submit" class="submit action-button" value="Envoyer"/>

@@ -1,7 +1,7 @@
 <?php
 
 include('connectbdd.php');
-/*
+
 $montant_facture = isset($_POST['facture']) ? $_POST['facture'] : NULL;
 $orientation = isset($_POST['orientation']) ? $_POST['orientation'] : NULL;
 $inclinaison = isset($_POST['inclinaison']) ? $_POST['inclinaison'] : NULL;
@@ -35,7 +35,7 @@ $adresse = $_POST['adresse'];
 $code_postal = $_POST['code_postal'];
 $ville = $_POST['ville'];
 $info_complementaire = $_POST['info_complementaire'];
-
+/*
 $req = $bdd->prepare('INSERT INTO deviseco (montant_facture,	fournisseur,	chauffage,	chauffage_eau,	orientation,	inclinaison,	carte,	surface,	hauteur,	age,	couverture,
   	frigo,	piscine	lave_linge,	lave_vaisselle,	congelateur,	cave_a_vin,	voiture,	pompe_a_chaleur,	seche_linge,	nombre_personne_foyer,	photo_batiment,	civilite,	nom,	prenom,	email,	telephone,	adresse,	code_postal,	ville,	info_complementaire
 ) VALUES(?,?,?,?,?, ?,?,?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?)');
@@ -76,7 +76,44 @@ echo 'ok';
 
 */
 
-$req = $bdd->prepare('INSERT INTO `visiteur` (civilite, nom, prenom, mail, telephone, adresse, code_postal, ville) VALUES(?, ?, ?, ?, ?, ?, ?, ?)');
-$req->execute(array($_POST['civilite'], $_POST['nom'], $_POST['prenom'], $_POST['telephone'], $_POST['adresse'], $_POST['code_postal'], $_POST['ville']));
+$req = $bdd->prepare('INSERT INTO deviseco (montant_facture,	fournisseur,	chauffage,	chauffage_eau,
+  	orientation,	inclinaison,	carte,	surface,	hauteur,	age,	couverture, frigo,	piscine,	lave_linge,
+  	lave_vaisselle,	congelateur,	cave_a_vin,	voiture,	pompe_a_chaleur,	seche_linge,	nombre_personne_foyer,
+  	photo_batiment,	civilite,	nom,	prenom,	email,	telephone,	adresse,	code_postal,	ville,	info_complementaire)
+    VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+$req->execute(array(
+  $montant_facture,
+  $fournisseur,
+  $chauffage,
+  $chauffage_eau,
+  $orientation,
+  $inclinaison,
+  $carte,
+  $surface,
+  $hauteur,
+  $age,
+  $couverture,
+  $frigo,
+  $piscine,
+  $lave_linge,
+  $lave_vaisselle,
+  $congelateur,
+  $cave_a_vin,
+  $voiture,
+  $pompe_a_chaleur,
+  $seche_linge,
+  $nombre_personne_foyer,
+  $photo_batiment,
+  $civilite,
+  $nom,
+  $prenom,
+  $email,
+  $telephone,
+  $adresse,
+  $code_postal,
+  $ville,
+  $info_complementaire));
 
+echo "test effectué";
+header("Location: index.php");
  ?>
