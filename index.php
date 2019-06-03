@@ -51,7 +51,7 @@
           <div class="display_conso">
             <div class="form-group d-flex flex-column conso">
               <label for="consommation" class=data-toggle="tooltip" data-placement="top"
-                title="Consommation annuelle">Consommation*:</label>
+                title="obligatoire">Consommation*:</label>
               <div class="custom-control custom-radio">
                 <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
                 <label class="custom-control-label" for="customRadio1">
@@ -141,7 +141,7 @@
 
                   <div>
                     <label for="inclinaison" data-toggle="tooltip" data-placement="top"
-                      title="max 50°">Inclinaison*</label> : <br>
+                      title="obligatoire">Inclinaison*</label> : <br>
                   </div>
 
                   <canvas class="moncanvas d-flex" id="canvas" width="500" height="500"></canvas>
