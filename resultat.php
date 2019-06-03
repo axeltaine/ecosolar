@@ -35,52 +35,16 @@ $adresse = $_POST['adresse'];
 $code_postal = $_POST['code_postal'];
 $ville = $_POST['ville'];
 $info_complementaire = $_POST['info_complementaire'];
-/*
-$req = $bdd->prepare('INSERT INTO deviseco (montant_facture,	fournisseur,	chauffage,	chauffage_eau,	orientation,	inclinaison,	carte,	surface,	hauteur,	age,	couverture,
-  	frigo,	piscine	lave_linge,	lave_vaisselle,	congelateur,	cave_a_vin,	voiture,	pompe_a_chaleur,	seche_linge,	nombre_personne_foyer,	photo_batiment,	civilite,	nom,	prenom,	email,	telephone,	adresse,	code_postal,	ville,	info_complementaire
-) VALUES(?,?,?,?,?, ?,?,?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?)');
-$req->execute(array(
-  $montant_facture,
-  $fournisseur,
-  $chauffage,
-  $chauffage_eau,
-  $orientation,
-  $inclinaison,
-  $carte,
-  $surface,
-  $hauteur,
-  $age,
-  $couverture,
-  $frigo,
-  $piscine,
-  $lave_linge,
-  $lave_vaisselle,
-  $congelateur,
-  $cave_a_vin,
-  $voiture,
-  $pompe_a_chaleur,
-  $seche_linge,
-  $nombre_personne_foyer,
-  $photo_batiment,
-  $civilite,
-  $nom,
-  $prenom,
-  $email,
-    	$telephone,
-      	$adresse,
-        	$code_postal,
-  $ville,
-        $info_complementaire));
 
-echo 'ok';
-
-*/
 
 $req = $bdd->prepare('INSERT INTO deviseco (montant_facture,	fournisseur,	chauffage,	chauffage_eau,
   	orientation,	inclinaison,	carte,	surface,	hauteur,	age,	couverture, frigo,	piscine,	lave_linge,
   	lave_vaisselle,	congelateur,	cave_a_vin,	voiture,	pompe_a_chaleur,	seche_linge,	nombre_personne_foyer,
   	photo_batiment,	civilite,	nom,	prenom,	email,	telephone,	adresse,	code_postal,	ville,	info_complementaire)
-    VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+    VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
+       ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
+        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
+         ?)');
 $req->execute(array(
   $montant_facture,
   $fournisseur,
@@ -112,8 +76,11 @@ $req->execute(array(
   $adresse,
   $code_postal,
   $ville,
-  $info_complementaire));
+  $info_complementaire ));
 
 echo "test effectué";
-header("Location: index.php");
+echo $surface;
+echo $orientation;
+echo $couverture;
+
  ?>

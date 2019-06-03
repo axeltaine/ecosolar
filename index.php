@@ -125,11 +125,11 @@
                       <img id="Sud_est" src="img/Sud-est.png" />
                     </div>
                     <div class="button">
-                      <button id="button_ouest" type="button" name="orientation" class="btn btn-primary">Ouest</button>
-                      <button id="button_Sud_ouest" type="button" name="orientation" class="btn btn-primary">Sud_ouest</button>
-                      <button id="button_Sud" type="button" name="orientation" class="btn btn-primary">Sud</button>
-                      <button id="button_est" type="button" name="orientation" class="btn btn-primary">Est</button>
-                      <button id="button_Sud_est" type="button" name="orientation" class="btn btn-primary">Sud_est</button>
+                      <button id="button_ouest" type="button" name="orientation" value="ouest" class="btn btn-primary">Ouest</button>
+                      <button id="button_Sud_ouest" type="button" name="orientation" value="sud_ouest" class="btn btn-primary">Sud_ouest</button>
+                      <button id="button_Sud" type="button" name="orientation" value="sud" class="btn btn-primary">Sud</button>
+                      <button id="button_est" type="button" name="orientation" value="est" class="btn btn-primary">Est</button>
+                      <button id="button_Sud_est" type="button" name="orientation" value="sud_est" class="btn btn-primary">Sud_est</button>
                     </div>
                   </div>
                 </div>
@@ -211,9 +211,9 @@
             <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label> :
           </div>
           <div class="button_toiture">
-            <button type="button" name="surface"><img class="toiture_svg" src="img/house-roof.svg"/><p>< 35m</p></button>
-            <button type="button" name="surface"><img class="toiture_svg2" src="img/house-roof.svg"/><p>35 - 50m</p></button>
-            <button type="button" name="surface"><img class="toiture_svg3" src="img/house-roof.svg"/><p>> 50m</p></button>
+            <button type="button" value="<35m" name="surface"><img class="toiture_svg" src="img/house-roof.svg"/><p>< 35m</p></button>
+            <button type="button" value="35m<valeur<50m" name="surface"><img class="toiture_svg2" src="img/house-roof.svg"/><p>35 - 50m</p></button>
+            <button type="button" value=">50m" name="surface"><img class="toiture_svg3" src="img/house-roof.svg"/><p>> 50m</p></button>
           </div>
           </div>
           </div>
