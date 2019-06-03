@@ -31,7 +31,7 @@
   <!-- MultiStep Form -->
   <div class="row">
     <div class="col-md-12 col-md-offset-0">
-      <form id="msform">
+      <form id="msform" method="post" action="resultat.php">
         <!-- progressbar -->
         <ul id="progressbar">
           <li class="active">Consommation</li>
@@ -42,6 +42,7 @@
           <li>Informations personnelles</li>
         </ul>
         <!-- fieldsets -->
+
         <fieldset>
           <div class="display_hr">
             <hr class="hr1">
@@ -53,14 +54,12 @@
               <label for="consommation" class=data-toggle="tooltip" data-placement="top"
                 title="obligatoire">Consommation*:</label>
               <div class="custom-control custom-radio">
-                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                <label class="custom-control-label" for="customRadio1">
                   <input class="form-control" placeholder="Montant facture annuelle" type="text"
                     name="facture" id="input_conso">
                 </label>
               </div>
               <div class="custom-control custom-radio">
-                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                <input type="radio" id="customRadio2" name="facture" class="custom-control-input">
                 <label class="custom-control-label" for="customRadio2">
                   Je n'ai pas ma facture d'électricité.
                 </label>
@@ -69,8 +68,8 @@
             <div class="form-group">
               <label for="fournisseur">Fournisseur</label> : </br>
               <div class='display_button'>
-                <button type="button" class="button_edf"><img src="img/EDF_energy.png" alt="" style="max-height: 4em;"></button>
-                <button type="button" class="button_autre"><img src="img/autre_logo.png" alt="" style="height:2em;"><br>Autre</button>
+                <button type="button" name="fournisseur" class="button_edf"><img src="img/EDF_energy.png" alt="edf" style="max-height: 4em;"></button>
+                <button type="button" name="fournisseur" class="button_autre"><img src="img/autre_logo.png" alt="autre" style="height:2em;"><br>Autre</button>
               </div>
             </div>
           </div>
@@ -79,7 +78,7 @@
             <div class="form-group chauff_colonne" id="chauffage">
               <img class="img_chauff1" src="icons/chauffage.png" style="width:24%;">
               <label for="exampleFormControlSelect2">Chauffage</label>
-              <select class="form-control" id="exampleFormControlSelect2">
+              <select class="form-control" name="chauffage" id="exampleFormControlSelect2">
                 <option>Chauffage électrique</option>
                 <option>Climatisation (PAC Air/Air)</option>
                 <option>Pompe à chaleur Air/Eau</option>
@@ -89,7 +88,7 @@
             <div class="form-group chauff_colonne">
               <img class="img_chauff1" src="icons/logo-eau.png" style="width:30%;">
               <label for="exampleFormControlSelect1">Chauffage-eau</label>
-              <select class="form-control" id="exampleFormControlSelect1">
+              <select class="form-control" name="chauffage_eau" id="exampleFormControlSelect1">
                 <option>Résistance électrique</option>
                 <option>Pompe à chaleur</option>
                 <option>Chaudière bois</option>
@@ -126,11 +125,11 @@
                       <img id="Sud_est" src="img/Sud-est.png" />
                     </div>
                     <div class="button">
-                      <button id="button_ouest" type="button" class="btn btn-primary">Ouest</button>
-                      <button id="button_Sud_ouest" type="button" class="btn btn-primary">Sud_ouest</button>
-                      <button id="button_Sud" type="button" class="btn btn-primary">Sud</button>
-                      <button id="button_est" type="button" class="btn btn-primary">Est</button>
-                      <button id="button_Sud_est" type="button" class="btn btn-primary">Sud_est</button>
+                      <button id="button_ouest" type="button" name="orientation" class="btn btn-primary">Ouest</button>
+                      <button id="button_Sud_ouest" type="button" name="orientation" class="btn btn-primary">Sud_ouest</button>
+                      <button id="button_Sud" type="button" name="orientation" class="btn btn-primary">Sud</button>
+                      <button id="button_est" type="button" name="orientation" class="btn btn-primary">Est</button>
+                      <button id="button_Sud_est" type="button" name="orientation" class="btn btn-primary">Sud_est</button>
                     </div>
                   </div>
                 </div>
@@ -154,28 +153,28 @@
 
                       <div class="d-flex flex-column">
                         <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);"
-                          name="inlineRadioOptions" id="angle1" value="5">
+                          name="inclinaison" id="angle1" value="5">
                         <label class="form-check-label" for="inlineRadio1">05</label>
                       </div>
                     </div>
                     <div class="form-check form-check-inline">
                       <div class="d-flex flex-column">
                         <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);"
-                          name="inlineRadioOptions" id="angle2" value="20">
+                          name="inclinaison" id="angle2" value="20">
                         <label class="form-check-label" for="inlineRadio2">20</label>
                       </div>
                     </div>
                     <div class="form-check form-check-inline">
                       <div class="d-flex flex-column">
                         <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);"
-                          name="inlineRadioOptions" id="angle3" value="35">
+                          name="inclinaison" id="angle3" value="35">
                         <label class="form-check-label" for="inlineRadio3">35</label>
                       </div>
                     </div>
                     <div class="form-check form-check-inline">
                       <div class="d-flex flex-column">
                         <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);"
-                          name="inlineRadioOptions" id="angle4" value="45">
+                          name="inclinaison" id="angle4" value="45">
                         <label class="form-check-label" for="inlineRadio4">45</label>
                       </div>
                     </div>
@@ -212,9 +211,9 @@
             <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label> :
           </div>
           <div class="button_toiture">
-            <button type="button"><img class="toiture_svg" src="img/house-roof.svg"/><p>< 35m</p></button>
-            <button type="button"><img class="toiture_svg2" src="img/house-roof.svg"/><p>35 - 50m</p></button>
-            <button type="button"><img class="toiture_svg3" src="img/house-roof.svg"/><p>> 50m</p></button>
+            <button type="button" name="surface"><img class="toiture_svg" src="img/house-roof.svg"/><p>< 35m</p></button>
+            <button type="button" name="surface"><img class="toiture_svg2" src="img/house-roof.svg"/><p>35 - 50m</p></button>
+            <button type="button" name="surface"><img class="toiture_svg3" src="img/house-roof.svg"/><p>> 50m</p></button>
           </div>
           </div>
           </div>
@@ -243,7 +242,7 @@
 
                 <div class="input-group h-25">
                   <input class="numeric float optional form-control" min="0" placeholder="0" type="number" step="any"
-                    value="3" name="study[roof_height]" id="study_roof_height">
+                    value="3" name="hauteur" id="study_roof_height">
                   <div class="input-group-append">
                     <label class="input-group-text" for="inputGroupSelect02">m</label>
                   </div>
@@ -297,11 +296,11 @@
           <div class="form-row">
             <div class="col-7 mb-3 d-flex align-items-center">
               <div class="custom-control custom-radio custom-control-inline">
-                <input class="custom-control-input" type="radio" value="" name="gender" id="Monsieur">
+                <input class="custom-control-input" type="radio" value="" name="civilite" id="Monsieur">
                 <label class="custom-control-label" for="Monsieur">Monsieur</label>
               </div>
               <div class="custom-control custom-radio custom-control-inline">
-                <input class="custom-control-input" type="radio" value="" name="gender" id="Madame">
+                <input class="custom-control-input" type="radio" value="" name="civilite" id="Madame">
                 <label class="custom-control-label" for="Madame">Madame</label>
               </div>
             </div>
@@ -309,36 +308,36 @@
 
           <div class="form-row">
             <div class="col mb-3">
-              <input class="form-control" placeholder="nom" type="text" name="nom">
+              <input class="form-control" placeholder="nom" type="text" name="nom" id="nom">
             </div>
 
             <div class="col mb-3">
-              <input class="form-control" placeholder="prenom" type="text" name="prenom">
+              <input class="form-control" placeholder="prenom" type="text" name="prenom" id="prenom">
             </div>
           </div>
 
 
           <div class="form-row">
             <div class="col mb-3">
-              <input class="form-control" placeholder="email" type="email" name="eamil">
+              <input class="form-control" placeholder="email" type="email" name="mail"  id="mail">
             </div>
 
             <div class="col mb-3">
-              <input class="form-control" placeholder="Telephone" type="text" name="Telephone">
+              <input class="form-control" placeholder="Telephone" type="text" name="telephone" id="telephone">
             </div>
           </div>
 
           <div class="form-row">
             <div class="col mb-3">
-              <input class="form-control" placeholder="Adresse" type="text" name="Adresse">
+              <input class="form-control" placeholder="Adresse" type="text" name="adresse" id="adresse">
             </div>
 
             <div class="col mb-3">
-              <input class="form-control" placeholder="code postal" type="text" name="code postal">
+              <input class="form-control" placeholder="code postal" type="text" name="code_postal" id="code_postal">
             </div>
 
             <div class="col mb-3">
-              <input class="form-control" placeholder="Ville" type="text" name="ville">
+              <input class="form-control" placeholder="Ville" type="text" name="ville" id="ville">
             </div>
 
           </div>
@@ -347,7 +346,7 @@
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
-          <input type="submit" name="submit" class="submit action-button" value="Envoyer" />
+          <input type="submit" name="submit" class="submit action-button" value="Envoyer"/>
         </fieldset>
       </form>
     </div>
