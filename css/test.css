@@ -282,10 +282,13 @@ hr {
   margin-top: 4%;
 }
 
-.surface {
+.batiment {
   margin-top: 4%;
-  margin-left: 4%;
+  margin-right: auto;
+  margin-left: auto;
 }
+
+
 
 .surface_toiture:hover {
   transition: 200ms;
