@@ -198,7 +198,8 @@
               <div class="col">
                 <div class="form-group orientation">
                   <div class="form-group">
-            <label for="couverture">carte</label> :
+            <label for="couverture" ata-toggle="tooltip" data-placement="top"
+                    title="Obligatoire">carte*</label> :
               <?php include ('carte.html'); ?>
                   </div>
                 </div>
