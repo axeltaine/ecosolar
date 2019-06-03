@@ -1,10 +1,7 @@
 <?php
 session_start();
-if (isset($_SESSION['id']) AND isset($_SESSION['pseudo']))
-{
-
+include('connectbdd.php');
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,13 +9,6 @@ if (isset($_SESSION['id']) AND isset($_SESSION['pseudo']))
 <meta charset="UTF-8">
 </head>
 <body>
-  <?php
-                  if (isset($_SESSION['id']) AND isset($_SESSION['pseudo']))
-                  {
-                      echo $_SESSION['pseudo'];
-                  } ?>
+  <p>admin</p>
 </body>
 </html>
-
-<?php } else { header("Location: index.php");
- } ?>

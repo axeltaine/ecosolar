@@ -1,9 +1,9 @@
 <?php
 
-include ('config.inc.php');
+include ('connectbdd.php');
 
 $pseudo = isset($_POST['pseudo']) ? $_POST['pseudo'] : NULL;
-$pass = isset($_POST['password']) ? $_POST['password'] : NULL;
+$pass = isset($_POST['pass']) ? $_POST['pass'] : NULL;
 
 
 //  Récupération de l'utilisateur et de son pass hashé
@@ -13,7 +13,7 @@ $req->execute(array(
 $resultat = $req->fetch();
 
 // Comparaison du pass envoyé via le formulaire avec la base
-$isPasswordCorrect = password_verify($_POST['password'], $resultat['password']);
+$isPasswordCorrect = $_POST['pass'] == $resultat['pass'];
 
 if (!$resultat)
 {
@@ -29,7 +29,6 @@ else
         header("Location: page_admin.php");
     }
     else {
-        echo 'Mauvais identifiant ou mot de passe !';
-        header("Location: index.php");
+        echo 'retry';
     }
 }

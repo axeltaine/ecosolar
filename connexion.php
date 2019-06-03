@@ -12,7 +12,7 @@
     <label for="pseudo">Pseudo<label>
     <input type="text" placeholder="pseudo" id="pseudo" name="pseudo"/>
     <label for="password">Password</label>
-    <input type="password" placeholder="Mdp" id="password" name="password"/>
+    <input type="password" placeholder="pass" id="pass" name="pass"/>
     <label for="email">Email</label>
     <input type="email" placeholder="email" id="email" name="email"/>
     <button>Login</button>
