@@ -1,36 +1,27 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 29 mai 2019 à 09:12
--- Version du serveur :  5.7.24
--- Version de PHP :  7.2.14
+-- Host: localhost:8889
+-- Generation Time: Jun 03, 2019 at 11:48 AM
+-- Server version: 5.7.25
+-- PHP Version: 7.3.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
 --
--- Base de données :  `ecosolar`
+-- Database: `ecosolar`
 --
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `deviseco`
+-- Table structure for table `deviseco`
 --
 
-DROP TABLE IF EXISTS `deviseco`;
-CREATE TABLE IF NOT EXISTS `deviseco` (
-  `id_conso` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `deviseco` (
+  `id_conso` int(11) NOT NULL,
   `montant_facture` float NOT NULL,
   `fournisseur` varchar(50) DEFAULT NULL,
   `chauffage` varchar(50) DEFAULT NULL,
@@ -61,33 +52,25 @@ CREATE TABLE IF NOT EXISTS `deviseco` (
   `adresse` varchar(250) NOT NULL,
   `code_postal` varchar(50) NOT NULL,
   `ville` varchar(100) NOT NULL,
-  `info_complementaire` longtext,
-  PRIMARY KEY (`id_conso`)
+  `info_complementaire` longtext
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
-
 --
--- Structure de la table `utilisateur`
+-- Indexes for dumped tables
 --
 
-DROP TABLE IF EXISTS `utilisateur`;
-CREATE TABLE IF NOT EXISTS `utilisateur` (
-  `iduser` int(11) NOT NULL AUTO_INCREMENT,
-  `mail` varchar(60) NOT NULL,
-  `ulogin` varchar(20) NOT NULL,
-  `motdepassec` text NOT NULL,
-  PRIMARY KEY (`iduser`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+--
+-- Indexes for table `deviseco`
+--
+ALTER TABLE `deviseco`
+  ADD PRIMARY KEY (`id_conso`);
 
 --
--- Déchargement des données de la table `utilisateur`
+-- AUTO_INCREMENT for dumped tables
 --
 
-INSERT INTO `utilisateur` (`iduser`, `mail`, `ulogin`, `motdepassec`) VALUES
-(4, 'az.raharijaona@gmail.com', 'visiteur', '$2y$10$Wex9UzwN8mfFSBTUr8Uuye/EZC9fbwUxN0jjjE1eqCJ0To2Xd2mqu');
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+--
+-- AUTO_INCREMENT for table `deviseco`
+--
+ALTER TABLE `deviseco`
+  MODIFY `id_conso` int(11) NOT NULL AUTO_INCREMENT;
