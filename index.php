@@ -5,7 +5,8 @@
 <head>
   <meta charset="utf-8" />
   <title>Devis Ecosolar</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="css/test.css" rel="stylesheet">
@@ -54,8 +55,8 @@
               <label for="consommation" class=data-toggle="tooltip" data-placement="top"
                 title="obligatoire">Consommation*:</label>
               <div class="custom-control custom-radio">
-                  <input class="form-control" placeholder="Montant facture annuelle" type="text"
-                    name="facture" id="input_conso">
+                <input class="form-control" placeholder="Montant facture annuelle" type="text" name="facture"
+                  id="input_conso">
                 </label>
               </div>
               <div class="custom-control custom-radio">
@@ -68,8 +69,10 @@
             <div class="form-group">
               <label for="fournisseur">Fournisseur</label> : </br>
               <div class='display_button'>
-                <button type="button" name="fournisseur" class="button_edf"><img src="img/EDF_energy.png" alt="edf" style="max-height: 4em;"></button>
-                <button type="button" name="fournisseur" class="button_autre"><img src="img/autre_logo.png" alt="autre" style="height:2em;"><br>Autre</button>
+                <button type="button" name="fournisseur" class="button_edf"><img src="img/EDF_energy.png" alt="edf"
+                    style="max-height: 4em;"></button>
+                <button type="button" name="fournisseur" class="button_autre"><img src="img/autre_logo.png" alt="autre"
+                    style="height:2em;"><br>Autre</button>
               </div>
             </div>
           </div>
@@ -125,11 +128,16 @@
                       <img id="Sud_est" src="img/Sud-est.png" />
                     </div>
                     <div class="button">
-                      <button id="button_ouest" type="button" name="orientation" value="ouest" class="btn btn-primary">Ouest</button>
-                      <button id="button_Sud_ouest" type="button" name="orientation" value="sud_ouest" class="btn btn-primary">Sud_ouest</button>
-                      <button id="button_Sud" type="button" name="orientation" value="sud" class="btn btn-primary">Sud</button>
-                      <button id="button_est" type="button" name="orientation" value="est" class="btn btn-primary">Est</button>
-                      <button id="button_Sud_est" type="button" name="orientation" value="sud_est" class="btn btn-primary">Sud_est</button>
+                      <button id="button_ouest" type="button" name="orientation" value="ouest"
+                        class="btn btn-primary">Ouest</button>
+                      <button id="button_Sud_ouest" type="button" name="orientation" value="sud_ouest"
+                        class="btn btn-primary">Sud_ouest</button>
+                      <button id="button_Sud" type="button" name="orientation" value="sud"
+                        class="btn btn-primary">Sud</button>
+                      <button id="button_est" type="button" name="orientation" value="est"
+                        class="btn btn-primary">Est</button>
+                      <button id="button_Sud_est" type="button" name="orientation" value="sud_est"
+                        class="btn btn-primary">Sud_est</button>
                     </div>
                   </div>
                 </div>
@@ -198,29 +206,38 @@
               <div class="col">
                 <div class="form-group orientation">
                   <div class="form-group">
-            <label for="couverture" ata-toggle="tooltip" data-placement="top"
-                    title="Obligatoire">carte*</label> :
+                    <label for="couverture" ata-toggle="tooltip" data-placement="top" title="Obligatoire">carte*</label>
+                    :
                   </div>
-              <?php include ('carte.html'); ?>
-                  
+                  <?php include ('carte.html'); ?>
+
                 </div>
               </div>
 
               <!-- fin du bloc orientation -->
               <div class="col d-flex">
-          <div class="surface_toiture">
-          <div class="form-group surface">
-            <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label> :
-          </div>
-          <div class="button_toiture">
-            <button type="button" value="<35m" name="surface"><img class="toiture_svg" src="img/house-roof.svg"/><p>< 35m</p></button>
-            <button type="button" value="35m<valeur<50m" name="surface"><img class="toiture_svg2" src="img/house-roof.svg"/><p>35 - 50m</p></button>
-            <button type="button" value=">50m" name="surface"><img class="toiture_svg3" src="img/house-roof.svg"/><p>> 50m</p></button>
-          </div>
-          </div>
-          </div>
+                <div class="surface_toiture">
+                  <div class="form-group surface">
+                    <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label>
+                    :
+                  </div>
+                  <div class="button_toiture">
+                    <button type="button" value="<35m" name="surface"><img class="toiture_svg"
+                        src="img/house-roof.svg" />
+                      <p>
+                        < 35m</p> </button> <button type="button" value="35m<valeur<50m" name="surface"><img
+                            class="toiture_svg2" src="img/house-roof.svg" />
+                          <p>35 - 50m</p>
+                    </button>
+                    <button type="button" value=">50m" name="surface"><img class="toiture_svg3"
+                        src="img/house-roof.svg" />
+                      <p>> 50m</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
           <input type="button" name="next" class="next action-button" value=" Suivant" />
         </fieldset>
@@ -239,18 +256,18 @@
               </div>
             </div>
 
-              <div class="form-group d-flex flex-column string optional study_roof_height hauteur"><label class="string optional"
-                  for="study_roof_height">Hauteur du bâtiment</label>
+            <div class="form-group d-flex flex-column string optional study_roof_height hauteur"><label
+                class="string optional" for="study_roof_height">Hauteur du bâtiment</label>
 
-                <div class="input-group h-25">
-                  <input class="numeric float optional form-control" min="0" placeholder="0" type="number" step="any"
-                    value="3" name="hauteur" id="study_roof_height">
-                  <div class="input-group-append">
-                    <label class="input-group-text" for="inputGroupSelect02">m</label>
-                  </div>
+              <div class="input-group h-25">
+                <input class="numeric float optional form-control" min="0" placeholder="0" type="number" step="any"
+                  value="3" name="hauteur" id="study_roof_height">
+                <div class="input-group-append">
+                  <label class="input-group-text" for="inputGroupSelect02">m</label>
                 </div>
-                <label for="age">age:</label> <input type="text" name="age" id="age" />
               </div>
+              <label for="age">age:</label> <input type="text" name="age" id="age" />
+            </div>
 
           </div>
 
@@ -321,7 +338,7 @@
 
           <div class="form-row">
             <div class="col mb-3">
-              <input class="form-control" placeholder="email" type="email" name="email"  id="mail">
+              <input class="form-control" placeholder="email" type="email" name="email" id="mail">
             </div>
 
             <div class="col mb-3">
@@ -345,10 +362,11 @@
           </div>
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Plus d'informations</label>
-            <textarea class="form-control" name="info_complementaire" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" name="info_complementaire" id="exampleFormControlTextarea1"
+              rows="3"></textarea>
           </div>
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
-          <input type="submit" name="submit" class="submit action-button" value="Envoyer"/>
+          <input type="submit" name="submit" class="submit action-button" value="Envoyer" />
         </fieldset>
       </form>
     </div>
@@ -361,6 +379,11 @@
 
 
   <footer>
+    <div class="copyright">
+      <a href="http://ecosolar.energy/mentions-legales/" target="_blank">Mentions Légales</a>
+      <a href="http://ecosolar.energy/rgpd/" target="_blank">Protection des données</a>
+      <p>© Création du Formulaire Lilian, Mohamed, Axel</p>
+    </div>
 
 
 

@@ -446,3 +446,7 @@ button .toiture_svg {
 [required] {
    border: 2px dotted orange;
 }
+
+.copyright {
+  text-align: center;
+}
