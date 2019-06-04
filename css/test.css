@@ -293,41 +293,48 @@ hr {
   transform: scale(1.05);
 }
 
-.button_toiture {
-    background-color: #00BFFF;
-    border: none;
-    border-radius: 5%;
-    width: 5em;
-    height: 5em;
+#boutton_toiture {
+  background-color: lightgrey;
+  border-radius: 5%;
+  width: 6em;
+  height: 7em;
+  margin-right: 1em;
+  margin-top: 60%;
+  margin-bottom: 50%;
 }
 
-.button_toiture button:hover {
+#boutton_toiture:hover {
+    background-color: #fF671F;
+}
 
+.surface_boutton {
+  display: flex;
+  align-items: center;
+}
+
+.surface_boutton label:hover {
   transform: scale(1.05);
   transition: 200ms;
   background-color: #fF671F;
+  cursor: pointer;
 }
 
 .toiture_svg {
   height: 30px;
   width: 30px;
+  margin-top: 1em;
 }
 
 .toiture_svg2 {
   height: 40px;
   width: 40px;
+  margin-top: 0.7em;
 }
 
 .toiture_svg3 {
   height: 50px;
   width: 50px;
-}
-
-button .toiture_svg {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 0.5em;
 }
 
 /******POUR MODIFIER LA CONSO*******/
@@ -360,6 +367,7 @@ button .toiture_svg {
   margin-left: 3%;
   animation-name: bounceIn;
   animation-duration: 1s;
+  cursor: pointer;
 }
 
 .button_autre:hover {
@@ -376,6 +384,7 @@ button .toiture_svg {
   margin-left: 3%;
   animation-name: bounceIn;
   animation-duration: 1s;
+  cursor: pointer;
 }
 
 .button_edf:hover {

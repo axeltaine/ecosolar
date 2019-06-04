@@ -4,6 +4,10 @@
   margin-right: auto;
 }
 
+.bloc_orientation label {
+  cursor: pointer;
+}
+
 .orientation:hover {
   transition: 200ms;
   transform: scale(1.04);
@@ -61,6 +65,7 @@
   height: 2em;
   color: white;
   margin-right: 1em;
+  cursor: pointer;
 }
 
 #button_ouest:hover {
