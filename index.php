@@ -69,9 +69,9 @@
             <div class="form-group">
               <label for="fournisseur">Fournisseur</label> : </br>
               <div class='display_button'>
-                <button type="button" name="fournisseur" class="button_edf"><img src="img/EDF_energy.png" alt="edf"
+                <button type="button" name="fournisseur" class="button_edf" value="edf"><img src="img/EDF_energy.png" alt="edf"
                     style="max-height: 4em;"></button>
-                <button type="button" name="fournisseur" class="button_autre"><img src="img/autre_logo.png" alt="autre"
+                <button type="button" name="fournisseur" class="button_autre" value="autre"><img src="img/autre_logo.png" alt="autre"
                     style="height:2em;"><br>Autre</button>
               </div>
             </div>
@@ -315,11 +315,11 @@
           <div class="form-row">
             <div class="col-7 mb-3 d-flex align-items-center">
               <div class="custom-control custom-radio custom-control-inline">
-                <input class="custom-control-input" type="radio" value="" name="civilite" id="Monsieur">
+                <input class="custom-control-input" type="radio" value="homme" name="civilite" id="Monsieur">
                 <label class="custom-control-label" for="Monsieur">Monsieur</label>
               </div>
               <div class="custom-control custom-radio custom-control-inline">
-                <input class="custom-control-input" type="radio" value="" name="civilite" id="Madame">
+                <input class="custom-control-input" type="radio" value="femme" name="civilite" id="Madame">
                 <label class="custom-control-label" for="Madame">Madame</label>
               </div>
             </div>
