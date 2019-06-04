@@ -23,6 +23,7 @@
 
 
   </header>
+  <main class="global">
   <div class="row">
     <div class="col-md-12 col-md-offset-0">
       <img class="logo rounded mx-auto d-block" src="img/icone-pastille-ecosolar-rvb.png" />
