@@ -6,7 +6,7 @@ $( "#inlineRadio1" ).click(function() {
 });
 
 $( "#inlineRadio1" ).click(function(){
-  $('#acier').css("background-color", "#18B518");
+  $('#acier').css("background-color", "#fF671F");
   $('#terrase').css("background-color", "white");
   $('#tuile').css("background-color", "white");
   $('#ardoise').css("background-color", "white");
@@ -20,7 +20,7 @@ $( "#inlineRadio2" ).click(function() {
 });
 
 $( "#inlineRadio2" ).click(function(){
-  $('#ardoise').css("background-color", "#18B518");
+  $('#ardoise').css("background-color", "#fF671F");
   $('#terrase').css("background-color", "white");
   $('#tuile').css("background-color", "white");
   $('#acier').css("background-color", "white");
@@ -34,7 +34,7 @@ $( "#inlineRadio3" ).click(function() {
 });
 
 $( "#inlineRadio3" ).click(function(){
-  $('#tuile').css("background-color", "#18B518");
+  $('#tuile').css("background-color", "#fF671F");
   $('#terrase').css("background-color", "white");
   $('#acier').css("background-color", "white");
   $('#ardoise').css("background-color", "white");
@@ -48,7 +48,7 @@ $( "#inlineRadio4" ).click(function() {
 });
 
 $( "#inlineRadio4" ).click(function(){
-  $('#terrase').css("background-color", "#18B518");
+  $('#terrase').css("background-color", "#fF671F");
   $('#acier').css("background-color", "white");
   $('#tuile').css("background-color", "white");
   $('#ardoise').css("background-color", "white");
