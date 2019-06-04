@@ -55,12 +55,12 @@
               <label for="consommation" class=data-toggle="tooltip" data-placement="top"
                 title="obligatoire">Consommation*:</label>
               <div class="custom-control custom-radio">
-                <input class="form-control" placeholder="Montant facture annuelle" type="text" name="facture"
+                <input class="form-control" placeholder="Montant facture annuelle" type="text" name="montant_facture"
                   id="input_conso">
                 </label>
               </div>
               <div class="custom-control custom-radio">
-                <input type="radio" id="customRadio2" name="facture" class="custom-control-input">
+                <input type="radio" id="customRadio2" name="montant_facture" value="pas de facture" class="custom-control-input">
                 <label class="custom-control-label" for="customRadio2">
                   Je n'ai pas ma facture d'électricité.
                 </label>
@@ -69,9 +69,9 @@
             <div class="form-group">
               <label for="fournisseur">Fournisseur</label> : </br>
               <div class='display_button'>
-                <button type="button" name="fournisseur" class="button_edf" value="edf"><img src="img/EDF_energy.png" alt="edf"
+                <button type="button" name="fournisseur" value="edf" class="button_edf"><img src="img/EDF_energy.png" alt="edf"
                     style="max-height: 4em;"></button>
-                <button type="button" name="fournisseur" class="button_autre" value="autre"><img src="img/autre_logo.png" alt="autre"
+                <button type="button" name="fournisseur" value="autre"class="button_autre"><img src="img/autre_logo.png" alt="autre"
                     style="height:2em;"><br>Autre</button>
               </div>
             </div>
@@ -315,11 +315,11 @@
           <div class="form-row">
             <div class="col-7 mb-3 d-flex align-items-center">
               <div class="custom-control custom-radio custom-control-inline">
-                <input class="custom-control-input" type="radio" value="homme" name="civilite" id="Monsieur">
+                <input class="custom-control-input" type="radio" value="" name="civilite" id="Monsieur">
                 <label class="custom-control-label" for="Monsieur">Monsieur</label>
               </div>
               <div class="custom-control custom-radio custom-control-inline">
-                <input class="custom-control-input" type="radio" value="femme" name="civilite" id="Madame">
+                <input class="custom-control-input" type="radio" value="" name="civilite" id="Madame">
                 <label class="custom-control-label" for="Madame">Madame</label>
               </div>
             </div>
@@ -404,5 +404,12 @@
   <script src="carte.js"></script>
 
 </body>
+
+<script>
+
+
+
+
+</script>
 
 </html>
