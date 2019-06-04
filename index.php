@@ -193,19 +193,21 @@
             <h2 class="fs-title">Informations pour le calcul d'énergie</h2>
             <hr class="hr2">
           </div>
-          <div class="container toiture">
+          <div class="container batiment">
             <div class="row">
               <div class="col">
                 <div class="form-group orientation">
                   <div class="form-group">
-            <label for="couverture">carte</label> :
-              <?php include ('carte.html'); ?>
+            <label for="couverture" ata-toggle="tooltip" data-placement="top"
+                    title="Obligatoire">carte*</label> :
                   </div>
+              <?php include ('carte.html'); ?>
+                  
                 </div>
               </div>
 
               <!-- fin du bloc orientation -->
-
+              <div class="col d-flex">
           <div class="surface_toiture">
           <div class="form-group surface">
             <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label> :
@@ -217,7 +219,7 @@
           </div>
           </div>
           </div>
-
+            </div>
         </div>
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
           <input type="button" name="next" class="next action-button" value=" Suivant" />
