@@ -60,7 +60,8 @@
                 </label>
               </div>
               <div class="custom-control custom-radio">
-                <input type="radio" id="customRadio2" name="montant_facture" value="pas de facture" class="custom-control-input">
+                <input type="radio" id="customRadio2" name="montant_facture" value="pas de facture"
+                  class="custom-control-input">
                 <label class="custom-control-label" for="customRadio2">
                   Je n'ai pas ma facture d'électricité.
                 </label>
@@ -69,14 +70,13 @@
             <div class="form-group">
               <label for="fournisseur">Fournisseur</label> : </br>
               <div class="btn-group-toggle d-flex column" data-toggle="buttons">
-                <label class="btn button_edf"><img src="img/EDF_energy.png" alt="edf"
-                      style="max-height: 4em;"></label>
-              <input type="radio" checked autocomplete="off" name="fournisseur" value="edf"></input>
-<div class="btn-group-toggle" data-toggle="buttons">
-  <label class="btn button_autre">
-                <input type="radio" cheked autocomplete="off" name="fournisseur" value="autre"><img src="img/autre_logo.png" alt="autre"
-                    style="height:2em;"><br>Autre</input>
-                  </div>
+                <label class="btn button_edf"><img src="img/EDF_energy.png" alt="edf" style="max-height: 4em;"></label>
+                <input type="radio" checked autocomplete="off" name="fournisseur" value="edf">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn button_autre">
+                    <input type="radio" cheked autocomplete="off" name="fournisseur" value="autre"><img
+                      src="img/autre_logo.png" alt="autre" style="height:2em;"><br>Autre
+                </div>
                 </label>
               </div>
             </div>
@@ -135,34 +135,34 @@
                     <div class="button d-flex justify-content-center">
                       <div class="btn-group-toggle" data-toggle="buttons">
                         <label class="btn" id="button_ouest">
-                      <input type="radio" cheked autocomplete="off" id="button_ouest" type="button" name="orientation" value="ouest"
-                        class="btn btn-primary">Ouest</input>
+                          <input type="radio" cheked autocomplete="off" id="button_ouest" type="button"
+                            name="orientation" value="ouest" class="btn btn-primary">Ouest
                       </div>
-                    </label>
-                    <div class="btn-group-toggle" data-toggle="buttons">
-                      <label class="btn"  id="button_Sud_ouest" >
-                      <input type="radio" cheked autocomplete="off" id="button_Sud_ouest" type="button" name="orientation" value="sud_ouest"
-                        class="btn btn-primary">Sud_ouest</input>
+                      </label>
+                      <div class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn" id="button_Sud_ouest">
+                          <input type="radio" cheked autocomplete="off" id="button_Sud_ouest" type="button"
+                            name="orientation" value="sud_ouest" class="btn btn-primary">Sud_ouest
                       </div>
-                    </label>
-                    <div class="btn-group-toggle" data-toggle="buttons">
-                      <label class="btn" id="button_Sud">
-                      <input type="radio" cheked autocomplete="off" id="button_Sud" type="button" name="orientation" value="sud"
-                        class="btn btn-primary">Sud</input>
+                      </label>
+                      <div class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn" id="button_Sud">
+                          <input type="radio" cheked autocomplete="off" id="button_Sud" type="button" name="orientation"
+                            value="sud" class="btn btn-primary">Sud
                       </div>
-                    </label>
-                    <div class="btn-group-toggle" data-toggle="buttons">
-                      <label class="btn" id="button_est">
-                      <input type="radio" cheked autocomplete="off" id="button_est" type="button" name="orientation" value="est"
-                        class="btn btn-primary">Est</input>
+                      </label>
+                      <div class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn" id="button_est">
+                          <input type="radio" cheked autocomplete="off" id="button_est" type="button" name="orientation"
+                            value="est" class="btn btn-primary">Est
                       </div>
-                    </label>
-                    <div class="btn-group-toggle" data-toggle="buttons">
-                      <label class="btn" id="button_Sud_est">
-                      <input type="radio" cheked autocomplete="off" id="button_Sud_est" type="button" name="orientation" value="sud_est"
-                        class="btn btn-primary">Sud_est</input>
+                      </label>
+                      <div class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn" id="button_Sud_est">
+                          <input type="radio" cheked autocomplete="off" id="button_Sud_est" type="button"
+                            name="orientation" value="sud_est" class="btn btn-primary">Sud_est
                       </div>
-                    </label>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -249,31 +249,25 @@
                   <div class="surface_boutton">
                     <div class="btn-group-toggle" data-toggle="buttons">
                       <label class="btn" id="boutton_toiture">
-                                    <input type="radio" cheked autocomplete="off"
-                     value="<35m" name="surface"><img class="toiture_svg"
-                        src="img/house-roof.svg">
-                      <p>
-                        < 35m</p> </input>
-                      </div>
+                        <input type="radio" cheked autocomplete="off" value="<35m" name="surface"><img
+                          class="toiture_svg" src="img/house-roof.svg">
+                        <p>
+                          < 35m</p> </div> </label> <div class="btn-group-toggle" data-toggle="buttons">
+                            <label class="btn" id="boutton_toiture">
+                              <input type="radio" cheked autocomplete="off" value="35m<valeur<50m" name="surface"><img
+                                class="toiture_svg2" src="img/house-roof.svg" />
+                              <p>35 - 50m</p>
+
+                    </div>
                     </label>
                     <div class="btn-group-toggle" data-toggle="buttons">
                       <label class="btn" id="boutton_toiture">
-                                    <input type="radio" cheked autocomplete="off"
-                       value="35m<valeur<50m" name="surface"><img
-                            class="toiture_svg2" src="img/house-roof.svg" />
-                          <p>35 - 50m</p>
-                    </input>
-                  </div>
-                </label>
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn" id="boutton_toiture">
-                                <input type="radio" cheked autocomplete="off"
-                   value=">50m" name="surface"><img class="toiture_svg3"
-                        src="img/house-roof.svg">
-                      <p>> 50m</p>
-                    </input>
-                  </div>
-                </label>
+                        <input type="radio" cheked autocomplete="off" value=">50m" name="surface"><img
+                          class="toiture_svg3" src="img/house-roof.svg">
+                        <p>> 50m</p>
+
+                    </div>
+                    </label>
                   </div>
                 </div>
               </div>
@@ -331,8 +325,8 @@
           <div class="form-group">
             <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> :
             <div class="input-group">
-              <input class="numeric float optional form-control" min="0" placeholder="0" type="number" step="any"
-                value="10" name="nombre_personne_foyer" id="nombre_personnes_foyer">
+              <input class="numeric float optional form-control" min="1" placeholder="0" type="number" step="any"
+                value="1" name="nombre_personne_foyer" id="nombre_personnes_foyer">
               <div class="input-group-append">
               </div>
             </div>
