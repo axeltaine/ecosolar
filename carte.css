@@ -5,27 +5,27 @@
 #Zone1 {
     
     z-index: 2;
-    top: -16em;
+    top: -14em;
     left: 5em;
 }
 
 #Zone2 {
     
     z-index: 2;
-    top: -12em;
-    left: 5em;
+    top: -11em;
+    left: 2em;
 }
 
 #Zone3 {
     
     z-index: 2;
-    top: -10em;
-    left: 5em;
+    top: -9em;
+    left: 4em;
 }
 
 #Zone4 {
     
     z-index: 2;
-    top: -9em;
+    top: -8em;
     left: 8em;
 }
