@@ -450,3 +450,17 @@ button .toiture_svg {
 .copyright {
   text-align: center;
 }
+
+.copyright{
+  color: white;
+  margin-top: 1%;
+}
+.copyright a{
+  color: #ff671f;
+  text-decoration: underline;
+}
+
+.copyright a:hover{
+  color: white;
+  text-decoration: overline;
+}

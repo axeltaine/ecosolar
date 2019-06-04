@@ -61,3 +61,48 @@
   position: absolute;
   z-index: 3;
 }
+
+#button_ouest {
+  background-color: lightgrey;
+  border: none;
+  border-radius: 5%;
+  width: 4em;
+  height: 2em;
+  margin-left: 4%;
+}
+
+#button_est {
+  background-color: lightgrey;
+  border: none;
+  border-radius: 5%;
+  width: 4em;
+  height: 2em;
+    margin-left: 4%;
+}
+
+#button_Sud {
+  background-color: lightgrey;
+  border: none;
+  border-radius: 5%;
+  width: 4em;
+  height: 2em;
+    margin-left: 4%;
+}
+
+#button_Sud_ouest {
+  background-color: lightgrey;
+  border: none;
+  border-radius: 5%;
+  width: 6em;
+  height: 2em;
+    margin-left: 4%;
+}
+
+#button_Sud_est {
+  background-color: lightgrey;
+  border: none;
+  border-radius: 5%;
+  width: 5em;
+  height: 2em;
+    margin-left: 4%;
+}

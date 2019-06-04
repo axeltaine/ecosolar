@@ -132,33 +132,33 @@
                       <img id="est" src="img/est.png" />
                       <img id="Sud_est" src="img/Sud-est.png" />
                     </div>
-                    <div class="button">
+                    <div class="button d-flex justify-content-center">
                       <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-secondary active">
+                        <label class="btn" id="button_ouest">
                       <input type="radio" cheked autocomplete="off" id="button_ouest" type="button" name="orientation" value="ouest"
                         class="btn btn-primary">Ouest</input>
                       </div>
                     </label>
                     <div class="btn-group-toggle" data-toggle="buttons">
-                      <label class="btn btn-secondary active">
-                      <input type="radio" id="button_Sud_ouest" type="button" name="orientation" value="sud_ouest"
+                      <label class="btn"  id="button_Sud_ouest" >
+                      <input type="radio" cheked autocomplete="off" id="button_Sud_ouest" type="button" name="orientation" value="sud_ouest"
                         class="btn btn-primary">Sud_ouest</input>
                       </div>
                     </label>
                     <div class="btn-group-toggle" data-toggle="buttons">
-                      <label class="btn btn-secondary active">
+                      <label class="btn" id="button_Sud">
                       <input type="radio" cheked autocomplete="off" id="button_Sud" type="button" name="orientation" value="sud"
                         class="btn btn-primary">Sud</input>
                       </div>
                     </label>
                     <div class="btn-group-toggle" data-toggle="buttons">
-                      <label class="btn btn-secondary active">
+                      <label class="btn" id="button_est">
                       <input type="radio" cheked autocomplete="off" id="button_est" type="button" name="orientation" value="est"
                         class="btn btn-primary">Est</input>
                       </div>
                     </label>
                     <div class="btn-group-toggle" data-toggle="buttons">
-                      <label class="btn btn-secondary active">
+                      <label class="btn" id="button_Sud_est">
                       <input type="radio" cheked autocomplete="off" id="button_Sud_est" type="button" name="orientation" value="sud_est"
                         class="btn btn-primary">Sud_est</input>
                       </div>
