@@ -366,8 +366,8 @@ button .toiture_svg {
   background-color: lightgrey;
   border: none;
   border-radius: 5%;
-  width: 6em;
-  height: 6em;
+  width: 5em;
+  height: 5em;
   margin-left: 3%;
   animation-name: bounceIn;
   animation-duration: 1s;
@@ -382,8 +382,8 @@ button .toiture_svg {
   background-color: #00BFFF;
   border: none;
   border-radius: 5%;
-  width: 6em;
-  height: 6em;
+  width: 5em;
+  height: 5em;
   margin-left: 3%;
   animation-name: bounceIn;
   animation-duration: 1s;

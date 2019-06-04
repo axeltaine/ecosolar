@@ -68,14 +68,13 @@
             </div>
             <div class="form-group">
               <label for="fournisseur">Fournisseur</label> : </br>
-              <div class="btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-secondary active">
-              <input type="radio" checked autocomplete="off" name="fournisseur" value="edf" class="button_edf"><img src="img/EDF_energy.png" alt="edf"
-                    style="max-height: 4em;"></input>
-</label>
+              <div class="btn-group-toggle d-flex column" data-toggle="buttons">
+                <label class="btn button_edf"><img src="img/EDF_energy.png" alt="edf"
+                      style="max-height: 4em;"></label>
+              <input type="radio" checked autocomplete="off" name="fournisseur" value="edf"></input>
 <div class="btn-group-toggle" data-toggle="buttons">
-  <label class="btn btn-secondary active">
-                <input type="radio" cheked autocomplete="off" name="fournisseur" value="autre" class="button_autre"><img src="img/autre_logo.png" alt="autre"
+  <label class="btn button_autre">
+                <input type="radio" cheked autocomplete="off" name="fournisseur" value="autre"><img src="img/autre_logo.png" alt="autre"
                     style="height:2em;"><br>Autre</input>
                   </div>
                 </label>
