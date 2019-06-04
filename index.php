@@ -246,9 +246,8 @@
                     <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label>
                     :
                   </div>
-                  <div class="button_toiture">
                     <div class="btn-group-toggle" data-toggle="buttons">
-                      <label class="btn btn-secondary active">
+                      <label class="btn boutton_toiture">
                                     <input type="radio" cheked autocomplete="off"
                      value="<35m" name="surface"><img class="toiture_svg"
                         src="img/house-roof.svg">
@@ -257,7 +256,7 @@
                       </div>
                     </label>
                     <div class="btn-group-toggle" data-toggle="buttons">
-                      <label class="btn btn-secondary active">
+                      <label class="btn">
                                     <input type="radio" cheked autocomplete="off"
                        value="35m<valeur<50m" name="surface"><img
                             class="toiture_svg2" src="img/house-roof.svg" />
@@ -266,7 +265,7 @@
                   </div>
                 </label>
                 <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-secondary active">
+                  <label class="btn">
                                 <input type="radio" cheked autocomplete="off"
                    value=">50m" name="surface"><img class="toiture_svg3"
                         src="img/house-roof.svg">
@@ -278,7 +277,6 @@
                 </div>
               </div>
             </div>
-          </div>
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
           <input type="button" name="next" class="next action-button" value=" Suivant" />
         </fieldset>
