@@ -315,11 +315,11 @@
           <div class="form-row">
             <div class="col-7 mb-3 d-flex align-items-center">
               <div class="custom-control custom-radio custom-control-inline">
-                <input class="custom-control-input" type="radio" value="" name="civilite" id="Monsieur">
+                <input class="custom-control-input" type="radio" value="homme" name="civilite" id="Monsieur">
                 <label class="custom-control-label" for="Monsieur">Monsieur</label>
               </div>
               <div class="custom-control custom-radio custom-control-inline">
-                <input class="custom-control-input" type="radio" value="" name="civilite" id="Madame">
+                <input class="custom-control-input" type="radio" value="femme" name="civilite" id="Madame">
                 <label class="custom-control-label" for="Madame">Madame</label>
               </div>
             </div>
