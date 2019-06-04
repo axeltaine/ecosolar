@@ -388,7 +388,7 @@ hr {
 }
 
 .button_edf {
-  background-color: #00BFFF;
+  background-color: lightgrey;
   border: none;
   border-radius: 5%;
   width: 5em;
@@ -440,7 +440,7 @@ hr {
   position: absolute;
   margin-left: 33%;
   margin-top: 35%;
-  color: #18B518;
+  color: #1D428A;
   display: none;
 }
 

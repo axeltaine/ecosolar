@@ -69,7 +69,7 @@
               </div>
             </div>
             <div class="form-group">
-              <label for="fournisseur">Fournisseur</label> : </br>
+              <label for="fournisseur">Fournisseur</label> : 
               <div class="btn-group-toggle d-flex column" data-toggle="buttons">
                 <label class="btn button_edf"><img src="img/EDF_energy.png" alt="edf" style="max-height: 4em;"></label>
                 <input type="radio" checked autocomplete="off" name="fournisseur" value="edf">
@@ -82,7 +82,7 @@
               </div>
             </div>
           </div>
-          </br>
+          
           <div class="display_chauff">
             <div class="form-group chauff_colonne" id="chauffage">
               <img class="img_chauff1" src="icons/chauffage.png" style="width:24%;">
@@ -437,7 +437,7 @@
   <script src="js/maison.js"></script>
   <script src="js/angle.js"></script>
   <script src="js/checkbox.js"></script>
-  <script src="carte.js"></script>
+  
 
 </body>
 
