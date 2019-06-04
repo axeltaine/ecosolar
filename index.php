@@ -68,11 +68,17 @@
             </div>
             <div class="form-group">
               <label for="fournisseur">Fournisseur</label> : </br>
-              <div class='display_button'>
-                <button type="button" name="fournisseur" value="edf" class="button_edf"><img src="img/EDF_energy.png" alt="edf"
-                    style="max-height: 4em;"></button>
-                <button type="button" name="fournisseur" value="autre"class="button_autre"><img src="img/autre_logo.png" alt="autre"
-                    style="height:2em;"><br>Autre</button>
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+              <input type="radio" checked autocomplete="off" name="fournisseur" value="edf" class="button_edf"><img src="img/EDF_energy.png" alt="edf"
+                    style="max-height: 4em;"></input>
+</label>
+<div class="btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+                <input type="radio" cheked autocomplete="off" name="fournisseur" value="autre" class="button_autre"><img src="img/autre_logo.png" alt="autre"
+                    style="height:2em;"><br>Autre</input>
+                  </div>
+                </label>
               </div>
             </div>
           </div>
@@ -128,16 +134,36 @@
                       <img id="Sud_est" src="img/Sud-est.png" />
                     </div>
                     <div class="button">
-                      <button id="button_ouest" type="button" name="orientation" value="ouest"
-                        class="btn btn-primary">Ouest</button>
-                      <button id="button_Sud_ouest" type="button" name="orientation" value="sud_ouest"
-                        class="btn btn-primary">Sud_ouest</button>
-                      <button id="button_Sud" type="button" name="orientation" value="sud"
-                        class="btn btn-primary">Sud</button>
-                      <button id="button_est" type="button" name="orientation" value="est"
-                        class="btn btn-primary">Est</button>
-                      <button id="button_Sud_est" type="button" name="orientation" value="sud_est"
-                        class="btn btn-primary">Sud_est</button>
+                      <div class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                      <input type="radio" cheked autocomplete="off" id="button_ouest" type="button" name="orientation" value="ouest"
+                        class="btn btn-primary">Ouest</input>
+                      </div>
+                    </label>
+                    <div class="btn-group-toggle" data-toggle="buttons">
+                      <label class="btn btn-secondary active">
+                      <input type="radio" id="button_Sud_ouest" type="button" name="orientation" value="sud_ouest"
+                        class="btn btn-primary">Sud_ouest</input>
+                      </div>
+                    </label>
+                    <div class="btn-group-toggle" data-toggle="buttons">
+                      <label class="btn btn-secondary active">
+                      <input type="radio" cheked autocomplete="off" id="button_Sud" type="button" name="orientation" value="sud"
+                        class="btn btn-primary">Sud</input>
+                      </div>
+                    </label>
+                    <div class="btn-group-toggle" data-toggle="buttons">
+                      <label class="btn btn-secondary active">
+                      <input type="radio" cheked autocomplete="off" id="button_est" type="button" name="orientation" value="est"
+                        class="btn btn-primary">Est</input>
+                      </div>
+                    </label>
+                    <div class="btn-group-toggle" data-toggle="buttons">
+                      <label class="btn btn-secondary active">
+                      <input type="radio" cheked autocomplete="off" id="button_Sud_est" type="button" name="orientation" value="sud_est"
+                        class="btn btn-primary">Sud_est</input>
+                      </div>
+                    </label>
                     </div>
                   </div>
                 </div>
@@ -222,17 +248,33 @@
                     :
                   </div>
                   <div class="button_toiture">
-                    <button type="button" value="<35m" name="surface"><img class="toiture_svg"
-                        src="img/house-roof.svg" />
+                    <div class="btn-group-toggle" data-toggle="buttons">
+                      <label class="btn btn-secondary active">
+                                    <input type="radio" cheked autocomplete="off"
+                     value="<35m" name="surface"><img class="toiture_svg"
+                        src="img/house-roof.svg">
                       <p>
-                        < 35m</p> </button> <button type="button" value="35m<valeur<50m" name="surface"><img
+                        < 35m</p> </input>
+                      </div>
+                    </label>
+                    <div class="btn-group-toggle" data-toggle="buttons">
+                      <label class="btn btn-secondary active">
+                                    <input type="radio" cheked autocomplete="off"
+                       value="35m<valeur<50m" name="surface"><img
                             class="toiture_svg2" src="img/house-roof.svg" />
                           <p>35 - 50m</p>
-                    </button>
-                    <button type="button" value=">50m" name="surface"><img class="toiture_svg3"
-                        src="img/house-roof.svg" />
+                    </input>
+                  </div>
+                </label>
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-secondary active">
+                                <input type="radio" cheked autocomplete="off"
+                   value=">50m" name="surface"><img class="toiture_svg3"
+                        src="img/house-roof.svg">
                       <p>> 50m</p>
-                    </button>
+                    </input>
+                  </div>
+                </label>
                   </div>
                 </div>
               </div>
@@ -315,11 +357,11 @@
           <div class="form-row">
             <div class="col-7 mb-3 d-flex align-items-center">
               <div class="custom-control custom-radio custom-control-inline">
-                <input class="custom-control-input" type="radio" value="homme" name="civilite" id="Monsieur">
+                <input class="custom-control-input" type="radio" value="" name="civilite" id="Monsieur">
                 <label class="custom-control-label" for="Monsieur">Monsieur</label>
               </div>
               <div class="custom-control custom-radio custom-control-inline">
-                <input class="custom-control-input" type="radio" value="femme" name="civilite" id="Madame">
+                <input class="custom-control-input" type="radio" value="" name="civilite" id="Madame">
                 <label class="custom-control-label" for="Madame">Madame</label>
               </div>
             </div>
