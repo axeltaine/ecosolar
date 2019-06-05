@@ -69,19 +69,16 @@
               </div>
             </div>
             <div class="form-group">
-              <label for="fournisseur">Fournisseur</label> : 
-              <div class="btn-group-toggle d-flex column" data-toggle="buttons">
-                <label class="btn button_edf"><img src="img/EDF_energy.png" alt="edf" style="max-height: 4em;">
-                <input type="radio" checked autocomplete="off" name="fournisseur" value="edf">
-                </label>
-              
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn button_autre">
-                    <input type="radio" cheked autocomplete="off" name="fournisseur" value="autre"><img
-                      src="img/autre_logo.png" alt="autre" style="height:2em;"><br>Autre
-                </div>
-                </label>
-              </div>       
+              <label for="fournisseur">Fournisseur</label> :
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-secondary">
+      <input type="radio" name="options" id="option1" autocomplete="off"> <img src="img/EDF_energy.png" alt="edf" style="max-height: 4em;">
+    </label>
+    <label class="btn btn-secondary">
+      <input type="radio" name="options" id="option2" autocomplete="off"> <img
+        src="img/autre_logo.png" alt="autre" style="height:2em;"><br>Autre
+    </label>
+              </div>
           </div>
           </div>
           <div class="display_chauff">
@@ -346,7 +343,7 @@
         <fieldset>
           <div class="display_hr">
             <hr class="hr1">
-            <h2 class="modal-title">Information personnel</h2>
+            <h2 class="fs-title">INFORMATIONS PERSONNELLES</h2>
             <hr class="hr2">
           </div>
           <div class="form-row">
@@ -438,7 +435,7 @@
   <script src="js/maison.js"></script>
   <script src="js/angle.js"></script>
   <script src="js/checkbox.js"></script>
-  
+
 
 </body>
 
