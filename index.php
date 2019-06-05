@@ -70,7 +70,7 @@
             </div>
             <div class="form-group">
               <label for="fournisseur">Fournisseur</label> :
-              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <div class="btn-group btn-group-toggle d-flex column" data-toggle="buttons">
     <label class="btn btn-secondary">
       <input type="radio" name="fournisseur" id="option1" autocomplete="off"> <img src="img/EDF_energy.png" alt="edf" style="max-height: 4em;">
     </label>
@@ -133,35 +133,36 @@
                     </div>
                     <div class="button d-flex justify-content-center">
                       <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-secondary" id="button_ouest">
-                          <input type="radio" cheked autocomplete="off" id="button_ouest" type="button"
+                        <label class="btn btn-secondary button_ouest" >
+                          <input type="radio" cheked autocomplete="off" id="option1" type="button"
                             name="orientation" value="ouest" class="btn btn-primary">Ouest
-                      </div>
+                      
                       </label>
-                      <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-secondary" id="button_Sud_ouest">
-                          <input type="radio" cheked autocomplete="off" id="button_Sud_ouest" type="button"
+                      
+                        <label class="btn btn-secondary button_Sud_ouest" >
+                          <input type="radio" cheked autocomplete="off" id="option2" type="button"
                             name="orientation" value="sud_ouest" class="btn btn-primary">Sud_ouest
-                      </div>
+                      
                       </label>
-                      <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-secondary" id="button_Sud">
-                          <input type="radio" cheked autocomplete="off" id="button_Sud" type="button" name="orientation"
+                     
+                        <label class="btn btn-secondary button_Sud" >
+                          <input type="radio" cheked autocomplete="off" id="option3" type="button" name="orientation"
                             value="sud" class="btn btn-primary">Sud
-                      </div>
+                      
                       </label>
-                      <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-secondary" id="button_est">
-                          <input type="radio" cheked autocomplete="off" id="button_est" type="button" name="orientation"
+                      
+                        <label class="btn btn-secondary button_est" >
+                          <input type="radio" cheked autocomplete="off" id="option4" type="button" name="orientation"
                             value="est" class="btn btn-primary">Est
-                      </div>
+                      
                       </label>
-                      <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-secondary" id="button_Sud_est">
-                          <input type="radio" cheked autocomplete="off" id="button_Sud_est" type="button"
+                      
+                        <label class="btn btn-secondary button_Sud_est" >
+                          <input type="radio" cheked autocomplete="off" id="option5" type="button"
                             name="orientation" value="sud_est" class="btn btn-primary">Sud_est
-                      </div>
+                      
                       </label>
+                      </div>
                     </div>
                   </div>
                 </div>
