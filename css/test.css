@@ -77,10 +77,9 @@ margin-top: 8em;
 
 /*inputs*/
 #msform input, #msform textarea {
-    padding: 15px;
+    padding: 2.75%;
     border: 1px solid #ccc;
     border-radius: 0px;
-    margin-bottom: 10px;
     width: 100%;
     box-sizing: border-box;
     font-family: montserrat;
@@ -242,7 +241,7 @@ label{
 }
 
 .form-control {
-  height: 20%;
+  height: 13%;
 }
 
 /******POUR MODIFIER LE TITRE******/
@@ -367,8 +366,10 @@ hr {
   display: flex;
 }
 
+/**** pour les tout les input en bouttons ****/
+
 .btn-secondary {
-  background-color: lightgrey;
+  background-color: #A7A7A7;
   border: none;
   cursor: pointer;
   animation-name: bounceIn;
@@ -391,12 +392,17 @@ hr {
   background-color: #58BEEC;
 }
 
+.boutton_fournisseur {
+  margin-right: 0.7em;
+}
+
 /****** POUR MODIFIER LE CHAUFFAGE*******/
 
 .display_chauff {
   display: flex;
   justify-content: center;
-  height: 12em;
+  height: 10em;
+  margin-top: 3%;
 }
 
 .chauff_colonne {

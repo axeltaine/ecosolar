@@ -71,7 +71,7 @@
             <div class="form-group">
               <label for="fournisseur">Fournisseur</label> :
               <div class="btn-group btn-group-toggle d-flex column" data-toggle="buttons">
-    <label class="btn btn-secondary">
+    <label class="btn btn-secondary boutton_fournisseur">
       <input type="radio" name="fournisseur" value="edf" id="option1" autocomplete="off"> <img src="img/EDF_energy.png" alt="edf" style="max-height: 4em;">
     </label>
     <label class="btn btn-secondary">
@@ -86,6 +86,7 @@
               <img class="img_chauff1" src="icons/chauffage.png" style="width:24%;">
               <label for="exampleFormControlSelect2">Chauffage</label>
               <select class="form-control" name="chauffage" id="exampleFormControlSelect2">
+                <option></option>
                 <option>Chauffage électrique</option>
                 <option>Climatisation (PAC Air/Air)</option>
                 <option>Pompe à chaleur Air/Eau</option>
@@ -96,6 +97,7 @@
               <img class="img_chauff1" src="icons/logo-eau.png" style="width:30%;">
               <label for="exampleFormControlSelect1">Chauffage-eau</label>
               <select class="form-control" name="chauffage_eau" id="exampleFormControlSelect1">
+                <option></option>
                 <option>Résistance électrique</option>
                 <option>Pompe à chaleur</option>
                 <option>Chaudière bois</option>
@@ -136,31 +138,31 @@
                         <label class="btn btn-secondary button_ouest" >
                           <input type="radio" cheked autocomplete="off" id="option1" type="button"
                             name="orientation" value="ouest" class="btn btn-primary">Ouest
-                      
+
                       </label>
-                      
+
                         <label class="btn btn-secondary button_Sud_ouest" >
                           <input type="radio" cheked autocomplete="off" id="option2" type="button"
                             name="orientation" value="sud_ouest" class="btn btn-primary">Sud_ouest
-                      
+
                       </label>
-                     
+
                         <label class="btn btn-secondary button_Sud" >
                           <input type="radio" cheked autocomplete="off" id="option3" type="button" name="orientation"
                             value="sud" class="btn btn-primary">Sud
-                      
+
                       </label>
-                      
+
                         <label class="btn btn-secondary button_est" >
                           <input type="radio" cheked autocomplete="off" id="option4" type="button" name="orientation"
                             value="est" class="btn btn-primary">Est
-                      
+
                       </label>
-                      
+
                         <label class="btn btn-secondary button_Sud_est" >
                           <input type="radio" cheked autocomplete="off" id="option5" type="button"
                             name="orientation" value="sud_est" class="btn btn-primary">Sud_est
-                      
+
                       </label>
                       </div>
                     </div>
@@ -293,7 +295,7 @@
 
               <div class="input-group h-25">
                 <input class="numeric float optional form-control" min="0" placeholder="0" type="number" step="any"
-                  value="3" name="hauteur" id="study_roof_height">
+                  value="" name="hauteur" id="study_roof_height">
                 <div class="input-group-append">
                   <label class="input-group-text" for="inputGroupSelect02">m</label>
                 </div>
@@ -347,11 +349,11 @@
           <div class="form-row">
             <div class="col-7 mb-3 d-flex align-items-center">
               <div class="custom-control custom-radio custom-control-inline">
-                <input class="custom-control-input" type="radio" value="" name="civilite" id="Monsieur">
+                <input class="custom-control-input" type="radio" value="Homme" name="civilite" id="Monsieur">
                 <label class="custom-control-label" for="Monsieur">Monsieur</label>
               </div>
               <div class="custom-control custom-radio custom-control-inline">
-                <input class="custom-control-input" type="radio" value="" name="civilite" id="Madame">
+                <input class="custom-control-input" type="radio" value="Femme" name="civilite" id="Madame">
                 <label class="custom-control-label" for="Madame">Madame</label>
               </div>
             </div>
