@@ -72,10 +72,10 @@
               <label for="fournisseur">Fournisseur</label> :
               <div class="btn-group btn-group-toggle d-flex column" data-toggle="buttons">
     <label class="btn btn-secondary">
-      <input type="radio" name="fournisseur" id="option1" autocomplete="off"> <img src="img/EDF_energy.png" alt="edf" style="max-height: 4em;">
+      <input type="radio" name="fournisseur" value="edf" id="option1" autocomplete="off"> <img src="img/EDF_energy.png" alt="edf" style="max-height: 4em;">
     </label>
     <label class="btn btn-secondary">
-      <input type="radio" name="fournisseur" id="option2" autocomplete="off"> <img
+      <input type="radio" name="fournisseur" value="autre" id="option2" autocomplete="off"> <img
         src="img/autre_logo.png" alt="autre" style="height:2em;"><br>Autre
     </label>
               </div>
@@ -249,7 +249,7 @@
                    <div class="surface_boutton">
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
                      <label class="btn btn-secondary boutton_toiture">
-                      <input type="radio" name="fournisseur" id="option1" autocomplete="off" value="<35m" name="surface"><img
+                      <input type="radio" id="option1" autocomplete="off" value="<35m" name="surface"><img
                           class="toiture_svg" src="img/house-roof.svg">
                         <p>
                           < 35m</p> </label>
