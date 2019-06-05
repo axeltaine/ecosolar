@@ -343,7 +343,7 @@
         <fieldset>
           <div class="display_hr">
             <hr class="hr1">
-            <h2 class="modal-title">Information personnel</h2>
+            <h2 class="fs-title">INFORMATIONS PERSONNELLES</h2>
             <hr class="hr2">
           </div>
           <div class="form-row">
