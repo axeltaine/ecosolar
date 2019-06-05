@@ -72,10 +72,10 @@
               <label for="fournisseur">Fournisseur</label> :
               <div class="btn-group btn-group-toggle" data-toggle="buttons">
     <label class="btn btn-secondary">
-      <input type="radio" name="options" id="option1" autocomplete="off"> <img src="img/EDF_energy.png" alt="edf" style="max-height: 4em;">
+      <input type="radio" name="fournisseur" id="option1" autocomplete="off"> <img src="img/EDF_energy.png" alt="edf" style="max-height: 4em;">
     </label>
     <label class="btn btn-secondary">
-      <input type="radio" name="options" id="option2" autocomplete="off"> <img
+      <input type="radio" name="fournisseur" id="option2" autocomplete="off"> <img
         src="img/autre_logo.png" alt="autre" style="height:2em;"><br>Autre
     </label>
               </div>
@@ -133,31 +133,31 @@
                     </div>
                     <div class="button d-flex justify-content-center">
                       <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn" id="button_ouest">
+                        <label class="btn btn-secondary" id="button_ouest">
                           <input type="radio" cheked autocomplete="off" id="button_ouest" type="button"
                             name="orientation" value="ouest" class="btn btn-primary">Ouest
                       </div>
                       </label>
                       <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn" id="button_Sud_ouest">
+                        <label class="btn btn-secondary" id="button_Sud_ouest">
                           <input type="radio" cheked autocomplete="off" id="button_Sud_ouest" type="button"
                             name="orientation" value="sud_ouest" class="btn btn-primary">Sud_ouest
                       </div>
                       </label>
                       <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn" id="button_Sud">
+                        <label class="btn btn-secondary" id="button_Sud">
                           <input type="radio" cheked autocomplete="off" id="button_Sud" type="button" name="orientation"
                             value="sud" class="btn btn-primary">Sud
                       </div>
                       </label>
                       <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn" id="button_est">
+                        <label class="btn btn-secondary" id="button_est">
                           <input type="radio" cheked autocomplete="off" id="button_est" type="button" name="orientation"
                             value="est" class="btn btn-primary">Est
                       </div>
                       </label>
                       <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn" id="button_Sud_est">
+                        <label class="btn btn-secondary" id="button_Sud_est">
                           <input type="radio" cheked autocomplete="off" id="button_Sud_est" type="button"
                             name="orientation" value="sud_est" class="btn btn-primary">Sud_est
                       </div>
@@ -241,37 +241,34 @@
               <!-- fin du bloc orientation -->
               <div class="col d-flex">
                 <div class="surface_toiture">
-                  <div class="form-group surface">
+                  <div class="form-group">
                     <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label>
                     :
                   </div>
-                  <div class="surface_boutton">
-                    <div class="btn-group-toggle" data-toggle="buttons">
-                      <label class="btn" id="boutton_toiture">
-                        <input type="radio" cheked autocomplete="off" value="<35m" name="surface"><img
+                   <div class="surface_boutton">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                     <label class="btn btn-secondary boutton_toiture">
+                      <input type="radio" name="fournisseur" id="option1" autocomplete="off" value="<35m" name="surface"><img
                           class="toiture_svg" src="img/house-roof.svg">
                         <p>
-                          < 35m</p> </div> </label> <div class="btn-group-toggle" data-toggle="buttons">
-                            <label class="btn" id="boutton_toiture">
-                              <input type="radio" cheked autocomplete="off" value="35m<valeur<50m" name="surface"><img
+                          < 35m</p> </label>
+                            <label class="btn btn-secondary boutton_toiture">
+                              <input type="radio" id="option2" cheked autocomplete="off" value="35m<valeur<50m" name="surface"><img
                                 class="toiture_svg2" src="img/house-roof.svg" />
                               <p>35 - 50m</p>
-
-                    </div>
                     </label>
-                    <div class="btn-group-toggle" data-toggle="buttons">
-                      <label class="btn" id="boutton_toiture">
-                        <input type="radio" cheked autocomplete="off" value=">50m" name="surface"><img
+                      <label class="btn btn-secondary boutton_toiture">
+                        <input type="radio" id="option3" cheked autocomplete="off" value=">50m" name="surface"><img
                           class="toiture_svg3" src="img/house-roof.svg">
                         <p>> 50m</p>
-
-                    </div>
                     </label>
+                  </div>
+                  </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+
+
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
           <input type="button" name="next" class="next action-button" value=" Suivant" />
         </fieldset>

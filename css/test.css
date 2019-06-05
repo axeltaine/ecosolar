@@ -306,18 +306,14 @@ hr {
   transform: scale(1.05);
 }
 
-#boutton_toiture {
+.boutton_toiture {
   background-color: lightgrey;
   border-radius: 5%;
   width: 6em;
   height: 7em;
   margin-right: 1em;
-  margin-top: 60%;
+  margin-top: 30%;
   margin-bottom: 50%;
-}
-
-#boutton_toiture:hover {
-    background-color: #fF671F;
 }
 
 .surface_boutton {
@@ -371,11 +367,6 @@ hr {
   display: flex;
 }
 
-.button_edf:hover {
-  background-color: #87CEFA;
-  transform: scale(1.03);
-}
-
 .btn-secondary {
   background-color: lightgrey;
   border: none;
@@ -388,7 +379,15 @@ hr {
   background-color: #58BEEC;
 }
 
+.btn-secondary:focus {
+  background-color: #58BEEC;
+}
+
 .btn-secondary:not(:disabled):not(.disabled).active {
+  background-color: #58BEEC;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active {
   background-color: #58BEEC;
 }
 
@@ -435,11 +434,6 @@ hr {
 .hauteur {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-
-[required] {
-   border: 2px dotted orange;
 }
 
 .copyright {
