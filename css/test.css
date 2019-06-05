@@ -378,6 +378,8 @@ hr {
 
 .btn-secondary:hover {
   background-color: #58BEEC;
+  transform: scale(1.1);
+  transition: 150ms;
 }
 
 .btn-secondary:focus {

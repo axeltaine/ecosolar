@@ -69,7 +69,7 @@
 }
 
 .button_ouest:hover {
-  transform: scale(1.03);
+  transform: scale(1.1);
   background-color: #fF671F;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .button_est:hover {
-  transform: scale(1.03);
+  transform: scale(1.1);
   background-color: #fF671F;
 }
 
@@ -99,7 +99,7 @@
 }
 
 .button_Sud:hover {
-  transform: scale(1.03);
+  transform: scale(1.1);
   background-color: #fF671F;
 }
 
@@ -114,7 +114,7 @@
 }
 
 .button_Sud_ouest:hover {
-  transform: scale(1.03);
+  transform: scale(1.1);
   background-color: #fF671F;
 }
 
@@ -129,6 +129,6 @@
 }
 
 .button_Sud_est:hover {
-  transform: scale(1.03);
+  transform: scale(1.1);
   background-color: #fF671F;
 }
