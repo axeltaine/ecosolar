@@ -92,7 +92,7 @@ margin-top: 8em;
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    border: 1px solid #2098ce;
+    border: 1px solid #1D428A;
     outline-width: 0;
     transition: All 0.5s ease-in;
     -webkit-transition: All 0.5s ease-in;
@@ -143,7 +143,7 @@ label{
 }
 
 #msform .action-button:hover, #msform .action-button:focus {
-    box-shadow: 0 0 0 2px white, 0 0 0 3px #2098ce;
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #1D428A;
 }
 
 #msform .action-button-previous {
@@ -159,7 +159,7 @@ label{
 }
 
 #msform .action-button-previous:hover, #msform .action-button-previous:focus {
-    box-shadow: 0 0 0 2px white, 0 0 0 3px #aCbEd0;
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #1D428A;
 }
 
 /*headings*/

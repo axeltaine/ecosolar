@@ -71,18 +71,19 @@
             <div class="form-group">
               <label for="fournisseur">Fournisseur</label> : 
               <div class="btn-group-toggle d-flex column" data-toggle="buttons">
-                <label class="btn button_edf"><img src="img/EDF_energy.png" alt="edf" style="max-height: 4em;"></label>
+                <label class="btn button_edf"><img src="img/EDF_energy.png" alt="edf" style="max-height: 4em;">
                 <input type="radio" checked autocomplete="off" name="fournisseur" value="edf">
+                </label>
+              
                 <div class="btn-group-toggle" data-toggle="buttons">
                   <label class="btn button_autre">
                     <input type="radio" cheked autocomplete="off" name="fournisseur" value="autre"><img
                       src="img/autre_logo.png" alt="autre" style="height:2em;"><br>Autre
                 </div>
                 </label>
-              </div>
-            </div>
+              </div>       
           </div>
-          
+          </div>
           <div class="display_chauff">
             <div class="form-group chauff_colonne" id="chauffage">
               <img class="img_chauff1" src="icons/chauffage.png" style="width:24%;">
