@@ -267,7 +267,7 @@
                   </div>
                 </div>
               </div>
-
+              </div>
 
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
           <input type="button" name="next" class="next action-button" value=" Suivant" />
