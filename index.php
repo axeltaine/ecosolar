@@ -20,7 +20,6 @@
   <header>
 
 
-
   </header>
   <main class="global">
   <div class="row">
