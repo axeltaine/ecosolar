@@ -371,42 +371,25 @@ hr {
   display: flex;
 }
 
-.button_autre {
-  background-color: lightgrey;
-  border: none;
-  border-radius: 5%;
-  width: 5em;
-  height: 5em;
-  margin-left: 3%;
-  animation-name: bounceIn;
-  animation-duration: 1s;
-  cursor: pointer;
-}
-
-.button_autre:hover {
-  background-color: #87CEFA;
-  transform: scale(1.02);
-}
-
-.button_edf {
-  background-color: lightgrey;
-  border: none;
-  border-radius: 5%;
-  width: 5em;
-  height: 5em;
-  margin-left: 3%;
-  animation-name: bounceIn;
-  animation-duration: 1s;
-  cursor: pointer;
-}
-
 .button_edf:hover {
   background-color: #87CEFA;
   transform: scale(1.03);
 }
 
-.btn.focus {
-  box-shadow: 0 0 0 0.2em rgba(255, 103, 31, 0.884);
+.btn-secondary {
+  background-color: lightgrey;
+  border: none;
+  cursor: pointer;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+}
+
+.btn-secondary:hover {
+  background-color: #58BEEC;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active {
+  background-color: #58BEEC;
 }
 
 /****** POUR MODIFIER LE CHAUFFAGE*******/
