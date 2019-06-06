@@ -15,5 +15,5 @@ $_POST['civilite'], $_POST['nom'],$_POST['prenom'], $_POST['email'],
 $_POST['telephone'], $_POST['adresse'],$_POST['code_postal'], $_POST['ville'],$_POST['info_complementaire']
  ));
 
-
+include('docpdf.php');
  ?>
