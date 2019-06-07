@@ -115,13 +115,6 @@
               </div>
 </div>
 
-
-
-
-
-
-
-
           <input type="button" name="next" class="next action-button" value="Suivant" />
         </fieldset>
 
@@ -280,29 +273,28 @@
             </div>
 
             <div class="form-group d-flex flex-column string optional study_roof_height hauteur">
-
               <div class="input-group d-flex flex-column h-25">
                 <label for="formGroupExampleInput">Hauteur:</label>
-      <input type="text" class="form-control" name="hauteur" id="formGroupExampleInput" placeholder="Hauteur">
+      <input type="text" class="form-control" name="hauteur" id="formGroupExampleInput" placeholder="Hauteur en m">
       <label for="formGroupExampleInput">Longueur:</label>
-          <input type="text" class="form-control" name="longueur" id="formGroupExampleInput" placeholder="Longueur">
+          <input type="text" class="form-control" name="longueur" id="formGroupExampleInput" placeholder="Longueur en m">
           <label for="formGroupExampleInput">Largeur:</label>
-    <input type="text" class="form-control" name="largeur" id="formGroupExampleInput" placeholder="Largeur">
+    <input type="text" class="form-control" name="largeur" id="formGroupExampleInput" placeholder="Largeur en m">
               </div>
-
-
             </div>
-
           </div>
-        <div class="form-group">
+        <div class="form-group d-flex justify-content-center">
+          <div class="d-flex flex-column">
           <label for="age">age:</label> <input type="text" name="age" id="age" />
+        </div>
+        <div class="d-flex flex-column">
           <label for="charpente">Charpente:</label>
           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="charp1" value="chevrons">
       <label class="form-check-label" for="charpente">Chevrons</label>
       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="charp2" value="fermettes">
       <label class="form-check-label" for="charpente">Fermettes</label>
     </div>
-
+    </div>
 
           <div class="form-group">
             <label for="couverture">Couverture</label> :
