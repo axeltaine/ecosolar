@@ -77,7 +77,6 @@ margin-top: 8em;
 
 /*inputs*/
 #msform input, #msform textarea {
-    padding: 2.75%;
     border: 1px solid #ccc;
     border-radius: 0px;
     box-sizing: border-box;
@@ -232,6 +231,10 @@ label{
 #progressbar li.active:before, #progressbar li.active:after {
     background: #ff671f;
     color: white;
+}
+
+.input-group>.form-control {
+  width: 100%;
 }
 
 
@@ -487,7 +490,7 @@ hr {
   height: 3.2em;
   width: 4em;
   text-align: center;
-  background-color: #fF671F;
+  background-color: grey;
   box-shadow: 2px 1px 2px rgba(000, 0, 0, 0.3);
 }
 
@@ -495,7 +498,25 @@ hr {
   transform: scale(1.1);
   transition: 500ms;
   cursor: pointer;
+  background-color: #fF671F;
+  border-radius: 50% 50% 50% 0%;
+  box-shadow: -2px 1px 2px rgba(000, 0, 0, 0.3);
+}
+
+.circle_abo1:focus {
   background-color: #58BEEC;
   border-radius: 50% 50% 50% 0%;
   box-shadow: -2px 1px 2px rgba(000, 0, 0, 0.3);
 }
+
+.circle_abo1:not(:disabled):not(.disabled).active {
+  background-color: #58BEEC;
+  border-radius: 50% 50% 50% 0%;
+  box-shadow: -2px 1px 2px rgba(000, 0, 0, 0.3);
+}
+
+.circle_abo1:not(:disabled):not(.disabled):active {
+  background-color: #58BEEC;
+  border-radius: 50% 50% 50% 0%;
+  box-shadow: -2px 1px 2px rgba(000, 0, 0, 0.3);
+  }
