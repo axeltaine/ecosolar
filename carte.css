@@ -1,31 +1,42 @@
+#carte {
+    background-image: url('./cartesoleil.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+}
 
 
 /* positionnements et relations descriptions */
 
 #Zone1 {
-    
+
     z-index: 2;
-    top: -14em;
-    left: 5em;
+    top: -19em;
+    left: 350px;
 }
 
 #Zone2 {
-    
+
     z-index: 2;
-    top: -11em;
-    left: 2em;
+    top: -14em;
+    left: 320px;
 }
 
+
 #Zone3 {
-    
+
     z-index: 2;
-    top: -9em;
-    left: 4em;
+    top: -10em;
+    left: 290px;
 }
 
 #Zone4 {
-    
+
     z-index: 2;
     top: -8em;
-    left: 8em;
+    left: 450px;
 }
