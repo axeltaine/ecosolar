@@ -15,28 +15,28 @@
 #Zone1 {
 
     z-index: 2;
-    top: -19em;
+    top: 7em;
     left: 350px;
 }
 
 #Zone2 {
 
     z-index: 2;
-    top: -14em;
-    left: 320px;
+    top: 12em;
+    left: 300px;
 }
 
 
 #Zone3 {
 
     z-index: 2;
-    top: -10em;
+    top: 16em;
     left: 290px;
 }
 
 #Zone4 {
 
     z-index: 2;
-    top: -8em;
-    left: 450px;
+    top: 18em;
+    left: 430px;
 }
