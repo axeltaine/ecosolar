@@ -35,8 +35,8 @@
         <!-- progressbar -->
         <ul id="progressbar">
           <li class="active">Consommation</li>
+          <li>Région</li>
           <li>Toiture</li>
-          <li>Localisation bâtiment</li>
           <li>Informations bâtiment</li>
           <li>Vos appareils</li>
           <li>Informations personnelles</li>
@@ -54,60 +54,86 @@
               <label for="consommation" class=data-toggle="tooltip" data-placement="top"
                 title="obligatoire">Consommation*:</label>
               <div class="custom-control custom-radio">
-                <input class="form-control" placeholder="Montant facture annuelle" type="text" name="montant_facture"
+                <input class="form-control" placeholder="Consommation en kWh" type="text" name="montant_facture"
                   id="input_conso">
                 </label>
               </div>
-              <div class="custom-control custom-radio">
-                <input type="radio" id="customRadio2" name="montant_facture" value="pas de facture"
-                  class="custom-control-input">
-                <label class="custom-control-label" for="customRadio2">
-                  Je n'ai pas ma facture d'électricité.
-                </label>
-              </div>
             </div>
-            <div class="form-group">
-              <label for="fournisseur">Fournisseur</label> :
-              <div class="btn-group btn-group-toggle d-flex column" data-toggle="buttons">
-    <label class="btn btn-secondary boutton_fournisseur">
-      <input type="radio" name="fournisseur" value="edf" id="option1" autocomplete="off"> <img src="img/EDF_energy.png" alt="edf" style="max-height: 4em;">
-    </label>
-    <label class="btn btn-secondary">
-      <input type="radio" name="fournisseur" value="autre" id="option2" autocomplete="off"> <img
-        src="img/autre_logo.png" alt="autre" style="height:2em;"><br>Autre
-    </label>
-              </div>
-          </div>
-          </div>
-          <div class="display_chauff">
-            <div class="form-group chauff_colonne" id="chauffage">
-              <img class="img_chauff1" src="icons/chauffage.png" style="width:24%;">
-              <label for="exampleFormControlSelect2">Chauffage</label>
-              <select class="form-control" name="chauffage" id="exampleFormControlSelect2">
-                <option></option>
-                <option>Chauffage électrique</option>
-                <option>Climatisation (PAC Air/Air)</option>
-                <option>Pompe à chaleur Air/Eau</option>
-                <option>Chauffage gaz, fioul ou bois</option>
-              </select>
-            </div>
-            <div class="form-group chauff_colonne">
-              <img class="img_chauff1" src="icons/logo-eau.png" style="width:30%;">
-              <label for="exampleFormControlSelect1">Chauffage-eau</label>
-              <select class="form-control" name="chauffage_eau" id="exampleFormControlSelect1">
-                <option></option>
-                <option>Résistance électrique</option>
-                <option>Pompe à chaleur</option>
-                <option>Chaudière bois</option>
-                <option>Chaudière gaz</option>
-                <option>Chaudière fuel</option>
-              </select>
-            </div>
-          </div>
+</div>
 
+            <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="3">
+  <label class="form-check-label" for="inlineRadio1">3</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="6">
+  <label class="form-check-label" for="inlineRadio2">6</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="9">
+  <label class="form-check-label" for="inlineRadio3">9</label>
+</div>
+
+
+
+        <div class="col d-flex">
+          <div class="surface_toiture">
+            <div class="form-group">
+              <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label>
+              :
+            </div>
+             <div class="surface_boutton">
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+               <label class="btn btn-secondary boutton_toiture">
+                <input type="radio" id="option1" autocomplete="off" value="<35m" name="surface"><img
+                    class="toiture_svg" src="img/house-roof.svg">
+                  <p>
+                    < 35m</p> </label>
+                      <label class="btn btn-secondary boutton_toiture">
+                        <input type="radio" id="option2" cheked autocomplete="off" value="35m<valeur<50m" name="surface"><img
+                          class="toiture_svg2" src="img/house-roof.svg" />
+                        <p>35 - 50m</p>
+              </label>
+                <label class="btn btn-secondary boutton_toiture">
+                  <input type="radio" id="option3" cheked autocomplete="off" value=">50m" name="surface"><img
+                    class="toiture_svg3" src="img/house-roof.svg">
+                  <p>> 50m</p>
+              </label>
+            </div>
+            </div>
+            </div>
+          </div>
 
 
           <input type="button" name="next" class="next action-button" value="Suivant" />
+        </fieldset>
+
+        <fieldset>
+          <div class="display_hr">
+            <hr class="hr1">
+            <h2 class="fs-title">Informations pour le calcul d'énergie</h2>
+            <hr class="hr2">
+          </div>
+          <div class="container batiment">
+            <div class="row">
+              <div class="col">
+                <div class="form-group orientation">
+                  <div class="form-group">
+                    <label for="couverture" ata-toggle="tooltip" data-placement="top" title="Obligatoire">carte*</label>
+                    :
+                  </div>
+                  <?php include ('carte.html'); ?>
+
+                </div>
+              </div>
+
+              <!-- fin du bloc orientation -->
+
+              </div>
+              </div>
+
+          <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
+          <input type="button" name="next" class="next action-button" value=" Suivant" />
         </fieldset>
 
         <fieldset>
@@ -220,59 +246,7 @@
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
           <input type="button" name="next" class="next action-button" value=" Suivant" />
         </fieldset>
-        <fieldset>
-          <div class="display_hr">
-            <hr class="hr1">
-            <h2 class="fs-title">Informations pour le calcul d'énergie</h2>
-            <hr class="hr2">
-          </div>
-          <div class="container batiment">
-            <div class="row">
-              <div class="col">
-                <div class="form-group orientation">
-                  <div class="form-group">
-                    <label for="couverture" ata-toggle="tooltip" data-placement="top" title="Obligatoire">carte*</label>
-                    :
-                  </div>
-                  <?php include ('carte.html'); ?>
 
-                </div>
-              </div>
-
-              <!-- fin du bloc orientation -->
-              <div class="col d-flex">
-                <div class="surface_toiture">
-                  <div class="form-group">
-                    <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label>
-                    :
-                  </div>
-                   <div class="surface_boutton">
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <label class="btn btn-secondary boutton_toiture">
-                      <input type="radio" id="option1" autocomplete="off" value="<35m" name="surface"><img
-                          class="toiture_svg" src="img/house-roof.svg">
-                        <p>
-                          < 35m</p> </label>
-                            <label class="btn btn-secondary boutton_toiture">
-                              <input type="radio" id="option2" cheked autocomplete="off" value="35m<valeur<50m" name="surface"><img
-                                class="toiture_svg2" src="img/house-roof.svg" />
-                              <p>35 - 50m</p>
-                    </label>
-                      <label class="btn btn-secondary boutton_toiture">
-                        <input type="radio" id="option3" cheked autocomplete="off" value=">50m" name="surface"><img
-                          class="toiture_svg3" src="img/house-roof.svg">
-                        <p>> 50m</p>
-                    </label>
-                  </div>
-                  </div>
-                  </div>
-                </div>
-              </div>
-              </div>
-
-          <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
-          <input type="button" name="next" class="next action-button" value=" Suivant" />
-        </fieldset>
 
         <fieldset>
           <div class="display_hr">
@@ -292,21 +266,34 @@
                 class="string optional" for="study_roof_height">Hauteur du bâtiment</label>
 
               <div class="input-group h-25">
-                <input class="numeric float optional form-control" min="0" placeholder="0" type="number" step="any"
-                  value="" name="hauteur" id="study_roof_height">
-                <div class="input-group-append">
-                  <label class="input-group-text" for="inputGroupSelect02">m</label>
-                </div>
+                <label for="formGroupExampleInput">Hauteur:</label>
+      <input type="text" class="form-control" name="hauteur" id="formGroupExampleInput" placeholder="Hauteur">
+      <label for="formGroupExampleInput">Longueur:</label>
+          <input type="text" class="form-control" name="longueur" id="formGroupExampleInput" placeholder="Longueur">
+          <label for="formGroupExampleInput">Largeur:</label>
+    <input type="text" class="form-control" name="largeur" id="formGroupExampleInput" placeholder="Largeur">
               </div>
               <label for="age">age:</label> <input type="text" name="age" id="age" />
+
             </div>
 
           </div>
+        <div class="form-group">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">1</label>
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">1</label>
+    </div>
 
 
           <div class="form-group">
             <label for="couverture">Couverture</label> :
             <?php include ('checkbox.php'); ?>
+          </div>
+
+          <div class="form-group">
+            <label for="photo">Photo du bâtiment</label>
+            <input type="file" class="form-control-file" name="photo_batiment" id="photo" />
           </div>
 
 
@@ -320,6 +307,43 @@
           <h3 class="fs-subtitle">Cochez ce qui vous correspond</h3>
           <!-- ajouter une liste d'appareils électriques à cocher le nombre possedé -->
           <div class="form-group">
+            <label for="fournisseur">Fournisseur</label> :
+            <div class="btn-group btn-group-toggle d-flex column" data-toggle="buttons">
+          <label class="btn btn-secondary boutton_fournisseur">
+          <input type="radio" name="fournisseur" value="edf" id="option1" autocomplete="off"> <img src="img/EDF_energy.png" alt="edf" style="max-height: 4em;">
+          </label>
+          <label class="btn btn-secondary">
+          <input type="radio" name="fournisseur" value="autre" id="option2" autocomplete="off"> <img
+          src="img/autre_logo.png" alt="autre" style="height:2em;"><br>Autre
+          </label>
+            </div>
+          </div>
+          <div class="display_chauff">
+            <div class="form-group chauff_colonne" id="chauffage">
+              <img class="img_chauff1" src="icons/chauffage.png" style="width:24%;">
+              <label for="exampleFormControlSelect2">Chauffage</label>
+              <select class="form-control" name="chauffage" id="exampleFormControlSelect2">
+                <option></option>
+                <option>Chauffage électrique</option>
+                <option>Climatisation (PAC Air/Air)</option>
+                <option>Pompe à chaleur Air/Eau</option>
+                <option>Chauffage gaz, fioul ou bois</option>
+              </select>
+            </div>
+            <div class="form-group chauff_colonne">
+              <img class="img_chauff1" src="icons/logo-eau.png" style="width:30%;">
+              <label for="exampleFormControlSelect1">Chauffage-eau</label>
+              <select class="form-control" name="chauffage_eau" id="exampleFormControlSelect1">
+                <option></option>
+                <option>Résistance électrique</option>
+                <option>Pompe à chaleur</option>
+                <option>Chaudière bois</option>
+                <option>Chaudière gaz</option>
+                <option>Chaudière fuel</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
             <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> :
             <div class="input-group">
               <input class="numeric float optional form-control" min="1" placeholder="0" type="number" step="any"
@@ -328,10 +352,7 @@
               </div>
             </div>
           </div>
-          <div class="form-group">
-            <label for="photo">Photo du bâtiment</label>
-            <input type="file" class="form-control-file" name="photo_batiment" id="photo" />
-          </div>
+
 
           <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
           <input type="button" name="next" class="next action-button" value="Suivant" />
