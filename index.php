@@ -37,8 +37,8 @@
           <li class="active">Consommation</li>
           <li>Région</li>
           <li>Toiture</li>
-          <li>Informations bâtiment</li>
-          <li>Vos appareils</li>
+          <li>Bâtiment</li>
+          <li>Energie</li>
           <li>Informations personnelles</li>
         </ul>
         <!-- fieldsets -->
@@ -58,51 +58,55 @@
                   id="input_conso">
                 </label>
               </div>
+              <div class="form-check form-check-inline">
+                <label for="abonnement" class=data-toggle="tooltip" data-placement="top"
+                  title="obligatoire">Type d'abonnement</label>
+    <input class="form-check-input" type="radio" name="abonnement" id="abo1" value="3">
+    <label class="form-check-label" for="inlineRadio1">3kWh</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="abonnement" id="abo2" value="6">
+    <label class="form-check-label" for="inlineRadio2">6kWh</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="abonnement" id="abo3" value="9">
+    <label class="form-check-label" for="inlineRadio3">9kWh</label>
+  </div>
             </div>
+            <div class="col d-flex">
+              <div class="surface_toiture">
+                <div class="form-group">
+                  <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label>
+                  :
+                </div>
+                 <div class="surface_boutton">
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                   <label class="btn btn-secondary boutton_toiture">
+                    <input type="radio" id="option1" autocomplete="off" value="<35m" name="surface"><img
+                        class="toiture_svg" src="img/house-roof.svg">
+                      <p>
+                        < 35m</p> </label>
+                          <label class="btn btn-secondary boutton_toiture">
+                            <input type="radio" id="option2" cheked autocomplete="off" value="35m<valeur<50m" name="surface"><img
+                              class="toiture_svg2" src="img/house-roof.svg" />
+                            <p>35 - 50m</p>
+                  </label>
+                    <label class="btn btn-secondary boutton_toiture">
+                      <input type="radio" id="option3" cheked autocomplete="off" value=">50m" name="surface"><img
+                        class="toiture_svg3" src="img/house-roof.svg">
+                      <p>> 50m</p>
+                  </label>
+                </div>
+                </div>
+                </div>
+              </div>
 </div>
 
-            <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="3">
-  <label class="form-check-label" for="inlineRadio1">3</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="6">
-  <label class="form-check-label" for="inlineRadio2">6</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="9">
-  <label class="form-check-label" for="inlineRadio3">9</label>
-</div>
 
 
 
-        <div class="col d-flex">
-          <div class="surface_toiture">
-            <div class="form-group">
-              <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label>
-              :
-            </div>
-             <div class="surface_boutton">
-              <div class="btn-group btn-group-toggle" data-toggle="buttons">
-               <label class="btn btn-secondary boutton_toiture">
-                <input type="radio" id="option1" autocomplete="off" value="<35m" name="surface"><img
-                    class="toiture_svg" src="img/house-roof.svg">
-                  <p>
-                    < 35m</p> </label>
-                      <label class="btn btn-secondary boutton_toiture">
-                        <input type="radio" id="option2" cheked autocomplete="off" value="35m<valeur<50m" name="surface"><img
-                          class="toiture_svg2" src="img/house-roof.svg" />
-                        <p>35 - 50m</p>
-              </label>
-                <label class="btn btn-secondary boutton_toiture">
-                  <input type="radio" id="option3" cheked autocomplete="off" value=">50m" name="surface"><img
-                    class="toiture_svg3" src="img/house-roof.svg">
-                  <p>> 50m</p>
-              </label>
-            </div>
-            </div>
-            </div>
-          </div>
+
+
 
 
           <input type="button" name="next" class="next action-button" value="Suivant" />
@@ -262,10 +266,9 @@
               </div>
             </div>
 
-            <div class="form-group d-flex flex-column string optional study_roof_height hauteur"><label
-                class="string optional" for="study_roof_height">Hauteur du bâtiment</label>
+            <div class="form-group d-flex flex-column string optional study_roof_height hauteur">
 
-              <div class="input-group h-25">
+              <div class="input-group d-flex flex-column h-25">
                 <label for="formGroupExampleInput">Hauteur:</label>
       <input type="text" class="form-control" name="hauteur" id="formGroupExampleInput" placeholder="Hauteur">
       <label for="formGroupExampleInput">Longueur:</label>
@@ -273,16 +276,18 @@
           <label for="formGroupExampleInput">Largeur:</label>
     <input type="text" class="form-control" name="largeur" id="formGroupExampleInput" placeholder="Largeur">
               </div>
-              <label for="age">age:</label> <input type="text" name="age" id="age" />
+
 
             </div>
 
           </div>
         <div class="form-group">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-      <label class="form-check-label" for="inlineRadio1">1</label>
-      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-      <label class="form-check-label" for="inlineRadio1">1</label>
+          <label for="age">age:</label> <input type="text" name="age" id="age" />
+          <label for="charpente">Charpente:</label>
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="charp1" value="chevrons">
+      <label class="form-check-label" for="charpente">Chevrons</label>
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="charp2" value="fermettes">
+      <label class="form-check-label" for="charpente">Fermettes</label>
     </div>
 
 
@@ -306,9 +311,10 @@
           <?php include ('listtest.html'); ?>
           <h3 class="fs-subtitle">Cochez ce qui vous correspond</h3>
           <!-- ajouter une liste d'appareils électriques à cocher le nombre possedé -->
-          <div class="form-group">
+          <div class="form-group row d-flex justify-content-center">
+            <div class="col-5">
             <label for="fournisseur">Fournisseur</label> :
-            <div class="btn-group btn-group-toggle d-flex column" data-toggle="buttons">
+            <div class="btn-group btn-group-toggle d-flex" data-toggle="buttons">
           <label class="btn btn-secondary boutton_fournisseur">
           <input type="radio" name="fournisseur" value="edf" id="option1" autocomplete="off"> <img src="img/EDF_energy.png" alt="edf" style="max-height: 4em;">
           </label>
@@ -317,32 +323,38 @@
           src="img/autre_logo.png" alt="autre" style="height:2em;"><br>Autre
           </label>
             </div>
-          </div>
-          <div class="display_chauff">
-            <div class="form-group chauff_colonne" id="chauffage">
-              <img class="img_chauff1" src="icons/chauffage.png" style="width:24%;">
-              <label for="exampleFormControlSelect2">Chauffage</label>
-              <select class="form-control" name="chauffage" id="exampleFormControlSelect2">
-                <option></option>
-                <option>Chauffage électrique</option>
-                <option>Climatisation (PAC Air/Air)</option>
-                <option>Pompe à chaleur Air/Eau</option>
-                <option>Chauffage gaz, fioul ou bois</option>
-              </select>
+                </div>
+                <div class="row col-7 d-flex justify-content-center">
+
+
+            <div class="display_chauff ">
+              <div class="form-group chauff_colonne col-6" id="chauffage">
+                <img class="img_chauff1" src="icons/chauffage.png" style="width:24%;">
+                <label for="exampleFormControlSelect2">Chauffage</label>
+                <select class="form-control" name="chauffage" id="exampleFormControlSelect2">
+                  <option></option>
+                  <option>Chauffage électrique</option>
+                  <option>Climatisation (PAC Air/Air)</option>
+                  <option>Pompe à chaleur Air/Eau</option>
+                  <option>Chauffage gaz, fioul ou bois</option>
+                </select>
+              </div>
+              <div class="form-group chauff_colonne col-6">
+                <img class="img_chauff1" src="icons/logo-eau.png" style="width:30%;">
+                <label for="exampleFormControlSelect1">Chauffage-eau</label>
+                <select class="form-control" name="chauffage_eau" id="exampleFormControlSelect1">
+                  <option></option>
+                  <option>Résistance électrique</option>
+                  <option>Pompe à chaleur</option>
+                  <option>Chaudière bois</option>
+                  <option>Chaudière gaz</option>
+                  <option>Chaudière fuel</option>
+                </select>
+              </div>
             </div>
-            <div class="form-group chauff_colonne">
-              <img class="img_chauff1" src="icons/logo-eau.png" style="width:30%;">
-              <label for="exampleFormControlSelect1">Chauffage-eau</label>
-              <select class="form-control" name="chauffage_eau" id="exampleFormControlSelect1">
-                <option></option>
-                <option>Résistance électrique</option>
-                <option>Pompe à chaleur</option>
-                <option>Chaudière bois</option>
-                <option>Chaudière gaz</option>
-                <option>Chaudière fuel</option>
-              </select>
-            </div>
           </div>
+            </div>
+
           <div class="form-group">
             <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> :
             <div class="input-group">
