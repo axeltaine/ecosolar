@@ -39,6 +39,7 @@ function Footer()
 }
 //--- ETAPE 1 : Informations sur la consommation ----
 $num_fact = $_POST['montant_facture'];
+$abo = $_POST['abonnement'];
 $fourns = $_POST['fournisseur'];
 $chauff = $_POST['chauffage'];
 $chauffo = $_POST['chauffage_eau'];
@@ -54,7 +55,10 @@ $surf = $_POST['surface'];
 
 //----ETAPE 4 Informations bâtiment ----
 $hautr = $_POST['hauteur'];
+$long = $_POST['longueur'];
+$larg = $_POST['largeur'];
 $age = $_POST['age'];
+$chartp = $_POST['charpente'];
 //$couv = $_POST['Couverture'];
 
 //----ETAPE 5 Vos appareils ----
