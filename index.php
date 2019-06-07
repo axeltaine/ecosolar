@@ -12,7 +12,6 @@
   <link href="css/listtest.css" rel="stylesheet">
   <link rel="stylesheet" href="css/maison.css" />
   <link href="css/angle_toit.css" rel="stylesheet">
-  <link href="css/animate.css" rel="stylesheet">
   <link href="carte.css" rel="stylesheet">
 </head>
 

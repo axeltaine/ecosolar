@@ -302,7 +302,6 @@ hr {
 
 .surface_toiture:hover {
   transition: 200ms;
-  transform: scale(1.05);
 }
 
 .boutton_toiture {
