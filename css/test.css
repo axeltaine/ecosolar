@@ -288,6 +288,7 @@ hr {
 .surface_toiture{
   margin-left: auto;
   margin-right: auto;
+  width: 50%;
 }
 .toiture {
   margin-top: 4%;
@@ -310,8 +311,8 @@ hr {
   width: 6em;
   height: 7em;
   margin-right: 1em;
-  margin-top: 30%;
-  margin-bottom: 50%;
+  margin-top: 3%;
+  margin-bottom: auto;
 }
 
 .surface_boutton {
@@ -346,14 +347,17 @@ hr {
 
 /******POUR MODIFIER LA CONSO*******/
 .conso{
-  margin-right: 2%;
+  width: 50%;
 }
 #input_conso{
   height: 1.5em;
+  width: 40%;
 }
+
 #chauffage{
   margin-right: 2%;
 }
+
 .display_conso {
   display: flex;
   justify-content: center;
@@ -465,4 +469,34 @@ hr {
 
 .cotation {
   margin-right: 3em;
+}
+
+.kilow {
+  margin-top: 5em;
+}
+
+.circle_abo1 p {
+  font-size: 90%;
+  margin-top: 18%;
+  margin-bottom: 50%;
+  padding: 7%;
+  color: white;
+}
+
+.circle_abo1 {
+  border-radius: 50% 50% 0% 50%;
+  height: 3.2em;
+  width: 4em;
+  text-align: center;
+  background-color: #fF671F;
+  box-shadow: 2px 1px 2px rgba(000, 0, 0, 0.3);
+}
+
+.circle_abo1:hover {
+  transform: scale(1.1);
+  transition: 500ms;
+  cursor: pointer;
+  background-color: #58BEEC;
+  border-radius: 50% 50% 50% 0%;
+  box-shadow: -2px 1px 2px rgba(000, 0, 0, 0.3);
 }

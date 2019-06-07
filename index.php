@@ -53,25 +53,39 @@
             <div class="form-group d-flex flex-column conso">
               <label for="consommation" class=data-toggle="tooltip" data-placement="top"
                 title="obligatoire">Consommation*:</label>
-              <div class="custom-control custom-radio">
+              <div class="custom-control custom-radio d-flex justify-content-center">
                 <input class="form-control" placeholder="Consommation en kWh" type="text" name="montant_facture"
                   id="input_conso">
                 </label>
               </div>
-              <div class="form-check form-check-inline">
+
+              <div class="form-check d-flex flex-column justify-content-center kilow">
                 <label for="abonnement" class=data-toggle="tooltip" data-placement="top"
-                  title="obligatoire">Type d'abonnement</label>
-    <input class="form-check-input" type="radio" name="abonnement" id="abo1" value="3">
-    <label class="form-check-label" for="inlineRadio1">3kWh</label>
+                  title="obligatoire">Type d'abonnement:</label>
+                  <div class="btn-group btn-group-toggle d-flex justify-content-center" data-toggle="buttons">
+                      <div class="form-check form-check-inline col-2">
+                    <label class="circle_abo1">
+                     <input type="radio" id="option1" autocomplete="off" value="3kWh" name="abonnement">
+                       <p>
+                         3kWh</p> </label>
+            </label>
+</div>
+  <div class="form-check form-check-inline col-2">
+    <label class="circle_abo1">
+     <input type="radio" id="option1" autocomplete="off" value="6kWh" name="abonnement">
+       <p>
+         6kWh</p> </label>
+</label>
   </div>
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" name="abonnement" id="abo2" value="6">
-    <label class="form-check-label" for="inlineRadio2">6kWh</label>
+  <div class="form-check form-check-inline col-2">
+    <label class="circle_abo1">
+     <input type="radio" id="option1" autocomplete="off" value="9kWh" name="abonnement">
+       <p>
+         9kWh</p> </label>
+</label>
   </div>
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" name="abonnement" id="abo3" value="9">
-    <label class="form-check-label" for="inlineRadio3">9kWh</label>
-  </div>
+</div>
+</div>
             </div>
             <div class="col d-flex">
               <div class="surface_toiture">
