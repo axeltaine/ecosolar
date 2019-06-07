@@ -243,17 +243,10 @@ label{
 }
 
 .form-control {
-  height: 25%;
+  height: 75%;
 }
 
 /******POUR MODIFIER LE TITRE******/
-
-.fs-title {
-  animation-name: flipInX;
-  animation-duration: 1s;
-  margin-bottom: 0px;
-  margin-top: 1%;
-}
 
 .display_hr {
   display: flex;
@@ -267,16 +260,6 @@ hr {
   margin-left: 1%;
   margin-right: 1%;
   margin-top: 1.8em;
-}
-
-.hr1 {
-  animation-name: fadeInLeft;
-  animation-duration: 800ms;
-}
-
-.hr2 {
-  animation-name: fadeInRight;
-  animation-duration: 800ms;
 }
 
 .electro {
