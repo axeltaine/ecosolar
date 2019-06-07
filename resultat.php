@@ -4,7 +4,7 @@ include('connectbdd.php');
 
 
 
-$req = $bdd->prepare('INSERT INTO `deviseco`(`montant_facture`, `fournisseur`, `chauffage`, `chauffage_eau`, `orientation`, `inclinaison`, `carte`, `surface`, `hauteur`, `age`, `couverture`, `frigo`, `piscine`, `lave_linge`, `lave_vaisselle`, `congelateur`, `cave_a_vin`, `voiture`, `pompe_a_chaleur`, `seche_linge`, `nombre_personne_foyer`, `photo_batiment`, `civilite`, `nom`, `prenom`, `email`, `telephone`, `adresse`, `code_postal`, `ville`, `info_complementaire`, `abonnement`, `longuer`, `largeur`, `charpente`) VALUES (? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,?,? ,? ,? ,? )');
+$req = $bdd->prepare('INSERT INTO `deviseco`(`montant_facture`, `fournisseur`, `chauffage`, `chauffage_eau`, `orientation`, `inclinaison`, `carte`, `surface`, `hauteur`, `age`, `couverture`, `frigo`, `piscine`, `lave_linge`, `lave_vaisselle`, `congelateur`, `cave_a_vin`, `voiture`, `pompe_a_chaleur`, `seche_linge`, `nombre_personne_foyer`, `photo_batiment`, `civilite`, `nom`, `prenom`, `email`, `telephone`, `adresse`, `code_postal`, `ville`, `info_complementaire`, `abonnement`, `longuer`, `largeur`, `charpente`) VALUES (? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? )');
 $req->execute(array($_POST['montant_facture'], $_POST['fournisseur'],
 $_POST['chauffage'], $_POST['chauffage_eau'],$_POST['orientation'], $_POST['inclinaison'],
 $_POST['carte'], $_POST['surface'],$_POST['hauteur'], $_POST['age'],

@@ -101,6 +101,7 @@ $pdf->Cell(170,10,' - INFORMATIONS SUR LA CONSOMMATION - ',1,2,'C');
 $pdf->SetFillColor(180,180,180);
 $pdf->SetFont('Arial','',11);
 $pdf->Cell(0,10,'Consommation : '.$num_fact,0,10,'L');
+$pdf->Cell(0,10,'abonnement : '.$abo,0,10,'L');
 $pdf->Cell(0,10,'Fournisseur energie: '.strtoupper($fourns),0,10,'L');
 $pdf->Cell(0,10,'Chauffage : '.$chauff,0,10,'L');
 $pdf->Cell(0,10,'Chauffe-eau : '.$chauffo,0,10,'L');
@@ -131,7 +132,10 @@ $pdf->Cell(170,10,' - INFORMATIONS BATIMENT - ',1,2,'C');
 $pdf->SetFillColor(180,180,180);
 $pdf->SetFont('Arial','',11);
 $pdf->Cell(0,10,'Hauteur : '.$hautr,0,10,'L');
+$pdf->Cell(0,10,'longueur : '.$long,0,10,'L');
+$pdf->Cell(0,10,'largeur : '.$larg,0,10,'L');
 $pdf->Cell(0,10,'Age : '.$age,0,10,'L');
+$pdf->Cell(0,10,'charpente : '.$chartp,0,10,'L');
 //$pdf->Cell(0,10,'Couverture : '.$couv,0,10,'L');
 
 
