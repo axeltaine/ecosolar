@@ -51,8 +51,7 @@
                 <label for="consommation" class=data-toggle="tooltip" data-placement="top"
                   title="obligatoire">Consommation*:</label>
                 <div class="custom-control custom-radio d-flex justify-content-center">
-                  <input class="form-control" placeholder="
-                  en kWh" type="text" name="montant_facture"
+                  <input class="form-control" placeholder="en kWh" type="text" name="montant_facture"
                     id="input_conso">
                   </label>
                 </div>
