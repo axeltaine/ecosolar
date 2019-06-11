@@ -60,7 +60,7 @@
                   <label for="abonnement" class=data-toggle="tooltip" data-placement="top" title="obligatoire">Type
                     d'abonnement:</label>
                   <div class="btn-group btn-group-toggle d-flex justify-content-center" data-toggle="buttons">
-                    <div class="form-check form-check-inline col-2">
+                    <div class="form-check form-check-inline col-lg-2 col-ms-3">
                       <label class="btn circle_abo1">
                         <input type="radio" id="option1" autocomplete="off" value="3kWh" name="abonnement">
                         <p>
@@ -68,7 +68,7 @@
                       </label>
                       </label>
                     </div>
-                    <div class="form-check form-check-inline col-2">
+                    <div class="form-check form-check-inline col-lg-2 col-ms-3">
                       <label class="btn circle_abo1">
                         <input type="radio" id="option2" autocomplete="off" value="6kWh" name="abonnement">
                         <p>
@@ -76,7 +76,7 @@
                       </label>
                       </label>
                     </div>
-                    <div class="form-check form-check-inline col-2">
+                    <div class="form-check form-check-inline col-lg-2 col-ms-3">
                       <label class="btn circle_abo1">
                         <input type="radio" id="option3" autocomplete="off" value="9kWh" name="abonnement">
                         <p>
@@ -221,6 +221,7 @@
                 </div>
               </div>
             </div>
+          </div>
 
             <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
             <input type="button" name="next" class="next action-button" value=" Suivant" />

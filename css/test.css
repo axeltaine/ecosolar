@@ -271,10 +271,10 @@ hr {
 }
 
 /******PARTIE SURFACE TOITURE******/
+
 .surface_toiture{
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 }
 .toiture {
   margin-top: 4%;
@@ -286,10 +286,6 @@ hr {
   margin-left: auto;
 }
 
-.surface_toiture:hover {
-  transition: 200ms;
-}
-
 .boutton_toiture {
   background-color: lightgrey;
   border-radius: 5%;
@@ -298,6 +294,12 @@ hr {
   margin-right: 1em;
   margin-top: 3%;
   margin-bottom: auto;
+}
+
+@media only screen and (max-width:800px) {
+ .btn-secondary{
+   background-color: red;
+ }
 }
 
 .surface_boutton {
@@ -457,7 +459,7 @@ hr {
 }
 
 .kilow {
-  margin-top: 5em;
+  margin-top: 4em;
 }
 
 .circle_abo1 p {
