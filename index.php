@@ -213,7 +213,7 @@
                     <div class="d-flex justify-content-center">
                       <div class="d-flex flex-column">
                         <input type="range" class="custom-range"
-                        min="5" max="50" step="5" id="chgtangle"
+                        min="5" max="50" step="5" name="inclinaison" id="chgtangle"
                         onclick="updateTextInput(this.value)" value="">
                         <span id="AfficheValue">35</span>
                     </div>
