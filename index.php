@@ -318,21 +318,23 @@
             <div class="form-group row d-flex justify-content-center">
               <div class="col-5">
                 <label for="fournisseur">Fournisseur</label> :
-                <div class="btn-group btn-group-toggle d-flex" data-toggle="buttons">
-                  <label class="btn btn-secondary boutton_fournisseur">
+                <div class="btn-group btn-group-toggle d-flex justify-content-center fournisseur_position" data-toggle="buttons">
+                  <label class="btn btn-secondary boutton_fournisseur col-lg-2">
                     <input type="radio" name="fournisseur" value="edf" id="option1" autocomplete="off"> <img
                       src="img/EDF_energy.png" alt="edf" style="max-height: 4em;">
                   </label>
-                  <label class="btn btn-secondary">
+                  <label class="btn btn-secondary col-lg-2">
                     <input type="radio" name="fournisseur" value="autre" id="option2" autocomplete="off"> <img
                       src="img/autre_logo.png" alt="autre" style="height:2em;"><br>Autre
                   </label>
                 </div>
               </div>
-              <div class="row col-7 d-flex justify-content-center">
+              <div class="row col-5 d-flex justify-content-center">
+                <div class="d-flex flex-column">
+                <label for="chauffage">Type de chauffage:</label>
                 <div class="display_chauff ">
                   <div class="form-group chauff_colonne col-6" id="chauffage">
-                    <img class="img_chauff1" src="icons/chauffage.png" style="width:24%;">
+                    <img class="img_chauff1" src="icons/chauffage.png" style="width:30%;">
                     <label for="exampleFormControlSelect2">Chauffage</label>
                     <select class="form-control" name="chauffage" id="exampleFormControlSelect2">
                       <option></option>
@@ -357,6 +359,7 @@
                 </div>
               </div>
             </div>
+          </div>
 
             <div class="form-group">
               <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> :
