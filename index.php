@@ -211,36 +211,11 @@
 
                     <label>Angle d'inclinaison approximatif de votre toiture en °</label><br />
                     <div class="d-flex justify-content-center">
-                      <div class="form-check form-check-inline">
-                        <!--!!!!!!!!!!!!!!!!!!! le onclick est nécessaire pour récupérer la valeur de l'input -->
-
-                        <div class="d-flex flex-column">
-                          <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);"
-                            name="inclinaison" id="angle1" value="5">
-                          <label class="form-check-label" for="inlineRadio1">05</label>
-                        </div>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <div class="d-flex flex-column">
-                          <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);"
-                            name="inclinaison" id="angle2" value="20">
-                          <label class="form-check-label" for="inlineRadio2">20</label>
-                        </div>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <div class="d-flex flex-column">
-                          <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);"
-                            name="inclinaison" id="angle3" value="35">
-                          <label class="form-check-label" for="inlineRadio3">35</label>
-                        </div>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <div class="d-flex flex-column">
-                          <input class="form-check-input" type="radio" onclick="updateTextInput(this.value);"
-                            name="inclinaison" id="angle4" value="45">
-                          <label class="form-check-label" for="inlineRadio4">45</label>
-                        </div>
-                      </div>
+                      <div class="d-flex flex-column">
+                        <input type="range" class="custom-range"
+                        min="5" max="50" step="5" id="chgtangle"
+                        onclick="updateTextInput(this.value)" value="">
+                        <span id="AfficheValue">35</span>
                     </div>
                   </div>
                 </div>
