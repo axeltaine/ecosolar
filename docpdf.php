@@ -44,6 +44,87 @@ $fourns = $_POST['fournisseur'];
 $chauff = $_POST['chauffage'];
 $chauffo = $_POST['chauffage_eau'];
 
+  if ($_POST['orientation'] == 'est' AND $_POST['inclinaison'] == '5')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 0.93);
+  }
+  if ($_POST['orientation'] == 'est' AND $_POST['inclinaison'] == '20')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 0.91);
+  }
+  if ($_POST['orientation'] == 'est' AND $_POST['inclinaison'] == '35')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 0.86);
+  }
+  if ($_POST['orientation'] == 'est' AND $_POST['inclinaison'] == '45')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 0.82);
+  }
+  if ($_POST['orientation'] == 'sud_est' AND $_POST['inclinaison'] == '5')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 0.93);
+  }
+  if ($_POST['orientation'] == 'sud_est' AND $_POST['inclinaison'] == '20')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 0.95);
+  }
+  if ($_POST['orientation'] == 'sud_est' AND $_POST['inclinaison'] == '35')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 0.96);
+  }
+  if ($_POST['orientation'] == 'sud_est' AND $_POST['inclinaison'] == '45')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 0.92);
+  }
+  if ($_POST['orientation'] == 'sud' AND $_POST['inclinaison'] == '5')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 0.93);
+  }
+  if ($_POST['orientation'] == 'sud' AND $_POST['inclinaison'] == '20')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 1);
+  }
+  if ($_POST['orientation'] == 'sud' AND $_POST['inclinaison'] == '35')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 0.97);
+  }
+  if ($_POST['orientation'] == 'sud' AND $_POST['inclinaison'] == '45')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 0.95);
+  }
+  if ($_POST['orientation'] == 'sud_ouest' AND $_POST['inclinaison'] == '5')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 0.93);
+  }
+  if ($_POST['orientation'] == 'sud_ouest' AND $_POST['inclinaison'] == '20')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 0.95);
+  }
+  if ($_POST['orientation'] == 'sud_ouest' AND $_POST['inclinaison'] == '35')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 0.96);
+  }
+  if ($_POST['orientation'] == 'sud_ouest' AND $_POST['inclinaison'] == '45')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 0.92);
+  }
+  if ($_POST['orientation'] == 'ouest' AND $_POST['inclinaison'] == '5')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 0.93);
+  }
+  if ($_POST['orientation'] == 'ouest' AND $_POST['inclinaison'] == '20')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 0.91);
+  }
+  if ($_POST['orientation'] == 'ouest' AND $_POST['inclinaison'] == '35')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 0.86);
+  }
+  if ($_POST['orientation'] == 'ouest' AND $_POST['inclinaison'] == '45')
+  {
+    $sum = $_POST['abonnement'] * ($_POST['carte'] * 0.82);
+  }
+
 //--- ETAPE 2 Toiture ----
 $orient = $_POST['orientation'];
 $incli = $_POST['inclinaison'];
@@ -105,7 +186,7 @@ $pdf->Cell(0,10,'abonnement : '.$abo,0,10,'L');
 $pdf->Cell(0,10,'Fournisseur energie: '.strtoupper($fourns),0,10,'L');
 $pdf->Cell(0,10,'Chauffage : '.$chauff,0,10,'L');
 $pdf->Cell(0,10,'Chauffe-eau : '.$chauffo,0,10,'L');
-
+$pdf->Cell(0,10,'Production solaire en KWh : '.$sum,0,10,'L');
 
 //--- ETAPE 2 Toiture ----
 $pdf->SetFont('Times','BI',13);

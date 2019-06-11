@@ -62,7 +62,7 @@
                   <div class="btn-group btn-group-toggle d-flex justify-content-center" data-toggle="buttons">
                     <div class="form-check form-check-inline col-lg-2 col-ms-3">
                       <label class="btn circle_abo1">
-                        <input type="radio" id="option1" autocomplete="off" value="3kWh" name="abonnement">
+                        <input type="radio" id="option1" autocomplete="off" value="3" name="abonnement">
                         <p>
                           3kWh</p>
                       </label>
@@ -70,7 +70,7 @@
                     </div>
                     <div class="form-check form-check-inline col-lg-2 col-ms-3">
                       <label class="btn circle_abo1">
-                        <input type="radio" id="option2" autocomplete="off" value="6kWh" name="abonnement">
+                        <input type="radio" id="option2" autocomplete="off" value="6" name="abonnement">
                         <p>
                           6kWh</p>
                       </label>
@@ -78,7 +78,7 @@
                     </div>
                     <div class="form-check form-check-inline col-lg-2 col-ms-3">
                       <label class="btn circle_abo1">
-                        <input type="radio" id="option3" autocomplete="off" value="9kWh" name="abonnement">
+                        <input type="radio" id="option3" autocomplete="off" value="9" name="abonnement">
                         <p>
                           9kWh</p>
                       </label>
@@ -213,7 +213,7 @@
                     <div class="d-flex justify-content-center">
                       <div class="d-flex flex-column">
                         <input type="range" class="custom-range"
-                        min="5" max="50" step="5" id="chgtangle"
+                        min="5" max="50" step="5" name="inclinaison" id="chgtangle"
                         onclick="updateTextInput(this.value)" value="">
                         <span id="AfficheValue">35</span>
                     </div>
