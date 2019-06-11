@@ -268,7 +268,7 @@
                   <div class="d-flex flex-column checkbox2">
                     <i id="checkbox_i4" class="fas fa-check fa-3x"></i>
                 <img id="chevrons" src="img/chevrons.jpg" class="img-thumbnail" alt="chevrons" style="height:8em; width:10em;">
-              </br>
+              <br>
                 <div class="d-flex justify-content-center">
                 <input class="form-check-input" type="radio" name="charpente" id="charp1" value="chevrons">
               </div>
@@ -281,7 +281,7 @@
                   <div class="d-flex flex-column checkbox2">
                     <i id="checkbox_i5" class="fas fa-check fa-3x"></i>
                 <img id="fermettes" src="img/ccb-charpente-indus-13.jpg" class="img-thumbnail" alt="chevrons" style="height:8em; width:10em;">
-              </br>
+              <br>
                 <div class="d-flex justify-content-center">
                 <input class="form-check-input" type="radio" name="charpente" id="charp2" value="fermettes">
               </div>
