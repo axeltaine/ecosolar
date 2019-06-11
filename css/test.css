@@ -237,13 +237,12 @@ label{
   width: 100%;
 }
 
-
 .input-group {
     flex-wrap: nowrap;
 }
 
 .form-control {
-  height: 75%;
+  height: auto;
 }
 
 /******POUR MODIFIER LE TITRE******/
