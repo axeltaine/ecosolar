@@ -53,3 +53,25 @@ $( "#inlineRadio4" ).click(function(){
   $('#tuile').css("background-color", "white");
   $('#ardoise').css("background-color", "white");
   });
+
+  //*****CHECKBOX PARTIE CHARPENTE******//
+
+$('#charp1').click(function(){
+  $( "#checkbox_i4" ).show( "slow" );
+    $("#checkbox_i5").hide();
+})
+
+$( "#charp1" ).click(function(){
+  $('#chevrons').css("background-color", "#fF671F");
+  $('#fermettes').css("background-color", "white");
+})
+
+$('#charp2').click(function(){
+  $( "#checkbox_i5" ).show( "slow" );
+      $("#checkbox_i4").hide();
+})
+
+$( "#charp2" ).click(function(){
+  $('#fermettes').css("background-color", "#fF671F");
+  $('#chevrons').css("background-color", "white");
+})

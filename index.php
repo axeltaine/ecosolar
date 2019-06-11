@@ -234,7 +234,7 @@
               <h2 class="fs-title">Informations sur le bâtiment</h2>
               <hr class="hr2">
             </div>
-            <div class="container-fluid d-flex justify-content-center">
+            <div class="container-fluid d-flex justify-content-center col-lg-7">
               <div class="form-group p-3">
                 <label for="cotation">cotation:</label>
                 <div class="row d-flex justify-content-center cotation">
@@ -242,7 +242,7 @@
                 </div>
               </div>
 
-              <div class="form-group d-flex flex-column string optional study_roof_height hauteur">
+              <div class="form-group d-flex flex-column string optional study_roof_height hauteur col-lg-5">
                 <div class="input-group d-flex flex-column h-25">
                   <label for="formGroupExampleInput">Hauteur:</label>
                   <input type="text" class="form-control" name="hauteur" id="formGroupExampleInput"
@@ -257,17 +257,43 @@
               </div>
             </div>
             <div class="form-group d-flex justify-content-center">
-              <div class="d-flex flex-column">
-                <label for="age">age:</label> <input type="text" name="age" id="age" />
+              <div class="d-flex flex-column age_position">
+                <label for="age">age du bâtiment:</label> <input type="text" name="age" id="age" />
               </div>
               <div class="d-flex flex-column">
-                <label for="charpente">Charpente:</label>
+              <label for="charpente">Charpente:</label>
+              <div class="d-flex">
+                <div class="d-flex flex-column">
+                <div class="form-check form-check-inline justify-content-center">
+                  <div class="d-flex flex-column checkbox2">
+                    <i id="checkbox_i4" class="fas fa-check fa-3x"></i>
+                <img id="chevrons" src="img/chevrons.jpg" class="img-thumbnail" alt="chevrons" style="height:8em; width:10em;">
+              </br>
+                <div class="d-flex justify-content-center">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="charp1" value="chevrons">
+              </div>
+              </div>
+            </div>
                 <label class="form-check-label" for="charpente">Chevrons</label>
+              </div>
+              <div class="d-flex flex-column">
+                <div class="form-check form-check-inline justify-content-center">
+                  <div class="d-flex flex-column checkbox2">
+                    <i id="checkbox_i5" class="fas fa-check fa-3x"></i>
+                <img id="fermettes" src="img/ccb-charpente-indus-13.jpg" class="img-thumbnail" alt="chevrons" style="height:8em; width:10em;">
+              </br>
+                <div class="d-flex justify-content-center">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="charp2" value="fermettes">
+              </div>
+              </div>
+            </div>
                 <label class="form-check-label" for="charpente">Fermettes</label>
               </div>
             </div>
+          </div>
+        </div>
+
+
 
             <div class="form-group">
               <label for="couverture">Couverture</label> :
