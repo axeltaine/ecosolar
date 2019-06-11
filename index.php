@@ -116,7 +116,7 @@
             </div>
 
             <input type="button" name="next" class="next action-button" value="Suivant" />
-
+              <p>*Champs obligatoire</p>
           </fieldset>
 
           <fieldset>
@@ -143,6 +143,7 @@
 
             <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
             <input type="button" name="next" class="next action-button" value=" Suivant" />
+            <p>*Champs obligatoire</p>
           </fieldset>
 
           <fieldset>
@@ -225,6 +226,7 @@
 
             <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
             <input type="button" name="next" class="next action-button" value=" Suivant" />
+            <p>*Champs obligatoire</p>
           </fieldset>
 
 
@@ -309,6 +311,7 @@
 
             <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
             <input type="button" name="next" class="next action-button" value=" Suivant" />
+            <p>*Champs obligatoire</p>
           </fieldset>
 
           <fieldset>
@@ -374,7 +377,7 @@
 
             <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
             <input type="button" name="next" class="next action-button" value="Suivant" />
-
+            <p>*Champs obligatoire</p>
           </fieldset>
 
           <fieldset>
@@ -438,6 +441,7 @@
             </div>
             <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
             <input type="submit" name="submit" class="submit action-button" value="Envoyer" />
+            <p>*Champs obligatoire</p>
           </fieldset>
         </form>
       </div>
