@@ -116,7 +116,7 @@
             </div>
 
             <input type="button" name="next" class="next action-button" value="Suivant" />
-              <p>*Champs obligatoire</p>
+            <p><i>*Champs obligatoire</i></p>
           </fieldset>
 
           <fieldset>
@@ -143,7 +143,7 @@
 
             <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
             <input type="button" name="next" class="next action-button" value=" Suivant" />
-            <p>*Champs obligatoire</p>
+            <p><i>*Champs obligatoire</i></p>
           </fieldset>
 
           <fieldset>
@@ -213,20 +213,19 @@
                     <label>Angle d'inclinaison approximatif de votre toiture en °</label><br />
                     <div class="d-flex justify-content-center">
                       <div class="d-flex flex-column">
-                        <input type="range" class="custom-range"
-                        min="5" max="50" step="5" name="inclinaison" id="chgtangle"
-                        onclick="updateTextInput(this.value)" value="">
+                        <input type="range" class="custom-range" min="5" max="50" step="5" name="inclinaison"
+                          id="chgtangle" onclick="updateTextInput(this.value)" value="">
                         <span id="AfficheValue">35</span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
             <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
             <input type="button" name="next" class="next action-button" value=" Suivant" />
-            <p>*Champs obligatoire</p>
+            <p><i>*Champs obligatoire</i></p>
           </fieldset>
 
 
@@ -263,37 +262,39 @@
                 <label for="age">age du bâtiment:</label> <input type="text" name="age" id="age" />
               </div>
               <div class="d-flex flex-column">
-              <label for="charpente">Charpente:</label>
-              <div class="d-flex">
-                <div class="d-flex flex-column">
-                <div class="form-check form-check-inline justify-content-center">
-                  <div class="d-flex flex-column checkbox2">
-                    <i id="checkbox_i4" class="fas fa-check fa-3x"></i>
-                <img id="chevrons" src="img/chevrons.jpg" class="img-thumbnail" alt="chevrons" style="height:8em; width:10em;">
-              <br>
-                <div class="d-flex justify-content-center">
-                <input class="form-check-input" type="radio" name="charpente" id="charp1" value="chevrons">
-              </div>
+                <label for="charpente">Charpente:</label>
+                <div class="d-flex">
+                  <div class="d-flex flex-column">
+                    <div class="form-check form-check-inline justify-content-center">
+                      <div class="d-flex flex-column checkbox2">
+                        <i id="checkbox_i4" class="fas fa-check fa-3x"></i>
+                        <img id="chevrons" src="img/chevrons.jpg" class="img-thumbnail" alt="chevrons"
+                          style="height:8em; width:10em;">
+                        <br>
+                        <div class="d-flex justify-content-center">
+                          <input class="form-check-input" type="radio" name="charpente" id="charp1" value="chevrons">
+                        </div>
+                      </div>
+                    </div>
+                    <label class="form-check-label" for="charpente">Chevrons</label>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div class="form-check form-check-inline justify-content-center">
+                      <div class="d-flex flex-column checkbox2">
+                        <i id="checkbox_i5" class="fas fa-check fa-3x"></i>
+                        <img id="fermettes" src="img/ccb-charpente-indus-13.jpg" class="img-thumbnail" alt="chevrons"
+                          style="height:8em; width:10em;">
+                        <br>
+                        <div class="d-flex justify-content-center">
+                          <input class="form-check-input" type="radio" name="charpente" id="charp2" value="fermettes">
+                        </div>
+                      </div>
+                    </div>
+                    <label class="form-check-label" for="charpente">Fermettes</label>
+                  </div>
+                </div>
               </div>
             </div>
-                <label class="form-check-label" for="charpente">Chevrons</label>
-              </div>
-              <div class="d-flex flex-column">
-                <div class="form-check form-check-inline justify-content-center">
-                  <div class="d-flex flex-column checkbox2">
-                    <i id="checkbox_i5" class="fas fa-check fa-3x"></i>
-                <img id="fermettes" src="img/ccb-charpente-indus-13.jpg" class="img-thumbnail" alt="chevrons" style="height:8em; width:10em;">
-              <br>
-                <div class="d-flex justify-content-center">
-                <input class="form-check-input" type="radio" name="charpente" id="charp2" value="fermettes">
-              </div>
-              </div>
-            </div>
-                <label class="form-check-label" for="charpente">Fermettes</label>
-              </div>
-            </div>
-          </div>
-        </div>
 
 
 
@@ -311,7 +312,7 @@
 
             <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
             <input type="button" name="next" class="next action-button" value=" Suivant" />
-            <p>*Champs obligatoire</p>
+            <p><i>*Champs obligatoire</i></p>
           </fieldset>
 
           <fieldset>
@@ -321,7 +322,8 @@
             <div class="form-group row d-flex justify-content-center">
               <div class="col-5">
                 <label for="fournisseur">Fournisseur</label> :
-                <div class="btn-group btn-group-toggle d-flex justify-content-center fournisseur_position" data-toggle="buttons">
+                <div class="btn-group btn-group-toggle d-flex justify-content-center fournisseur_position"
+                  data-toggle="buttons">
                   <label class="btn btn-secondary boutton_fournisseur col-lg-2 col-sm-5">
                     <input type="radio" name="fournisseur" value="edf" id="option1" autocomplete="off"> <img
                       src="img/EDF_energy.png" alt="edf" style="max-height: 4em;">
@@ -334,35 +336,35 @@
               </div>
               <div class="row col-5 d-flex justify-content-center">
                 <div class="d-flex flex-column">
-                <label for="chauffage">Type de chauffage:</label>
-                <div class="display_chauff ">
-                  <div class="form-group chauff_colonne col-6" id="chauffage">
-                    <img class="img_chauff1" src="icons/chauffage.png" style="width:30%;">
-                    <label for="exampleFormControlSelect2">Chauffage</label>
-                    <select class="form-control" name="chauffage" id="exampleFormControlSelect2">
-                      <option></option>
-                      <option>Chauffage électrique</option>
-                      <option>Climatisation (PAC Air/Air)</option>
-                      <option>Pompe à chaleur Air/Eau</option>
-                      <option>Chauffage gaz, fioul ou bois</option>
-                    </select>
-                  </div>
-                  <div class="form-group chauff_colonne col-6">
-                    <img class="img_chauff1" src="icons/logo-eau.png" style="width:30%;">
-                    <label for="exampleFormControlSelect1">Chauffage-eau</label>
-                    <select class="form-control" name="chauffage_eau" id="exampleFormControlSelect1">
-                      <option></option>
-                      <option>Résistance électrique</option>
-                      <option>Pompe à chaleur</option>
-                      <option>Chaudière bois</option>
-                      <option>Chaudière gaz</option>
-                      <option>Chaudière fuel</option>
-                    </select>
+                  <label for="chauffage">Type de chauffage:</label>
+                  <div class="display_chauff ">
+                    <div class="form-group chauff_colonne col-6" id="chauffage">
+                      <img class="img_chauff1" src="icons/chauffage.png" style="width:30%;">
+                      <label for="exampleFormControlSelect2">Chauffage</label>
+                      <select class="form-control" name="chauffage" id="exampleFormControlSelect2">
+                        <option></option>
+                        <option>Chauffage électrique</option>
+                        <option>Climatisation (PAC Air/Air)</option>
+                        <option>Pompe à chaleur Air/Eau</option>
+                        <option>Chauffage gaz, fioul ou bois</option>
+                      </select>
+                    </div>
+                    <div class="form-group chauff_colonne col-6">
+                      <img class="img_chauff1" src="icons/logo-eau.png" style="width:30%;">
+                      <label for="exampleFormControlSelect1">Chauffage-eau</label>
+                      <select class="form-control" name="chauffage_eau" id="exampleFormControlSelect1">
+                        <option></option>
+                        <option>Résistance électrique</option>
+                        <option>Pompe à chaleur</option>
+                        <option>Chaudière bois</option>
+                        <option>Chaudière gaz</option>
+                        <option>Chaudière fuel</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
             <div class="form-group">
               <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> :
@@ -377,7 +379,7 @@
 
             <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
             <input type="button" name="next" class="next action-button" value="Suivant" />
-            <p>*Champs obligatoire</p>
+            <p><i>*Champs obligatoire</i></p>
           </fieldset>
 
           <fieldset>
@@ -441,7 +443,7 @@
             </div>
             <input type="button" name="previous" class="previous action-button-previous" value="Précédent" />
             <input type="submit" name="submit" class="submit action-button" value="Envoyer" />
-            <p>*Champs obligatoire</p>
+            <p><i>*Champs obligatoire</i></p>
           </fieldset>
         </form>
       </div>
