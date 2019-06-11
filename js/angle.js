@@ -1,7 +1,8 @@
 var formulaire = document.getElementById("formulaire_angle");
 //fonction qui récupère la valeur du bouton sélectionné
 function updateTextInput(val) {
-      document.getElementsByName('inlineRadioOptions').value=val;
+      document.getElementsByName('chgtangle').value=val;
+      document.getElementById("AfficheValue").innerHTML=val;
     }
 //je sélectionne mon canvas
 var canvas = document.querySelector('.moncanvas');
@@ -16,7 +17,7 @@ function degToRad(degrees) {
 var angle;
 
 function changeangle(){
-angle = document.getElementsByName('inlineRadioOptions').value; //si je met textInput a la place de custom, rien ne s'affiche
+angle = document.getElementsByName('chgtangle').value; //si je met textInput a la place de custom, rien ne s'affiche
 return angle;
 }
 
