@@ -64,7 +64,7 @@
                       <label class="btn circle_abo1">
                         <input type="radio" id="option1" autocomplete="off" value="3" name="abonnement">
                         <p>
-                          3kWh</p>
+                          3kVA</p>
                       </label>
                       </label>
                     </div>
@@ -72,7 +72,7 @@
                       <label class="btn circle_abo1">
                         <input type="radio" id="option2" autocomplete="off" value="6" name="abonnement">
                         <p>
-                          6kWh</p>
+                          6kVA</p>
                       </label>
                       </label>
                     </div>
@@ -80,7 +80,7 @@
                       <label class="btn circle_abo1">
                         <input type="radio" id="option3" autocomplete="off" value="9" name="abonnement">
                         <p>
-                          9kWh</p>
+                          9kVA</p>
                       </label>
                       </label>
                     </div>

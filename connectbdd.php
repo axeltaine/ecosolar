@@ -2,7 +2,7 @@
 try
 {
   // On se connecte à MySQL
-  $bdd = new PDO('mysql:host=localhost;dbname=ecosolar;charset=utf8', 'root', 'root');
+  $bdd = new PDO('mysql:host=db776288475.hosting-data.io;dbname=db776288475;charset=utf8', 'dbo776288475', '2ku8t5y97');
 }
 catch(Exception $e)
 {

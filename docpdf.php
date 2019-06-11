@@ -1,7 +1,6 @@
-
 <?php
 
-require('fpdf.php');
+require 'fpdf.php';
 class PDF extends FPDF
 {
   // Page header
@@ -253,12 +252,7 @@ $pdf->Cell(0,10,'Code postal : '.$cp,0,10,'L');
 $pdf->Cell(0,10,'Ville : '.strtoupper($vil),0,10,'L');
 $pdf->Cell(0,10,'Infos complementaire : '.$infc,0,10,'L');
 
-
-
-
-
-//$pdf->Output('devis/'.strtoupper($nom).'_'.$prenom.'.pdf','D');
+$pdf->Output('devis/'.strtoupper($nom).'_'.$prenom.'.pdf','D');
 //$pdf->Output(strtoupper($nom).'_'.$prenom.'.pdf','D', 'isUTF8');
-$pdf->Output();
-
+//$pdf->Output();
 ?>
