@@ -270,7 +270,7 @@
                 <img id="chevrons" src="img/chevrons.jpg" class="img-thumbnail" alt="chevrons" style="height:8em; width:10em;">
               </br>
                 <div class="d-flex justify-content-center">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="charp1" value="chevrons">
+                <input class="form-check-input" type="radio" name="charpente" id="charp1" value="chevrons">
               </div>
               </div>
             </div>
@@ -283,7 +283,7 @@
                 <img id="fermettes" src="img/ccb-charpente-indus-13.jpg" class="img-thumbnail" alt="chevrons" style="height:8em; width:10em;">
               </br>
                 <div class="d-flex justify-content-center">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="charp2" value="fermettes">
+                <input class="form-check-input" type="radio" name="charpente" id="charp2" value="fermettes">
               </div>
               </div>
             </div>
