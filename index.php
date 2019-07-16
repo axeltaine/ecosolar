@@ -49,7 +49,7 @@
             <div class="display_conso">
               <div class="form-group d-flex flex-column conso">
                 <label for="consommation" class=data-toggle="tooltip" data-placement="top"
-                  title="obligatoire">Consommation*:</label>
+                  title="obligatoire">Votre consommation électrique annuelle en kWh*:</label>
                 <div class="custom-control custom-radio d-flex justify-content-center">
                   <input class="form-control" placeholder="en kWh" type="text" name="montant_facture"
                     id="input_conso">
@@ -57,8 +57,7 @@
                 </div>
 
                 <div class="form-check d-flex flex-column justify-content-center kilow">
-                  <label for="abonnement" class=data-toggle="tooltip" data-placement="top" title="obligatoire">Type
-                    d'abonnement:</label>
+                  <label for="abonnement" class=data-toggle="tooltip" data-placement="top" title="obligatoire">Votre abonnement d'électricité:</label>
                   <div class="btn-group btn-group-toggle d-flex justify-content-center" data-toggle="buttons">
                     <div class="form-check form-check-inline col-lg-2 col-ms-3">
                       <label class="btn circle_abo1">
@@ -79,8 +78,16 @@
                     <div class="form-check form-check-inline col-lg-2 col-ms-3">
                       <label class="btn circle_abo1">
                         <input type="radio" id="option3" autocomplete="off" value="9" name="abonnement">
-                        <p>
-                          9kVA</p>
+                        <p class="p_circle">
+                          9kVA<br>mono</p>
+                      </label>
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline col-lg-2 col-ms-3">
+                      <label class="btn circle_abo1">
+                        <input type="radio" id="option3" autocomplete="off" value="9" name="abonnement">
+                        <p class="p_circle">
+                          9kVA<br>tri</p>
                       </label>
                       </label>
                     </div>
@@ -90,7 +97,7 @@
               <div class="col d-flex">
                 <div class="surface_toiture">
                   <div class="form-group">
-                    <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface*</label>
+                    <label for="surface" data-toggle="tooltip" data-placement="top" title="Obligatoire">Surface de la toiture utilisée<br> pour l'installation photovoltaïque*</label>
                     :
                   </div>
                   <div class="surface_boutton">
@@ -111,6 +118,7 @@
                       </label>
                     </div>
                   </div>
+                  <small><i>Choisir le pan de toiture le plus au Sud possible</i></small>
                 </div>
               </div>
             </div>
@@ -131,8 +139,7 @@
                   <div class="form-group orientation">
                     <div class="form-group">
                       <label for="couverture" ata-toggle="tooltip" data-placement="top"
-                        title="Obligatoire">carte*</label>
-                      :
+                        title="Obligatoire">Carte d'ensoleillement en France*:<br><small><i>Déterminer votre position géographique</i></small></label>
                     </div>
                     <?php include ('carte.html'); ?>
                   </div>
@@ -157,7 +164,7 @@
                 <div class="col">
                   <div class="form-group orientation">
                     <label for="orientation" data-toggle="tooltip" data-placement="top"
-                      title="Obligatoire">Orientation*</label> : <br>
+                      title="Obligatoire">Orientation du pan de toiture utilisé*</label> : <br>
                     <!-- ligne contenant l'orientation avec les triangles animer en jquery -->
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex flex-column bloc_orientation">
                       <div class="maison d-flex justify-content-center">
@@ -184,14 +191,14 @@
                               value="sud" class="btn btn-primary">Sud
                           </label>
 
-                          <label class="btn btn-secondary button_est">
-                            <input type="radio" cheked autocomplete="off" id="option4" type="button" name="orientation"
-                              value="est" class="btn btn-primary">Est
-                          </label>
-
                           <label class="btn btn-secondary button_Sud_est">
                             <input type="radio" cheked autocomplete="off" id="option5" type="button" name="orientation"
                               value="sud_est" class="btn btn-primary">Sud_est
+                          </label>
+
+                          <label class="btn btn-secondary button_est">
+                            <input type="radio" cheked autocomplete="off" id="option4" type="button" name="orientation"
+                              value="est" class="btn btn-primary">Est
                           </label>
                         </div>
                       </div>
@@ -204,7 +211,7 @@
 
                     <div>
                       <label for="inclinaison" data-toggle="tooltip" data-placement="top"
-                        title="obligatoire">Inclinaison*</label> : <br>
+                        title="obligatoire">Inclinaison du pan de toiture utilisé*</label> : <br>
                     </div>
 
                     <canvas class="moncanvas d-flex" id="canvas" width="500" height="500"></canvas>
@@ -213,8 +220,8 @@
                     <label>Angle d'inclinaison approximatif de votre toiture en °</label><br />
                     <div class="d-flex justify-content-center">
                       <div class="d-flex flex-column">
-                        <input type="range" class="custom-range" min="5" max="50" step="5" name="inclinaison"
-                          id="chgtangle" onclick="updateTextInput(this.value)" value="">
+                        <input type="range" class="custom-range" min="0" max="55" step="5" name="inclinaison"
+                            id="chgtangle" onload="modif_angle(this.value)" onchange="updateTextInput(this.value)" value=""
                         <span id="AfficheValue">35</span>
                       </div>
                     </div>
@@ -237,7 +244,7 @@
             </div>
             <div class="container-fluid d-flex justify-content-center col-lg-7">
               <div class="form-group p-3">
-                <label for="cotation">cotation:</label>
+                <label for="cotation">Cotations du bâtiment:</label>
                 <div class="row d-flex justify-content-center cotation">
                   <img src="img/cotation.png" class="img-thumbnail" style="height:12em; width:15em;">
                 </div>
@@ -259,10 +266,10 @@
             </div>
             <div class="form-group d-flex justify-content-center">
               <div class="d-flex flex-column age_position">
-                <label for="age">age du bâtiment:</label> <input type="text" name="age" id="age" />
+                <label for="age">Age du bâtiment:</label> <input type="text" name="age" id="age" />
               </div>
               <div class="d-flex flex-column">
-                <label for="charpente">Charpente:</label>
+                <label for="charpente">Type de charpente:</label>
                 <div class="d-flex">
                   <div class="d-flex flex-column">
                     <div class="form-check form-check-inline justify-content-center">
@@ -299,7 +306,7 @@
 
 
             <div class="form-group">
-              <label for="couverture">Couverture</label> :
+              <label for="couverture">Type de couverture</label> :
               <?php include ('checkbox.php'); ?>
             </div>
 
@@ -317,11 +324,11 @@
 
           <fieldset>
             <?php include ('listtest.html'); ?>
-            <h3 class="fs-subtitle">Cochez ce qui vous correspond</h3>
+            <h3 class="fs-subtitle">Veuillez indiquer le nombre de vos appareils éléctriques</h3>
             <!-- ajouter une liste d'appareils électriques à cocher le nombre possedé -->
             <div class="form-group row d-flex justify-content-center">
               <div class="col-5">
-                <label for="fournisseur">Fournisseur</label> :
+                <label for="fournisseur">Votre fournisseur d'électricité</label> :
                 <div class="btn-group btn-group-toggle d-flex justify-content-center fournisseur_position"
                   data-toggle="buttons">
                   <label class="btn btn-secondary boutton_fournisseur col-lg-2 col-sm-5">
@@ -336,7 +343,7 @@
               </div>
               <div class="row col-5 d-flex justify-content-center">
                 <div class="d-flex flex-column">
-                  <label for="chauffage">Type de chauffage:</label>
+                  <label for="chauffage">Vos type de chauffage:</label>
                   <div class="display_chauff ">
                     <div class="form-group chauff_colonne col-6" id="chauffage">
                       <img class="img_chauff1" src="icons/chauffage.png" style="width:30%;">
@@ -367,7 +374,7 @@
             </div>
 
             <div class="form-group">
-              <label for="Nombre_personnes_foyer">Nombre personnes foyer</label> :
+              <label for="Nombre_personnes_foyer">Nombre de personnes dans le foyer</label> :
               <div class="input-group">
                 <input class="numeric float optional form-control" min="1" placeholder="0" type="number" step="any"
                   value="1" name="nombre_personne_foyer" id="nombre_personnes_foyer">
