@@ -221,7 +221,7 @@
                     <div class="d-flex justify-content-center">
                       <div class="d-flex flex-column">
                         <input type="range" class="custom-range" min="0" max="55" step="5" name="inclinaison"
-                            id="chgtangle" onload="modif_angle(this.value)" onchange="updateTextInput(this.value)" value=""
+                            id="chgtangle" onload="modif_angle(this.value)" onchange="updateTextInput(this.value)" value="">
                         <span id="AfficheValue">35</span>
                       </div>
                     </div>
